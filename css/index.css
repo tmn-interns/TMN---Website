@@ -1,15 +1,37 @@
 @import url("global.css");
 
 body{
-    
+    background: var(--PALT_6);
+    font-family: 'Inter', sans-serif;
 }
 
 section{
-    width: 100%;
-    height: 97vh;
+    min-height: 97vh;
     border: solid grey 1px;
+    padding: 0 50% 0 50%;
 }
 
 main section:nth-child(odd){
     background-color: var(--PALT_2);
+    color: white;
 }
+
+main section:nth-child(even){
+    background-color: var(--PALT_6);
+    color: var(--PALT_2);
+}
+
+.section-title{
+    margin-top: 3rem;
+    text-align: center;
+}
+.section-title > h2{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.section-title > hr{
+    width: 10%;
+    height: 1.5px;
+    background: var(--PALT_1);
+}
+
