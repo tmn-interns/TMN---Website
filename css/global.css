@@ -7,4 +7,13 @@
     --PALT_4: #39404D;
     --PALT_5: black;
     --PALT_6: white;
+    
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+#navbar{
+    overflow: visible;
 }

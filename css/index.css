@@ -9,16 +9,17 @@ body{
 
 section{
     min-height: 100vh;
-    border: solid grey 1px;
-    padding: 0 50% 0 50%;
+    border: solid var(--PALT_2) 1px;
+    position: relative;
+    margin: 0;
 }
 
-main section:nth-child(odd){
+main > section:nth-child(odd){
     background-color: var(--PALT_2);
     color: white;
 }
 
-main section:nth-child(even){
+main > section:nth-child(even){
     background-color: var(--PALT_6);
     color: var(--PALT_2);
 }
@@ -37,6 +38,13 @@ main section:nth-child(even){
     background: var(--PALT_1);
 }
 
+#home-welcome-wave{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    width: 100%;
+}
 /* Contact Us */
 .contact-cards {
     margin: 4rem 4.5rem;
