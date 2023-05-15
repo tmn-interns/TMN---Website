@@ -1,7 +1,11 @@
 @import url("global.css");
 
+main{
+    background-color: var(--PALT_2);
+}
+
 body{
-    background: var(--PALT_6);
+    background: white;
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -9,65 +13,56 @@ body{
 
 section{
     min-height: 100vh;
-    border: solid var(--PALT_2) 1px;
     position: relative;
-    margin: 0;
+    padding-top: 3rem;
 }
+
 
 main > section:nth-child(odd){
     background-color: var(--PALT_2);
-    color: white;
-}
-
+    color: white;}
 main > section:nth-child(even){
     background-color: var(--PALT_6);
-    color: var(--PALT_2);
-}
+    color: var(--PALT_2);}
+
 
 .section-title{
-    margin-top: 3rem;
-    text-align: center;
-}
+    text-align: center;}
 .section-title > h2{
     font-weight: 900;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
 .section-title > hr{
     width: 10%;
     height: 1.5px;
-    background: var(--PALT_1);
-}
+    background: var(--PALT_1);}
+
 
 #home-welcome-wave{
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left:0;
-    right: 0;
     width: 100%;
 }
 /* Contact Us */
 .contact-cards {
-    margin: 4rem 4.5rem;
     width: 100%;
-    height: 19rem;
     display: flex;
     justify-content: space-around;
-    /* column-gap: 12rem; */
-    align-items: center;
 }
 
 .add, .ph, .email {
-    width: 20rem;
+    align-items: center;
     height: 100%;
     position: relative;
     border-radius: 1.5rem;
     display: flex;
-    align-items: center;
+    width: 20rem;
+    height: 16rem;
 }
 
 .upper{
-    width: 20rem;
-    height: 6rem;
+    width: 100%;
+    height: 40%;
     position: absolute;
     left: 0;
     top: 0;
@@ -78,8 +73,8 @@ main > section:nth-child(even){
 }
 
 .lower{
-    width: 20rem;
-    height: 10rem;
+    width: 100%;
+    height: 60%;
     position: absolute;
     left: 0;
     top: 5rem;
@@ -99,8 +94,8 @@ main > section:nth-child(even){
 }
 
 .icon{
-    width: 4rem;
-    height: 4rem;
+    width: 25%;
+    aspect-ratio: 1;
     position: absolute;
     left: 8rem;
     top: 3rem;
