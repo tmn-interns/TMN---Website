@@ -119,11 +119,13 @@ p {color: #FFFFFF;
 .text1{
     color: #B29B6B;
     font-family: 'Inter';
+    font-weight: bold;
 }
 
 .text2{
     color: #23262f;
     font-family: 'Inter';
+    font-weight: normal;
 }
 
     
@@ -132,6 +134,7 @@ p {color: #FFFFFF;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 
 .circle{
@@ -159,16 +162,10 @@ p {color: #FFFFFF;
 }
 .t1{font-size: 325%;
         font-weight: bold;
-        /* top: 21%; */
-        /* left: 9%; */
-        /* position: absolute; */
     }
 
         .t11{font-size: 195%;
         font-weight: normal;
-        /* top: 50%; */
-        /* left: 27%; */
-        /* position: absolute; */
         }
         .images1{
     top: 93%;
@@ -183,15 +180,9 @@ p {color: #FFFFFF;
     display: inline-block;
 }
 .t2{font-size: 210%;
-        font-weight: bold;
-        top: 15%;
-        left: 15%;
-        position: absolute;}
+        }
         .t22{font-size: 100%;
-        font-weight: normal;
-        top: 50%;
-        left: 22%;
-        position: absolute;}  
+       }  
         .images2{
     top: -63%;
     left: 33%;
@@ -205,15 +196,9 @@ p {color: #FFFFFF;
     display: inline-block;
 }
 .t3{font-size: 295%;
-        font-weight: bold;
-        top: 16%;
-        left: 12%;
-        position: absolute;} 
+        } 
         .t33{font-size: 175%;
-        font-weight: normal;
-        top: 55%;
-        left: 15%;
-        position: absolute;} 
+        } 
         .images3{
     top: -25%;
     left: 85%;
@@ -227,15 +212,9 @@ p {color: #FFFFFF;
     display: inline-block;
 }
 .t4{font-size: 335%;
-        font-weight: bold;
-        top: 15%;
-        left: 16%;
-        position: absolute;} 
+        } 
         .t44{font-size: 165%;
-        font-weight: normal;
-        top: 52%;
-        left: 6%;
-        position: absolute;} 
+        } 
         .images4{
     top: 71%;
     left: 95%;
