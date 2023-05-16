@@ -88,7 +88,16 @@ img:hover{
 .contact-cards {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 !important;
+    /* margin-top: 6%; */
+}
+
+
+@media (max-width: 600px){
+    .add, .ph, .email{
+        margin: auto;
+    }
 }
 
 .add, .ph, .email {
@@ -97,8 +106,8 @@ img:hover{
     position: relative;
     border-radius: 1.5rem;
     display: flex;
-    width: 20rem;
-    height: 16rem;
+    width: 15rem;
+    height: 13rem;
 }
 
 .upper{
@@ -122,9 +131,9 @@ img:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.92rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 1.2;
+    /* line-height: 1.2; */
     color: #ffffff;
     font-family: Poppins, 'Source Sans Pro';
     white-space: nowrap;
@@ -138,9 +147,10 @@ img:hover{
     width: 25%;
     aspect-ratio: 1;
     position: absolute;
+    transform: translateX(100%);
+    top: 45%;
     left: 50%;
-    transform: translateX(-50%);
-    top: 3rem;
+    transform: translate(-50%, -75%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,4 +333,73 @@ p {color: #FFFFFF;
     top: 63%;
     left: 40%;
     position: absolute;
+}
+/* Contact Us Form */
+.form-grp{
+    margin-left: 0;
+    margin-right: 0;
+}
+.form{
+    width: 45%;
+    box-sizing: border-box;
+    border: solid 0.1rem white;
+    border-radius: 1.1rem;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+input[type="text"], input[type="email"]{
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    background-color: #333845;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    background-color: #333845;
+    border: 0.1rem solid #b29a6b;
+    outline: none;
+    box-shadow: none;
+}
+
+.ta{
+    resize: none !important;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4) !important;
+    background-color: #333845 !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+.ta:focus{
+    border: 0.1rem solid #b29a6b !important;
+}
+
+.send-btn{
+    background-color: #333845 !important;
+}
+
+.send-btn:hover{
+    background-color: #23262f !important;
+}
+
+.airplane-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .airplane-container{
+        display: none;
+    }
+}
+
+#airplane{
+    width: 100%;
+    aspect-ratio: 1.25;
 }
