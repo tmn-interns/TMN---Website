@@ -82,30 +82,69 @@
     </section>
 
     <section class="container-fluid" id="contacts-us">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-            <hr>
-            <p>Want to get in touch? We'd love to hear from you.
-            <br>
-            Here's how you can reach us.</p>
-        </div>
-
-        <div class="contact-cards row">
-            <div class="add col-md-4 align-items-center">
-                <div class="upper"></div>
-                <div class="lower">ADDRESS</div>
-                <div class="icon"></div>
+        <!-- Contact cards -->
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <hr>
+                <p>Want to get in touch? We'd love to hear from you.
+                <br>
+                Here's how you can reach us.</p>
             </div>
-            <div class="ph col-md-4">
+
+            <div class="contact-cards row ml-0 mr-0 mt-5">
+                <div class="add">
+                    <div class="upper"></div>
+                    <div class="lower">ADDRESS</div>
+                    <div class="icon"></div>
+                </div>
+            <div class="ph">
                 <div class="upper"></div>
                 <div class="lower">PHONE NUMBER</div>
                 <div class="icon"></div>
             </div>
-            <div class="email col-md-4">
+            <div class="email">
                 <div class="upper"></div>
                 <div class="lower">EMAIL</div>
                 <div class="icon"></div>
+             </div>
+
+        </div>   
+            
+        <!-- Form - group -->
+        <div class="form-grp row">
+            <div class="form p-5 mt-5 col-md-6">
+                <form action="#">
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label class="form-label">Name</label><br>
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="mb-3 col">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control form-control-lg" placeholder="Your Email">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Your Subject">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea cols="10" rows="10" class="ta form-control" placeholder="Your Message Here..."></textarea>
+                    </div>
+                    <div id="send-btn-container" class="mt-4 d-flex justify-content-center">
+                        <input type="submit" class="send-btn btn btn-lg btn-secondary" value="Send Message"></input>
+                    </div>            
+                </form>
             </div>
+            <div class="airplane-container col-md-6">
+                <img src="images/airplane-image.png" alt="Airplane" id="airplane">
+            </div>
+        </div>
         </div>
     </section>
 
