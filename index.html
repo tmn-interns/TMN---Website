@@ -81,82 +81,46 @@
                 <p>We enable innovation! From ideation all the way through to market delivery.</p>
             </div>
 
-            <div class="carousel" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/images/partner1.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+            <div class="slide-container">
+                <div class="slide-subcontainer">
+                    <div class="slide-img">
+                        <img src="/images/partner1.png" alt="image 1">
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/images/partner2.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slide-img">
+                        <img src="/images/partner2.png" alt="image 2">
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/images/partner3.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slide-img">
+                        <img src="/images/partner3.png" alt="image 3">
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/images/partner4.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slide-img">
+                        <img src="/images/partner4.png" alt="image 4">
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/images/partner5.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slide-img">
+                        <img src="/images/partner5.png" alt="image 5">
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="/images/partner6.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slide-img">
+                        <img src="/images/partner6.png" alt="image 6">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner1.png" alt="image 1">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner2.png" alt="image 2">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner3.png" alt="image 3">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner4.png" alt="image 4">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner5.png" alt="image 5">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner6.png" alt="image 6">
                     </div>
                 </div>
             </div>
-        </section>
-        <script>
-            var items = document.querySelectorAll('.carousel .carousel-item');
-            items.forEach((e)=>{
-                const slide = 4;
-                let next = e.nextElementSibling;
-                for(var i=0;i<slide;i++){
-                    if(!next){
-                        next = items[0]
-                    }
-                    let clonechild = next.cloneNode(true)
-                    e.appendChild(clonechild.children[0])
-                    next = next.nextElementSibling
-                }
-            })
-        </script>
-
-        </div>
     </section>
 
     <section class="container-fluid" id="contacts-us">

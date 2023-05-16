@@ -43,6 +43,48 @@ main > section:nth-child(even){
     left:0;
     width: 100%;
 }
+
+/*Our Partner*/
+.slide-container{
+    /* height: 300px; */
+    /* border: 1px black solid; */
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+img:hover{
+    transform: translateZ(10px);
+}
+.slide-img{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.slide-subcontainer{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 30s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+
 /* Contact Us */
 .contact-cards {
     width: 100%;
