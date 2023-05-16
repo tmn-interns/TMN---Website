@@ -97,7 +97,8 @@ main > section:nth-child(even){
     width: 25%;
     aspect-ratio: 1;
     position: absolute;
-    left: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
     top: 3rem;
     display: flex;
     align-items: center;
