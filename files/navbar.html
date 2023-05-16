@@ -1,55 +1,48 @@
 <body>
-<div>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            
-            <div id="nav-logo">
-                <img id="company-logo" src="../images/logo.png">
-            </div>
 
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link">Career</a>
-                    <a href="#" class="nav-item nav-link">Blogs</a>
-                    <a href="#" class="nav-item nav-link">Our Partners</a>
-                    <a href="#" class="nav-item nav-link">Contact Us</a>
-                </div>
-                
-                <div class="navbar-nav">
-                    <a href="#" id="login-btn" class="ms-auto nav-item nav-link">
-                        Login <img src="..\images\login-icon.svg">
-                    </a>
-                </div>
-
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        
+        <div id="nav-logo">
+            <img id="company-logo" src="../images/logo.png">
         </div>
-    </nav>
-</div>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">Career</a>
+                <a href="#" class="nav-item nav-link">Blogs</a>
+                <a href="#" class="nav-item nav-link">Our Partners</a>
+                <a href="#" class="nav-item nav-link">Contact Us</a>
+            </div>
+            
+            <div class="navbar-nav">
+                <a href="#" id="login-btn" class="ms-auto nav-item nav-link">
+                    Login <img src="..\images\login-icon.svg">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
 
 
 <style>
 
 @import url("../css/global.css");
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: grey;
-}
-
 .navbar{
     background-color: var(--PALT_2);
-    min-height: 10vh;
-    box-shadow: 5px 5px 10px #000;
+    min-height: 8vh;
+    margin-bottom: 0;
+    box-shadow: 0px 5px 2px #0005;
+    z-index: 99;
 }
 
 #nav-logo{
-    color: white;
-    display: flex;
     justify-content: center;
     position: relative;
     display: flex;
@@ -74,8 +67,8 @@ body{
 #login-btn{
     background-color: var(--PALT_1);
     border-radius: 3rem;
-    padding: 0 2rem;
-    height: 2rem;
+    padding: 0 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;

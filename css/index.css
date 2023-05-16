@@ -36,13 +36,13 @@ main > section:nth-child(even){
     height: 1.5px;
     background: var(--PALT_1);}
 
-
 #home-welcome-wave{
     position: absolute;
     bottom: -1px;
     left:0;
     width: 100%;
 }
+
 /* Contact Us */
 .contact-cards {
     width: 100%;
