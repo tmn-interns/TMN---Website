@@ -1,0 +1,313 @@
+@import url("global.css");
+
+.error {
+    color: #eab454;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    background-color: var(--PALT_2);
+    color: var(--PALT_6);
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.img-login {
+    width: 50%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.login>h2 {
+    display: inline;
+    margin-top: 52px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: var(--PALT_6);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.tnc
+{
+    font-size: 1rem;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.form{
+    margin: auto;
+}
+
+hr {
+    width: 50%;
+    color: var(--PALT_6);
+}
+
+.names {
+    display: flex;
+    gap: 9%;
+}
+
+.lastname {
+    float: right;
+}
+
+.mobile-view {
+    display: none;
+}
+
+p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+input {
+    font-weight: bold;
+    background: #333845;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 49px;
+    color: #999999;
+    border: #333845;
+    width: 490px;
+}
+
+
+input[type="text"] {
+    width: 222px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5%;
+}
+
+input[placeholder] {
+    font-size: 17px;
+    padding-left: 26px;
+}
+
+form>div {
+    margin-bottom: 18px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 36px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+}
+.buttons>input {
+    width: 37%;
+    height: 51px;
+    font-size: 18px;
+    color: var(--PALT_6);
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 10px;
+    border: 1px solid var(--PALT_6);
+    margin-top: 30px;
+}
+
+.submit {
+    margin-left: 10%;
+}
+
+.google-fb
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.create-ac-h
+{
+    align-self: center;
+}
+.button-fb-google
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer
+{
+    background-color: var(--PALT_2);
+}
+
+@media (min-width:601px) and (max-width:1200px) {
+    .img-login {
+        display: none;
+    }
+
+    .form {
+        margin: auto;
+    }
+
+    .mobile-view>#member
+    {
+        margin-top: 20px;
+    }
+
+    .form-div {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .login {
+        justify-self: center;
+    }
+
+    .mobile-view {
+        display: block;
+        display: flex;
+        margin: 6% auto;
+        padding: 0 32%;
+    }
+
+    .login-button {
+        margin: 0% 4%;
+    }
+
+}
+
+
+
+@media (max-width:601px) {
+
+    .img-login {
+        display: none;
+    }
+    .names{
+        flex-direction: column;
+    }
+    .lastname
+    {
+        float: none;
+    }
+    .tnc 
+    {
+        font-size: 100%
+    }
+
+    div input, input[type="text"]
+    {
+        width: 100%;   
+    }
+    .firstname
+    {
+        margin-bottom: 18px;
+    }
+    .img-login {
+        display: none;
+    }
+
+    .form {
+        margin: auto;
+    }
+
+    .form-div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .login {
+        justify-self: center;
+    }
+
+    .mobile-view {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-button {
+        margin: 0% 4%;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .buttons input
+    {
+        width: 100%;
+    }
+    .submit{
+        margin: 0;
+    }
+}
+
+@media (max-width:480px) {
+    
+    div input, input[type="text"]
+    {
+        width: 100%;
+        
+    }
+    .form
+    {
+        margin: auto;
+    }
+    .form-div
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .form
+    {
+        margin: 0 auto;
+    }
+
+    .buttons input
+    {
+        width: 100%;
+    }
+
+    .submit{
+        margin: 0;
+    }
+    
+}
