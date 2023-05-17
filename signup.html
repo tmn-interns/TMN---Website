@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMN Signup</title>
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="js/load_nav_footer.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <div id="nav-placeholder">
+
+        </div>
+            <div class="main-div">
+                <div class="img-login">
+                    <div class="img">
+                        <img src="images/signup.png" alt="image" width="80%" height="80%">
+                    </div>
+
+                    <div class="login">
+                        <h2 style="font-weight: 700; font-size: 16px;">ALREADY A MEMBER?</h2>
+                        <button class="login-button">LOGIN</button>
+                    </div>
+                </div>
+
+
+
+                <div class="form-div">
+                    <h1 style="margin: 30px 0px; font-size: 30px;">Create Account</h1>
+                    <form name="login" class="form" onkeyup="ValidateForm()" onsubmit="return ValidateForm()">
+                        <div class="names">
+
+                            <div class="field firstname">
+                                <p>First Name</p>
+                                <input type="text" name="fname" placeholder="John">
+                                <div class="error" id="fnameerr"></div>
+                            </div>
+
+                            <div class="field lastname">
+                                <p>Last Name</p>
+                                <input type="text" name="lname" placeholder="Smith">
+                                <div class="error" id="lnameerr"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="email">
+                            <p>Email</p>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                            <div class="error" id="emailerr"></div>
+                        </div>
+
+                        <div class="phoneno">
+                            <p>Phone Number</p>
+                            <input type="tel" name="pno" placeholder="9213456423" minlength="10" maxlength="10">
+                            <div class="error" id="pnoerr"></div>
+
+                        </div>
+
+                        <div class="password">
+                            <p>Password</p>
+                            <input type="password" name="pass" placeholder="********">
+                            <div class="error" id="passerr"></div>
+                            <i class="far fa-eye"
+                            id="togglePassword" style="position: relative; right: 30px; color: wheat"></i>
+                        </div>
+
+                        <div class="confirm-password">
+                            <p>Confirm Password</p>
+                            <input type="password" name="cpass" placeholder="********">
+                            <div class="error" id="cpasserr"></div>
+                            <i class="far fa-eye"
+                             id="togglePassword" style="position: relative; right: 30px; color: wheat"></i>
+                        </div>
+
+                        <div class="terms">
+                            <input type="checkbox" name="terms">
+                            <p style="display: inline;" class="tnc">I have read and agreed to the <u>Terms and
+                                    Conditions</u></p>
+                        </div>
+
+                        <div class="buttons">
+                            <input type="reset" name="reset" value="Reset" style="background-color: #666666;">
+                            <input type="submit" name="submit" style="background-color: #333845;" class="submit
+                    " value="Create Account">
+                        </div>
+
+
+                           
+                        <div class="google-fb create-ac">
+                            <div class="create-ac-h">
+                                <h3 style="text-align: center; font-size: 30px; margin-top: 20px;" >Or Create Account Using</h3>
+                            </div>
+                            <div class="button-fb-google">
+                                <img src="images/google.svg" width="40px" height="40px">
+                                <img src="images/facebook.svg" width="40px" height="40px" style="margin-left: 50px; margin-bottom: 30px;">
+                            </div>
+                        </div>
+
+
+                        <div class="login mobile-view">
+                            <h6 style="font-weight: 700; font-size: 1rem; margin-top: 20px;" id="member;">ALREADY A
+                                MEMBER?
+                            </h2><br><br>
+                            <button class="login-button" style="margin-bottom: 30px;">LOGIN</button>
+                        </div>
+                </div>
+                </form>
+    </main>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+</body>
+
+</html>
