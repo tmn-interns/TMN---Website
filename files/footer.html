@@ -1,12 +1,94 @@
-<div>
+<body>
+<footer>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4 footer-div">
+            <h3>Explore Techmihir Naik</h3>
+            <div class="footer-cards">
+                <a><img src="#" alt="ABC"></a>
+                <a><img src="#" alt="PQR"></a>
+                <a><img src="#" alt="XYZ"></a>
+            </div>
+        </div>
 
+        <div class="col-md-4 footer-div">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>Terms of Services</li>
+                <li>Privacy policy</li>
+                <li>FAQ</li>
+                <li>Career</li>
+            </ul>
+        </div>
 
+        <div class="col-md-4 footer-div">
+            <h3>Follow Us</h3>
+            <ul id="footer-socials">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Linked In</li>
+            </ul><br>
 
+            <form id="form-subscribe">
+                <input type="text" placeholder="enter you email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    <hr style="background: white;">
+    <p style="text-align: center;">&copy; Copyright 2023 - <strong>Techmihirnaik</strong> All Rights Reserved</p>
 </div>
+</footer>
 
 
 <style>
+footer{
+    color: var(--PALT_6);
+}
+.footer-div{
+    padding: 0 20px;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer h3{
+    font-weight: bold;
+}
 
+#footer-socials{
+    display: inline-block;
+}
+#footer-socials > li{
+    float: left;
+    padding: 0 1rem;
+}
 
+#form-subscribe{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: inline-flex;
+}
+#form-subscribe input{
+    background-color: white;
+    color: var(--PALT_2);
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+}
+#form-subscribe input[type='submit']{
+    background-color: var(--PALT_1);
+    color: var(--PALT_6);
+    font-weight: bold;
+    display: flex;
+    border: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        text-align: center;
+    }
+    
+}
 
 </style>
+</body>
