@@ -13,7 +13,7 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link">Career</a>
+                <a href="#" class="nav-item nav-link active">Career</a>
                 <a href="#" class="nav-item nav-link">Blogs</a>
                 <a href="#" class="nav-item nav-link">Our Partners</a>
                 <a href="#" class="nav-item nav-link">Contact Us</a>
@@ -21,7 +21,7 @@
             
             <div class="navbar-nav">
                 <a href="#" id="login-btn" class="ms-auto nav-item nav-link">
-                    Login <img src="..\images\login-icon.svg">
+                    <span>Login <img src="..\images\login-icon.svg"></span>
                 </a>
             </div>
 
@@ -35,10 +35,14 @@
 @import url("../css/global.css");
 
 .navbar{
-    background-color: var(--PALT_2);
-    min-height: 8vh;
+    min-height: 5vh;
     margin-bottom: 0;
+    
+    font-size: 1.5rem;
+
+    background-color: var(--PALT_2);
     box-shadow: 0px 5px 2px #0005;
+    
     z-index: 99;
 }
 
@@ -58,7 +62,14 @@
     aspect-ratio: 1;
 }
 
+.nav-item{
+    margin: 0 1rem;
+    transition: 0.1s transform;
+}
 
+.nav-item:hover{
+    transform: scale(1.1);
+}
 .navbar-nav > a{
     text-transform: uppercase;
     font-weight: bolder;
@@ -67,14 +78,22 @@
 #login-btn{
     background-color: var(--PALT_1);
     border-radius: 3rem;
-    padding: 0 3rem;
-    height: 3rem;
+    padding: 0 4rem;
+    height: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
 }
-#login-btn > img{
-    height: 1rem;
+#login-btn > span{
+    display: inline-flex;
+    align-items: center;
+}
+#login-btn > span > img{
+    height: 1.5rem;
+    display: inline;
+    opacity: 0.5;
 }
 
 </style>
@@ -83,11 +102,9 @@
 <script>
     $("document").ready(function(){
         $(".nav-item").click(function(){
-            var items = $(".nav-item")
-            console.log(items);
+            var items = $(".nav-item");
             items.each(function(x){
-                console.log(x);
-                $(x).removeClass("active");
+                $(items[x]).removeClass("active");
             });
             $(this).addClass("active");
         })
