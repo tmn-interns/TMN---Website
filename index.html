@@ -119,13 +119,16 @@
         </div>
     </section>
 
-    <section class="container-fluid" id="our-partners">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Partners</h2>
-                <hr>
-                <p>We enable innovation! From ideation all the way through to market delivery.</p>
-            </div>
+    <section id="our-partners">
+        <!-- <div class="container-banner"> -->
+            <div class="banner-img-container">
+                <div class="section-title-banner">
+                    <h2>Our Partners</h2>
+                    <hr>
+                    <p>We enable innovation! From ideation all the way through to market delivery.</p>
+                </div> 
+            </div>            
+        <!-- </div> -->
 
             <div class="slide-container">
                 <div class="slide-subcontainer">
@@ -168,29 +171,10 @@
                     <div class="slide-img">
                         <img src="/images/partner2.png" alt="image 6">
                     </div>
-                    <!-- <div class="slide-img">
-                        <img src="/images/partner3.png" alt="image 6">
-                    </div> -->
                     
                 </div>
             </div>
         </div>
-
-        <script>
-            var items = document.querySelectorAll('.carousel .carousel-item');
-            items.forEach((e)=>{
-                const slide = 4;
-                let next = e.nextElementSibling;
-                for(var i=0;i<slide;i++){
-                    if(!next){
-                        next = items[0]
-                    }
-                    let clonechild = next.cloneNode(true)
-                    e.appendChild(clonechild.children[0])
-                    next = next.nextElementSibling
-                }
-            })
-        </script>
 
     </section>
 
