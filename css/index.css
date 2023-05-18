@@ -36,12 +36,13 @@ main > section:nth-child(even){
     background: var(--PALT_1);}
 
 /*Welcome Section*/
-
 #welcome-bg-img{
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 #welcome-text {
     padding-top: 30%;
@@ -50,7 +51,6 @@ main > section:nth-child(even){
     text-align: justify;
     font-size: 2rem;
 }
-
 #home-welcome-wave{
     position: absolute;
     bottom: -2px;
@@ -216,9 +216,6 @@ main > section:nth-child(even){
 }
 
 /* Facts section */
-p {color: #FFFFFF;
-    font-family: Inter;
-}
 
 .text1{
     color: #B29B6B;
