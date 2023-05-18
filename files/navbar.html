@@ -4,7 +4,7 @@
     <div class="container-fluid">
         
         <div id="nav-logo">
-            <a href="#"> <img src="../images/logo.png"> </a>
+            <a class="nav-item" href="#"> <img src="../images/logo.png"> </a>
         </div>
 
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -25,8 +25,8 @@
                     <span>Login <img src="..\images\login-icon.svg"></span>
                 </a>
             </div>
-
         </div>
+
     </div>
 </nav>
 
@@ -42,7 +42,7 @@
     font-size: 1rem;
 
     background-color: var(--PALT_2);
-    box-shadow: 0px 5px 2px #0005;
+    box-shadow: 0px 5px 10px #0005;
     
     z-index: 99;
     overflow: hidden;
@@ -53,9 +53,11 @@
     position: relative;
     display: flex;
     height: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3/2;
 }
 #nav-logo img{
+    object-fit: cover;
+    object-position: 0 -0.5rem;
     width: 80px;
     aspect-ratio: 1;
 }
