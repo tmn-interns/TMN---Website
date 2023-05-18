@@ -36,12 +36,13 @@ main > section:nth-child(even){
     background: var(--PALT_1);}
 
 /*Welcome Section*/
-
 #welcome-bg-img{
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 #welcome-text {
     padding-top: 30%;
@@ -50,7 +51,6 @@ main > section:nth-child(even){
     text-align: justify;
     font-size: 2rem;
 }
-
 #home-welcome-wave{
     position: absolute;
     bottom: -2px;
@@ -59,7 +59,10 @@ main > section:nth-child(even){
 }
 
 /*Our Partners*/
-
+#our-partners{
+    margin: 0;
+    padding: 0;
+}
 .banner-img-container{
     margin-top: 0;
     text-align: center;
@@ -105,7 +108,7 @@ main > section:nth-child(even){
     place-items: center;
     overflow: hidden;
 }
-img{
+.partner-img{
     width: 100%;
     transition: transform 1s;
     border-radius: 3px;
@@ -213,9 +216,6 @@ img{
 }
 
 /* Facts section */
-p {color: #FFFFFF;
-    font-family: Inter;
-}
 
 .text1{
     color: #B29B6B;
