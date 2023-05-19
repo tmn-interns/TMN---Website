@@ -12,6 +12,7 @@
     <script src="js/signup.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 </head>
 
 <body>
@@ -67,18 +68,19 @@
 
                         <div class="password">
                             <p>Password</p>
-                            <input type="password" name="pass" placeholder="********">
-                            <div class="error" id="passerr"></div>
+                            <input type="password" name="password" placeholder="********" id="id_password">
                             <i class="far fa-eye"
-                            id="togglePassword" style="position: relative; right: 30px; color: wheat"></i>
+                            id="togglePassword1"></i>
+                            <div class="error" id="passerr"></div>
+                          
                         </div>
 
                         <div class="confirm-password">
                             <p>Confirm Password</p>
-                            <input type="password" name="cpass" placeholder="********">
+                            <input type="password" name="cpass" placeholder="********" id="id_cpassword">
+                            <i class="far fa-eye" id="togglePassword"></i>
                             <div class="error" id="cpasserr"></div>
-                            <i class="far fa-eye"
-                             id="togglePassword" style="position: relative; right: 30px; color: wheat"></i>
+                           
                         </div>
 
                         <div class="terms">
@@ -112,13 +114,38 @@
                             </h2><br><br>
                             <button class="login-button" style="margin-bottom: 30px;">LOGIN</button>
                         </div>
+                        
+                    </main>
+                    <footer>
+                        <div id="footer-placeholder"></div>
+                    </footer>
+                        
                 </div>
                 </form>
-    </main>
-
-    <footer>
-        <div id="footer-placeholder"></div>
-    </footer>
+                
+   
 </body>
+<script>
+    const togglePassword = document.querySelector("#togglePassword1");
+    const toggleCPassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#id_password");
+    const cpassword = document.querySelector("#id_cpassword");
+        togglePassword.addEventListener("click", function (e) {
+            // toggle the type attribute
+            const type =
+                password.getAttribute("type") === "password" ? "email" : "password";
+            password.setAttribute("type", type);
+            // toggle the eye slash icon
+            this.classList.toggle("fa-eye-slash");
+        });
 
+        toggleCPassword.addEventListener("click", function (g) {
+            // toggle the type attribute
+            const type =
+                cpassword.getAttribute("type") === "password" ? "email" : "password";
+            cpassword.setAttribute("type", type);
+            // toggle the eye slash icon
+            this.classList.toggle("fa-eye-slash");
+});
+</script>
 </html>

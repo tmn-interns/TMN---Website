@@ -50,6 +50,12 @@ main{
     font-size: 1rem;
     text-align: center;
 }
+.fa-eye
+{
+    position: relative; 
+    right:50px; 
+    color: wheat;
+}
 
 .tnc
 {
@@ -270,6 +276,15 @@ footer
     .submit{
         margin: 0;
     }
+
+    .fa-eye
+    {
+        position: relative;   
+        left: 375px;
+        bottom: 35px;
+
+    }
+    
 }
 
 @media (max-width:480px) {
