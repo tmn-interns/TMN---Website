@@ -16,6 +16,7 @@ section{
     text-align: center;
     font-weight: bolder;
     font-size: 3em;
+    text-transform: uppercase;
 }
 
 .blog-circle{
@@ -47,7 +48,7 @@ section{
     border: solid white 5px;
 }
 
-.blog-r{
+.trend-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
