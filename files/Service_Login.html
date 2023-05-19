@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body 
+        {
+            background-color: #23262f;
+            color: white;
+        }
+        p {font-family: 'Inter';}
+
+        .Service_Login_Title
+        {
+            font-size: 1.3rem; 
+            color: #b29b6b;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .SLogin_Container
+        {
+           
+            position: relative;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 40%;
+            
+        }
+       
+        input,select{
+            width: 100%;
+            background-color: #333845;
+            border-radius: 10px;
+            padding: 0.5rem 0.2rem;
+            font-size: 1em;
+            margin-top: 5px;
+            color: inherit;
+        }
+        input[type=checkbox]{
+            width: auto;
+            display: inline-flex;
+        }
+        input[type=submit]{
+            width: 30%;
+            display: inline-block;
+            padding: 5px 7px; 
+            border: 1px solid white;
+        }
+        form
+        {   align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.95rem;
+        }
+        
+       .Form_field
+       {margin: 0.5em 0em;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <p class="Service_Login_Title">
+        GRAB YOUR SEAT
+    </p>
+
+    <div class="SLogin_Container">
+
+            <form>
+                <div class="Form_field" style="flex-direction: row; display: flex; justify-content: space-between;">
+                    <span>
+                        <label for="Fname">First Name* </label>
+                        <input type="text" id="Fname" name="Fname" required style="width: 100%;">
+                    </span>
+
+                    <span>
+                        <label for="Lname">Last Name* </label>
+                        <input type="text" id="Lname" name="Lname" required style="width: 100%;">
+                    </span>
+                </div>
+
+                <span class="Form_field">
+                    <label for="Email">Email ID* </label>
+                    <input type="email" id="Email" name="Email" required>
+                </span> 
+                
+                <span class="Form_field">
+                    <label for="Cname">Company Name* </label>
+                    <input type="text" id="Cname" name="Cname" required>
+                </span>
+
+                <span class="Form_field">
+                    <label for="Desg">Your Designation* </label>
+                    <input type="text" id="Desg" name="Desg" required>
+                </span>
+
+                <span class="Form_field">
+                    <label for="Ddetail">Domain Detail* </label>
+                    <input type="text" id="Ddetail" name="Ddetail" required>
+                </span>
+
+                <span class="Form_field">
+                <label for="Service">Service* </label>
+                    <select name="Service" id="Service" name="Service" required>
+                        <option value="WEBSITE DEVELOPMENT">WEBSITE DEVELOPMENT</option>
+                        <option value="BUSINESS DESIGNING">BUSINESS DESIGNING</option>
+                        <option value="SOCIAL MEDIA DESIGNING">SOCIAL MEDIA DESIGNING</option>
+                        <option value="OFFICE DESIGNING">OFFICE DESIGNING</option>
+                        <option value="UX DESIGN">UX DESIGN</option>
+                        <option value="DATA ANALYTICS">DATA ANALYTICS</option>
+                        <option value="CLOUD SOLUTIONS">CLOUD SOLUTIONS</option>
+                        <option value="COURIER">COURIER</option>
+                        <option value="BACKEND DEVELOPMENT">BACKEND DEVELOPMENT</option>
+                    </select>
+                </span>
+
+                <span class="Form_field">
+                    <label for="Pno.">Phone Number* </label>
+                    <input type="tel" id="Pno." name="Pno." required>
+                </span>
+
+                <span class="Form_field">
+                    <label for="Wno.">Whatsapp Number* </label>
+                    <input type="tel" id="Wno." name="Wno." required>
+                </span>
+
+                <span class="Form_field">
+                    <label for="city">City* </label>
+                    <input type="text" id="city" name="city" required>
+                </span>
+
+                <span class="Form_field">
+                    <label for="state">State* </label>
+                    <input type="tel" id="state" name="state" required>
+                </span>
+                
+                <span class="Form_field">
+                    <label for="pcode">Pin Code* </label>
+                    <input type="tel" id="pcode" name="pcode" required>
+                </span>
+
+                <span class="Form_field" style="text-align: center; flex-direction: row;">
+                <label> <input type="checkbox" id="tandc" name="tandc"> I have read and agreed to the <a href="#" style="color: inherit;"><u><b>Terms and Conditions</b></u></a></label>
+                </span>
+                
+
+                <input type="submit" value="Book Now">
+            </form>
+
+    </div>
+</body>
+</html>
