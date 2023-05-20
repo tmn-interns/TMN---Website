@@ -43,7 +43,7 @@
     <!-- titles -->
     <div class="major">
 <div class="titles">
-<h1>Welcome Back</h1>
+<h1><span id="element"></span></h1>
 
 <p class="bel">New to TechMihirNaik?</p>
 <p class="below"><a href=#>SignUp</a></p>
@@ -104,7 +104,7 @@
   </footer>
 
 
-
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 <!-- javascript for the eye button on the password -->
 
@@ -120,6 +120,15 @@
       // toggle the eye slash icon
       this.classList.toggle("fa-eye-slash");
     });
+
+    var typed = new Typed('#element', {
+      strings: ['Welcome Back'],
+      typeSpeed: 75,
+    });
+
+
+
+
   </script>
 
 
