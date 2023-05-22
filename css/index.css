@@ -199,8 +199,8 @@ img{
     width: 25%;
     aspect-ratio: 1;
     position: absolute;
-    left: 8rem;
-    top: 3rem;
+    left: 7.5rem;
+    top: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -516,6 +516,7 @@ h6{
     border: 4px solid #8d774a;
     background-color: #B29B6B;
     color: white;
+    cursor: default;
 }
 
 .about:hover .about,.about:hover .image {
