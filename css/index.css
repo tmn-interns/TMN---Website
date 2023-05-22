@@ -176,7 +176,7 @@ section{
 }
 .section-title-banner{
     position: absolute;
-    left: 35%;
+    left: 25%;
     z-index: 6;
 }
 .section-title-banner > h2{
