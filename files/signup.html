@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMN Signup</title>
+    <title>Signup</title>
     <script src="/lib/jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="/css/signup.css">
     <script src="/js/load_nav_footer.js"></script>
     <script src="/js/signup.js"></script>
     <script src="/lib/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
@@ -29,7 +29,7 @@
 
                     <div class="login">
                         <h2 style="font-weight: 700; font-size: 16px;">ALREADY A MEMBER?</h2>
-                        <button class="login-button">LOGIN</button>
+                        <button class="login-button" onclick="login_page()">LOGIN</button>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
 
                         <div class="password">
                             <p>Password</p>
-                            <input type="password" name="password" placeholder="********" id="id_password">
+                            <input type="password" name="pass" placeholder="********" id="id_password">
                             <i class="far fa-eye"
                             id="togglePassword1"></i>
                             <div class="error" id="passerr"></div>

@@ -1,3 +1,9 @@
+function login_page()
+{
+    window.open("login.html", "_self");
+}
+
+
 function printError(elemId, hintMsg) {
     document.getElementById(elemId).innerHTML = hintMsg;
 }
@@ -72,7 +78,7 @@ else
        //Regular expression for basic password validation
        var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,15}$/;
        if(regex.test(pass) === false) {
-           printError("passerr", "Passwords must have at least 8 characters and contain at least one of the following: upper case letters, lower case letters, numbers and symbols.");
+           printError("passerr", "Passwords must have at least 8 characters </br> and contain at least one of the following: upper case </br> letters, lower case letters, numbers and symbols.");
        }
        else {
            printError("passerr", "");
