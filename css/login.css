@@ -156,6 +156,7 @@ padding-left: 230px;
 position: absolute;
 left: 190px;
 top: 110px;
+display: flex;
 }
 
 .imga{
@@ -188,6 +189,15 @@ button:disabled {
  }
 
 
+
+@media(max-width:1767px){
+    .hi{
+        display: none;
+    }
+
+}
+
+
 @media(max-width:1250px){
 .imga {
 display: none;
@@ -217,11 +227,22 @@ margin-bottom: 5px;
 
 .bel{
 margin-left: -80px;
-margin-top: 10px;
+margin-top: -45px;
+}
+
+span{
+    display: none;
+}
+
+.hi{
+    display: flex;
+    width: 292px;
 }
 
 .below{
 margin-top: 10px;
+display: flex;
+justify-content: center;
 }
 
 
@@ -259,13 +280,11 @@ margin-left: -210px;
 
 @media(max-width:412px){
 
-h1{
-font-size: 35px;
-}
+
 
 .below{
-margin-left:11px;
-margin-top: 5px;
+margin-left:26px;
+margin-top: 10px;
 }
 
 
