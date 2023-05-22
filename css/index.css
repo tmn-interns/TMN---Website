@@ -1,29 +1,28 @@
 @import url("global.css");
 
-main{
-    background-color: var(--PALT_2);
-}
 body{
     background: white;
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
-section{
-    min-height: 100vh;
-    position: relative;
-    padding-top: 3rem;
-    overflow: hidden;
+main{
+    background-color: var(--PALT_2);
 }
-
 main > section:nth-child(odd){
     background: var(--PALT_2);
     color: white;}
 main > section:nth-child(even){
     background: var(--PALT_6);
-    color: var(--PALT_2);}
-
-
+    color: var(--PALT_2);
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 3rem;
+    position: relative;
+    overflow: hidden;
+}
 .section-title{
     margin-top: 3rem;
     text-align: center;}
@@ -35,31 +34,127 @@ main > section:nth-child(even){
     height: 1.5px;
     background: var(--PALT_1);}
 
-/*Welcome Section*/
 
-#welcome-bg-img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-#welcome-text {
-    padding-top: 30%;
+/*----------Welcome Section----------*/
+#welcome-text{
+    padding-top: 20%;
     display: flex;
     flex-direction: column;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.25em;
+    color: white;
+    justify-content: center;
+}
+#welcome-text > h2{
+    font-size: 1.5em;
+    font-variant: small-caps;
 }
 
+#get-started-btn{
+    display: flex;
+    padding: 0.8em 5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--PALT_2);
+    color: var(--PALT_6);
+    transition: background-color 0.2s;
+}
+#get-started-btn:hover{
+    background-color: var(--PALT_6);
+    color: var(--PALT_2);
+}
+
+#welcome-text-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0.7;
+
+    transform-origin: left center;
+    transform: scale(1.4);
+}
+#welcome-bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 #home-welcome-wave{
     position: absolute;
-    bottom: -2px;
+    bottom: -1%;
     left:0;
     width: 105%;
 }
 
-/*Our Partners*/
+/*----------ABOUT US----------*/
+.about-us-card{
+    min-height: 8em;
+    margin: 2em 10%;
+    padding: 1em 1em;
+    border: 4px solid lightgray;
+    border-radius: 10px;
+    color: var(--PALT_2);
+    background-color: var(--PALT_6);
+    text-align: justify;
 
+    transition: 0.2s;
+}
+
+.about-us-card:hover{
+    transform: scale(1.1);
+    color: white;
+    background: var(--PALT_1);
+    border-color: #8d774a;
+}
+
+
+.about-us-card h6{
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+.about-us-description{
+    font-size: 0.8em;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_img{
+    aspect-ratio: 1;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.about-us-card:hover .about_img{
+    border-radius: 5px;
+}
+
+
+
+
+
+#img1{background: hsl(41, 80%, 88%);}
+#img2{background: rgb(253, 215, 221);}
+#img3{background: rgb(217, 250, 217);}
+#img4{background: rgb(218, 218, 249);}
+#img5{background: rgb(227, 202, 250);}
+#img6{background: rgba(113, 113, 249, 0.21);}
+
+
+
+
+/*----------Our Partners----------*/
+#our-partners{
+    margin: 0;
+    padding: 0;
+}
 .banner-img-container{
     margin-top: 0;
     text-align: center;
@@ -105,7 +200,7 @@ main > section:nth-child(even){
     place-items: center;
     overflow: hidden;
 }
-img{
+.partner-img{
     width: 100%;
     transition: transform 1s;
     border-radius: 3px;
@@ -145,7 +240,7 @@ img{
         transform: translateX(calc(-250px * 9));
     }
 }
-/* Contact Us */
+/*----------Contact Us----------*/
 .contact-cards {
     width: 100%;
     display: flex;
@@ -212,10 +307,7 @@ img{
     border-radius: 3rem;
 }
 
-/* Facts section */
-p {color: #FFFFFF;
-    font-family: Inter;
-}
+/*----------Facts section----------*/
 
 .text1{
     color: #B29B6B;
@@ -384,7 +476,7 @@ p {color: #FFFFFF;
     left: 40%;
     position: absolute;
 }
-/* Contact Us Form */
+/*----------Contact Us Form----------*/
 .form-grp{
     margin-left: 0;
     margin-right: 0;
