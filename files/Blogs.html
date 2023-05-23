@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <!-- Libraries import -->
-	<script src="../lib/jquery-3.7.0.min.js"></script>
-	<script src="../lib/js/bootstrap.bundle.min.js"></script> <!--not working -->
+    <script src="../lib/jquery-3.7.0.min.js"></script>
+    <script src="../lib/js/bootstrap.bundle.min.js"></script> <!--not working -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
 
@@ -14,60 +15,345 @@
 
 <body>
     <div id="nav-placeholder"></div>
-<main>
+    <main>
 
-<section id="trending-section" class="container">
-    <h2 class="blog-title">Trending Blog</h2>
+        <section id="trending-section" class="container">
+            <h2 class="blog-title">Trending Blog</h2>
 
-    <div class="blog-circle" style="top: 10%; left: -10%; z-index: 1;"></div>
-    <div class="blog-circle" style="top: 78%; left: 90%;"></div>
-    <img class="blog-t1" src="/images/Blogtrail1.svg" style="position: absolute; top: 80%; left: -15%;">
-    <img class="blog-t2" src="/images/Blogtrail2.svg" style="position: absolute; top: 8%; left: 90%;">
+            <div class="blog-circle" style="top: 10%; left: -10%; z-index: 1;"></div>
+            <div class="blog-circle" style="top: 78%; left: 90%;"></div>
+            <img class="blog-t1" src="/images/Blogtrail1.svg" style="position: absolute; top: 80%; left: -15%;">
+            <img class="blog-t2" src="/images/Blogtrail2.svg" style="position: absolute; top: 8%; left: 90%;">
 
-    <div class="row trending-blog">
-        <div class="col-lg-1"></div>
+            <div class="row trending-blog">
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-4">
+                    <img class="blog-img" src="../images/Blogbigpic.svg">
+                </div>
+
+                <div class="col-lg-6 blog-txt">
+                    <div class="trend-row">
+                        <span class="blog-r1-left">TRAVELLING</span>
+
+                        <div class="blog-r1-right">
+                            <span>May 10th, 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="trend-row blog-r2">
+                        <h3>TRAVEL BROADENS HORIZONS, FOSTERS CULTURAL UNDERSTANDING, CREATES LIFELONG MEMORIES.</h3>
+                    </div>
+                    <div class="trend-row blog-r3">
+                        <p>Have you been watching Ted Lasso? Just in case you've been marooned on a desert island and
+                            think experiences, diverse cultures, breathtaking landscapes, personal growth, and...</p>
+
+                    </div>
+                    <div class="trend-row">
+                        <div class="blog-pic">
+                            <img src="../images/Blogname.svg">
+                        </div>
+                        <div class="blog-r4-left">
+                            Michelle Bookoff-Bajdek
+                        </div>
+                        <div class="blog-r4-right">
+                            READ MORE >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section style="background: var(--PALT_6)">
+
+            <!----------------FILTERS ------------------>
+
+            <div class="content">
+
+                <div class="filters blog-filter">
+
+                    <div class="filter-blog">
+                        <h6> BLOGS </h6>
+                        <p> Search all posts</p>
+                        <input type="text" placeholder="Enter keyword(s)"><i class="bi bi-search"
+                            style="color: var(--PALT_2)"></i>
+                    </div>
+
+                    <div class="filter">
+                        <h6> FILTER </h6>
+                        <p> FILTER BY TOPIC</p>
+                        <Select>
+                            <option value="all" selected>All</option>
+                            <option value="Topic1">Topic 1</option>
+                            <option value="Topic2">Topic 2</option>
+                            <option value="Topic3">Topic 3</option>
+                        </Select>
+                    </div>
+                </div>
+
+                <!------------------Blogs--------------->
+
+                <div class="blog-container"> 
+
+                    <!---Blog 1-->
+                    <div class="blogs">
+                        <div class="image">
+                            <img src="/images/blog1.png">
+                        </div>
+                        <div class="blog-content">
+                            <div class="category-date">
+                                <div class="category">
+                                    <p> Workplace leadership</p>
+                                </div>
+                                <div class="date">
+                                    <p> May 10th, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="blog-heading-content">
+                                <h6> WINNING THE LONG GAME:
+                                    COACHING AT SCALE TAKES THE FIELD
+                                </h6>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam error
+                                    molestiae praesentium aliquam atque dolorem exercitationem reiciendis. Impedit,
+                                    laudantium.
+                                </p>
+
+                            </div>
+
+                            <div class="readmore-author">
+                                <div class="read-more">
+                                    <h6> READ MORE ></h6>
+                                </div>
+
+                                <div class="author-name">
+                                    <p>Author Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!---Blog 2-->
+                    
+                    <div class="blogs blog1">
+                        <div class="image">
+                            <img src="/images/blog1.png">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="category-date">
+                                <div class="category">
+                                    <p> Workplace leadership</p>
+                                </div>
+                                <div class="date">
+                                    <p> May 10th, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="blog-heading-content">
+                                <h6> WINNING THE LONG GAME:
+                                    COACHING AT SCALE TAKES THE FIELD
+                                </h6>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam error
+                                    molestiae praesentium aliquam atque dolorem exercitationem reiciendis. Impedit,
+                                    laudantium.
+                                </p>
+
+                            </div>
+
+                            <div class="readmore-author">
+                                <div class="read-more">
+                                    <h6> READ MORE ></h6>
+                                </div>
+
+                                <div class="author-name">
+                                    <p>Author Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---blog 3-->
+
+                    <div class="blogs blog1">
+                        <div class="image">
+                            <img src="/images/blog1.png">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="category-date">
+                                <div class="category">
+                                    <p> Workplace leadership</p>
+                                </div>
+                                <div class="date">
+                                    <p> May 10th, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="blog-heading-content">
+                                <h6> WINNING THE LONG GAME:
+                                    COACHING AT SCALE TAKES THE FIELD
+                                </h6>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam error
+                                    molestiae praesentium aliquam atque dolorem exercitationem reiciendis. Impedit,
+                                    laudantium.
+                                </p>
+
+                            </div>
+
+                            <div class="readmore-author">
+                                <div class="read-more">
+                                    <h6> READ MORE ></h6>
+                                </div>
+
+                                <div class="author-name">
+                                    <p>Author Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <!---blog 4-->
+
+                    <div class="blogs blog1">
+                        <div class="image">
+                            <img src="/images/blog1.png">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="category-date">
+                                <div class="category">
+                                    <p> Workplace leadership</p>
+                                </div>
+                                <div class="date">
+                                    <p> May 10th, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="blog-heading-content">
+                                <h6> WINNING THE LONG GAME:
+                                    COACHING AT SCALE TAKES THE FIELD
+                                </h6>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam error
+                                    molestiae praesentium aliquam atque dolorem exercitationem reiciendis. Impedit,
+                                    laudantium.
+                                </p>
+
+                            </div>
+
+                            <div class="readmore-author">
+                                <div class="read-more">
+                                    <h6> READ MORE ></h6>
+                                </div>
+
+                                <div class="author-name">
+                                    <p>Author Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!---blog 5-->
+
+                      <div class="blogs blog1">
+                        <div class="image">
+                            <img src="/images/blog1.png">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="category-date">
+                                <div class="category">
+                                    <p> Workplace leadership</p>
+                                </div>
+                                <div class="date">
+                                    <p> May 10th, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="blog-heading-content">
+                                <h6> WINNING THE LONG GAME:
+                                    COACHING AT SCALE TAKES THE FIELD
+                                </h6>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam error
+                                    molestiae praesentium aliquam atque dolorem exercitationem reiciendis. Impedit,
+                                    laudantium.
+                                </p>
+
+                            </div>
+
+                            <div class="readmore-author">
+                                <div class="read-more">
+                                    <h6> READ MORE ></h6>
+                                </div>
+
+                                <div class="author-name">
+                                    <p>Author Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!---blog 6-->
+
+                      <div class="blogs blog1">
+                        <div class="image">
+                            <img src="/images/blog1.png">
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="category-date">
+                                <div class="category">
+                                    <p> Workplace leadership</p>
+                                </div>
+                                <div class="date">
+                                    <p> May 10th, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="blog-heading-content">
+                                <h6> WINNING THE LONG GAME:
+                                    COACHING AT SCALE TAKES THE FIELD
+                                </h6>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam error
+                                    molestiae praesentium aliquam atque dolorem exercitationem reiciendis. Impedit,
+                                    laudantium.
+                                </p>
+
+                            </div>
+
+                            <div class="readmore-author">
+                                <div class="read-more">
+                                    <h6> READ MORE ></h6>
+                                </div>
+
+                                <div class="author-name">
+                                    <p>Author Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         
-        <div class="col-lg-4">
-            <img class="blog-img" src="../images/Blogbigpic.svg">
-        </div>
+    </main>
 
-        <div class="col-lg-6 blog-txt">    
-            <div class="trend-row">
-                <span class="blog-r1-left">TRAVELLING</span>
-
-                <div class="blog-r1-right">
-                    <span>May 10th, 2023</span>
-                </div>
-            </div>
-
-            <div class="trend-row blog-r2">
-                <h3>TRAVEL BROADENS HORIZONS, FOSTERS CULTURAL UNDERSTANDING, CREATES LIFELONG MEMORIES.</h3>
-            </div>
-            <div class="trend-row blog-r3">
-                    <p>Have you been watching Ted Lasso? Just in case you've been marooned on a desert island and think experiences, diverse cultures, breathtaking landscapes, personal growth, and...</p>
-
-            </div>
-            <div class ="trend-row">
-                <div class="blog-pic"> 
-                    <img src="../images/Blogname.svg">
-                </div>
-                <div class="blog-r4-left">
-                    Michelle Bookoff-Bajdek
-                </div>
-                <div class="blog-r4-right">
-                    READ MORE >
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section style="background: teal">
-
-</section>
-</main>
-
-<div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 </body>
+
 </html>
