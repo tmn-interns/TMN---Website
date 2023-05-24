@@ -100,7 +100,6 @@ section{
     color: var(--PALT_2);
     background-color: var(--PALT_6);
     text-align: justify;
-
     transition: 0.2s;
 }
 
@@ -110,7 +109,6 @@ section{
     background: var(--PALT_1);
     border-color: #8d774a;
 }
-
 
 .about-us-card h6{
     font-size: 1.25em;
@@ -124,7 +122,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    padding:40px;
+} 
 .about_img{
     aspect-ratio: 1;
     width: 50%;
@@ -134,21 +133,18 @@ section{
 }
 .about-us-card:hover .about_img{
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
-
-
-
-
-#img1{background: hsl(41, 80%, 88%);}
-#img2{background: rgb(253, 215, 221);}
-#img3{background: rgb(217, 250, 217);}
-#img4{background: rgb(218, 218, 249);}
-#img5{background: rgb(227, 202, 250);}
-#img6{background: rgba(113, 113, 249, 0.21);}
-
-
-
+#image1{background: hsl(41, 80%, 88%);}
+#image2{background: rgb(253, 215, 221);}
+#image3{background: rgb(217, 250, 217);}
+#image4{background: rgb(218, 218, 249);}
+#image5{background: rgb(227, 202, 250);}
+#image6{background: rgba(113, 113, 249, 0.21);}
 
 /*----------Our Partners----------*/
 #our-partners{

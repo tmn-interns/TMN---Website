@@ -15,8 +15,9 @@ function ValidateForm(){
    var pno=document.login.pno.value;
    var pass=document.login.pass.value;
    var cpass=document.login.cpass.value;
+   var checkbox=document.getElementById("checkbox");
 
-   var fnameerr=lnameerr=emailerr=pnoerr=passerr=cpasserr=true;
+   var fnameerr=lnameerr=emailerr=pnoerr=passerr=cpasserr=checkboxerr=true;
 
    if(fname == "")
    {
@@ -27,7 +28,7 @@ function ValidateForm(){
        printError("fnameerr", "Please enter a valid name");
    } else {
        printError("fnameerr", "");
-       fnameErr = false;
+       fnameerr = false;
    }
    }
 
@@ -40,7 +41,7 @@ function ValidateForm(){
        printError("lnameerr", "Please enter a valid name");
    } else {
        printError("lnameerr", "");
-       lnameErr = false;
+       lnameerr = false;
    }
    }
 
@@ -50,10 +51,10 @@ function ValidateForm(){
    // Regular expression for basic email validation
    var regex = /^\S+@\S+\.\S+$/;
    if(regex.test(email) === false) {
-       printError("emailErr", "Please enter a valid email address");
+       printError("emailerr", "Please enter a valid email address");
    } else{
-       printError("emailErr", "");
-       emailErr = false;
+       printError("emailerr", "");
+       emailerr = false;
    }
 }
 
@@ -65,7 +66,7 @@ if(pno == "") {
        printError("pnoerr", "Please enter a valid 10 digit mobile number");
    } else{
        printError("pnoerr", "");
-       pnoErr = false;
+       pnoerr = false;
    }
 }
 
@@ -91,22 +92,36 @@ if(cpass=="")
 else if(pass==cpass)
    {
        printError("cpasserr","");
-       cpassErr = false;
+       cpasserr = false;
    }
 else
    printError("cpasserr", "The passwords do not match.");
 
-if((fnameerr || lnameerr || emailerr || pnoerr || passerr || cpasserr) == true){
+if(checkbox.checked){
+    printError("checkboxerr","");
+    checkboxerr=false;
+}
+else{
+    printError("checkboxerr","Please accept the terms and conditions");
+}
+
+
+   
+
+if((fnameerr || lnameerr || emailerr || pnoerr || passerr || cpasserr || checkboxerr) == true){
 return false;
-} else {
+}
+
+else {
    var DataPreview = "You've entered the following detail: \n"+
                      "First Name: " + fname + "\n" +
                      "Last Name: " + lname + "\n" +
                      "Email Address: " + email + "\n" +
                      "Password: " + pass + "\n" +
-                     "Mobile Number: " + mobile + "\n";
+                     "Mobile Number: " + pno + "\n";
    alert(DataPreview);
 }
+
 
 }
 

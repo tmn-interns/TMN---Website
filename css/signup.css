@@ -149,6 +149,7 @@ h1 {
 
 .submit {
     margin-left: 10%;
+    cursor: pointer;
 }
 
 .google-fb
