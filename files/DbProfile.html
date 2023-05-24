@@ -1,156 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    
-    
-    <style>
-        #Profile > p{}
-        body {background-color: white;}
-        p 
-        {font-family: 'Inter';
-        text-align: center;
-    font-weight: bold;}
-        
-        .dbcontainer
-        {
-            background-color: white;
-            top: 7%;
-            left: 9%;
-            height: 88%;
-            width: 80%;
-            position: absolute;
-            /* border: 1px solid red; */
-        }
-        .profile-r
-        {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            /* border: 1px solid yellow; */
-        }
-        .user
-        {
-            background-color: #23262f;
-            height: 25%;
-            width: 100%;
-            /* border: 1px solid green; */
-            border-radius: 8px;
-        }
-        .ActiveServices
-        {
-            background-color: #23262f;
-            /* height: 69.2%; */
-            width: 70%;
-            /* position: absolute; */
-            /* border: 1px solid blue; */
-            margin-top: 2rem;
-            border-radius: 8px;
-        }
-        .Addservice
-        {
-            background-color: #23262f;
-            /* height: 69.2%; */
-            width: 25%;
-            /* position: absolute; */
-            margin-top: 2rem;
-            /* border: 2px solid purple; */
-            color: white;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-        }
-        .button
-        {
-            display: inline-flex;
-            color: white;
-            background-color: #39404d;
-            border: none;
-            border-radius: 5px;
-            font-family: 'Inter';
-            font-size: 0.84rem;
-            cursor: pointer;
-            width: 80%;
-            margin-left: 10%;
-            margin-bottom: 10%;
-            box-shadow: 0px 4px 10px black;
-        }
-        .button:hover
-        {
-            background-color: #b29b62;
-        }
-        .button__text
-        {
-            display: inline-flex;
-            align-items: center;
-            padding: 6px;
-        }
-        .button__icon
-        {
-            display: inline-flex;
-            align-items: center;
-            padding: 5px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/dbprofile.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <script type="javascript" src="/js/load_nav_footer.js"></script>
+    <script src="/lib/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://kit.fontawesome.com/9970c99cc3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class ="dbcontainer">
-        <!-- <div class ="profile-r"> -->
+    <main>
+        <div id="nav-placeholder">
+
+
+        </div>
+        <div class="dbcontainer">
+            <!-- <div class ="profile-r"> -->
 
             <div class="user">
-        
-            </div>
+                <div class="profile-pic-user-details">
+                    <div class="profile-pic">
+                        <i class="fa-solid fa-user fa-5x"></i>
+                    </div>
+                    <div class="user-details">
+                        <div class="username">
+                            <h3> USER </h3>
+                        </div>
+                        <div class="useremail">
+                            <h3> ABC@GMAIL.COM</h3>
+                        </div>
 
-        <!-- </div> -->
-        <div class ="profile-r">
-            
-            <div class="ActiveServices">
+                    </div>
+                </div>
 
+                <div class="bell-editProfile">
+                    <div class="bell">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </div>
+                    <div class="editProfile">
+                        <button id="editUser">
+                            <i class="fa-solid fa-pen"></i>
+                            <span> Edit Profile</span>
+                        </button>
+
+                    </div>
+                </div>
             </div>
-            
-            <div class="Addservice">
-                <p style="font-size: 1.4rem; margin-bottom: 2rem;">
-                    ADD SERVICE
-                </p>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileWD.svg" width="22" height="19"></span>
-                    <span class="button__text">WEBSITE DEVELOPMENT</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileBusd.svg" width="22" height="19"></span>
-                    <span class="button__text">BUSINESS DESIGNING</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileSmd.svg" width="22" height="19"></span>
-                    <span class="button__text">SOCIAL MEDIA DESIGNING</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileOd.svg" width="22" height="19"></span>
-                    <span class="button__text">OFFICE DESIGNING</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileUd.svg" width="22" height="19"></span>
-                    <span class="button__text">UX DESIGN</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileDa.svg" width="22" height="19"></span>
-                    <span class="button__text">DATA ANALYTICS</Datag></span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileCs.svg" width="22" height="19"></span>
-                    <span class="button__text">CLOUD SOLUTIONS</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileC.svg" width="22" height="19"></span>
-                    <span class="button__text">COURIER</span>
-                </button>
-                <button type="button" class="button">
-                    <span class="button__icon"><img src="../images/ProfileBD.svg" width="22" height="19"></span>
-                    <span class="button__text">BACKEND DEVELOPMENT</span>
-                </button>
+            <!-- </div> -->
+            <div class="profile-r">
+
+                <div class="ActiveServices">
+                    <div class="heading">
+                        <div class="yas">
+                            <h1> YOUR ACTIVE SERVICES</h1>
+                        </div>
+
+                        <div class="active-pending">
+                            <div class="pending">
+                                <button class="apbuttons"> PENDING</button>
+                            </div>
+
+                            <div class="active">
+                                <button class="apbuttons"> ACTIVE </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-details">
+                            <div class="name-date">
+                                <div class="service_name">
+                                    <h3>WEB DEVELOPMENT</h3>
+                                </div>
+                                <div class="date">
+                                    03/02/2023
+                                </div>
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sit culpa,
+                                    incidunt aliquam neque molestias ab adipisci? Id asperiores sint, recusandae illo
+                                    laborum quas. Aliquam consequatur minus vero dolor esse.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="service-btn">
+                            
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="Addservice">
+                    <p style="font-size: 1.4rem; margin-bottom: 2rem;">
+                        ADD SERVICE
+                    </p>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileWD.svg" width="22" height="19"></span>
+                        <span class="button__text">WEBSITE DEVELOPMENT</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileBusd.svg" width="22" height="19"></span>
+                        <span class="button__text">BUSINESS DESIGNING</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileSmd.svg" width="22" height="19"></span>
+                        <span class="button__text">SOCIAL MEDIA DESIGNING</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileOd.svg" width="22" height="19"></span>
+                        <span class="button__text">OFFICE DESIGNING</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileUd.svg" width="22" height="19"></span>
+                        <span class="button__text">UX DESIGN</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileDa.svg" width="22" height="19"></span>
+                        <span class="button__text">DATA ANALYTICS</Datag></span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileCs.svg" width="22" height="19"></span>
+                        <span class="button__text">CLOUD SOLUTIONS</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileC.svg" width="22" height="19"></span>
+                        <span class="button__text">COURIER</span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button__icon"><img src="../images/ProfileBD.svg" width="22" height="19"></span>
+                        <span class="button__text">BACKEND DEVELOPMENT</span>
+                    </button>
+                </div>
+
             </div>
 
         </div>
-       
-    </div>
+    </main>
 </body>
+
 </html>

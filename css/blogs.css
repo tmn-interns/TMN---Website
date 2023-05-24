@@ -1,6 +1,7 @@
 @import url("global.css");
 body{
     background-color: var(--PALT_2);
+    overflow-x: hidden;
 }
 section{
     position: relative;
@@ -236,18 +237,101 @@ option[selected]
     
 }
 
-@media (min-width:801px) and (max-width: 1200px)
+.load-more-less
 {
+   background-color: var(--PALT_6);
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+}
+
+#more, #less
+{
+    margin: 0.8rem 0;
+    background-color: var(--PALT_2);
+    color: var(--PALT_6);
+    border-radius: 5px;
+    border: 1px solid var(--PALT_2);
+    padding: 5px 10px;
+}
+
+#less
+{
+    display: none;
+}
+
+
+
+
+
+
+/* -----------------Media Query------------- */
+
+
+@media (min-width:812px) and (max-width: 1200px)
+{
+    .blog-container{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
+        width: 100%;
+    }
+        
+
+    .blogs{
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        height: max-content;
+        max-width: 100vw;
+        box-shadow: 0px 0.5px 0.8px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.082), 0px 6px 12px rgba(0, 0, 0, 0.14);
+
+        border-radius: 5px;
+
+        
+    }
+
+    .blog-heading-content .img{
+        width: 100%;
+        height: 100%;
+    };
+
+    .img img{
+        height: auto;
+    }
+
+    .blog-heading-content p{
+        
+            overflow-wrap: break-word;
+    }
+
+    
+
+    .blog-content
+    {
+        width: 100%;
+    }
+}
+@media (min-width:765px) and (max-width:811px){
+
+    .blogs
+    {
+        margin: 3rem auto 0 auto;
+    }
+    
     .blog-container{
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 1fr;
         grid-auto-columns: 1fr;
+        column-gap: 3em;
+        row-gap: 1em;
     }
 }
 
-
-@media (max-width: 780px)
+@media (max-width: 764px)
 {
     .filters
     {
