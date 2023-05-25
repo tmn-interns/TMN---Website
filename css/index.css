@@ -30,9 +30,12 @@ section{
     font-weight: 900;
     text-transform: uppercase;}
 .section-title > hr{
+    margin: auto;
     width: 10%;
-    height: 1.5px;
+    height: 2.5px;
     background: var(--PALT_1);}
+.section-title > p{
+        margin-top: 1rem;}
 
 
 /*----------Welcome Section----------*/
