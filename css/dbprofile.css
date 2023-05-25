@@ -114,10 +114,6 @@ p {
     justify-content: space-between;
 }
 
-.fa-4x {
-    display: none;
-}
-
 .profile-pic-user-details {
     display: flex;
     gap: 1.5em;
@@ -518,7 +514,7 @@ p {
     }
     .fa-4x {
         display: block;
-        
+
     }
 
     .profile-pic
@@ -535,11 +531,6 @@ p {
 
     h3, .useremail h3{
         font-size: 1.1rem;
-    }
-
-    .username i
-    {
-        display: none;
     }
 
     .editProfile
