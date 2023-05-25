@@ -69,7 +69,7 @@ p {
     width: 80%;
     margin-left: 10%;
     margin-bottom: 10%;
-    box-shadow: 0px 4px 10px var(--PALT_5);
+    box-shadow: 2px 2px 2px var(--PALT_5);
 }
 
 .button:hover {
@@ -133,7 +133,7 @@ p {
     border: var(--PALT_6);
     padding: 0.5rem;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 /* main body */
@@ -160,6 +160,7 @@ p {
     border-radius: 3px;
     width: 100%;
     box-shadow: 2px 2px 2px var(--PALT_5);
+    cursor: pointer;
 }
 
 /* services  */
@@ -217,7 +218,7 @@ p {
     box-shadow: 2px 2px 2px var(--PALT_r);
     font-weight: 500;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.36);
-    ;
+    cursor: pointer;
 }
 
 .date {
