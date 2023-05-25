@@ -1,7 +1,7 @@
 @import url("global.css");
 
 body{
-    background: white;
+    /* background: white; */
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
@@ -30,9 +30,12 @@ section{
     font-weight: 900;
     text-transform: uppercase;}
 .section-title > hr{
+    margin: auto;
     width: 10%;
-    height: 1.5px;
+    height: 2.5px;
     background: var(--PALT_1);}
+.section-title > p{
+        margin-top: 1rem;}
 
 
 /*----------Welcome Section----------*/
@@ -165,7 +168,12 @@ section{
     }
 
 }
-
+/*----------Our Services and Process----------*/
+#services{
+    background-image: url(../images/string.svg), url(../images/side-gold-stroke.svg) !important;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 150% -15%, 0% 0%;
+}
 /*----------Our Partners----------*/
 #our-partners{
     margin: 0;
