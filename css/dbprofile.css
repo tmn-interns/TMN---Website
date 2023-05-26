@@ -62,6 +62,10 @@ p {
     padding-bottom: 2rem;
 }
 
+.add-service p
+{
+    margin-top: 1rem;
+}
 .button {
     display: inline-flex;
     color: var(--PALT_6);
@@ -77,6 +81,9 @@ p {
     margin-bottom: 10%;
     box-shadow: 2px 2px 2px var(--PALT_5);
 
+}
+.btn{
+    line-height: 1;
 }
 
 .button:hover {
@@ -193,10 +200,12 @@ p {
     padding: 0 1rem;
 }
 
+
 .name-date {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0.5rem;
 }
 
 .description p {
@@ -250,7 +259,7 @@ p {
 .ActiveServices {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     height: max-content;
 }
 
@@ -308,6 +317,7 @@ p {
 
     .service-btn {
         flex-direction: row;
+        justify-content: left;
     }
 }
 
@@ -318,16 +328,8 @@ p {
 }
 
 @media (max-width:1024px) {
-    .date {
-        display: none;
-    }
-
-    .service-btn {
-        flex-direction: row;
-        width: 100%;
-
-
-    }
+  
+s
 
     .name-date {
         align-items: center;
@@ -361,13 +363,19 @@ p {
     .button {
         margin: 0 5%;
     }
-
+  
     .active-pending {
         flex-direction: column;
     }
 
     .profile-r {
         flex-direction: column;
+    }
+
+    .service-btn
+    {
+        justify-content: left;
+        width: 100%;
     }
 
     .ActiveServices {
@@ -392,7 +400,7 @@ p {
 }
 
 @media (max-width: 795px) {
-    #h1{
+    #h2{
         font-size: 1.9rem !important;
         margin-right: auto;
     }
@@ -452,6 +460,9 @@ p {
         grid-template-columns: auto;
         gap: 1rem;
     }
+    .date{
+        display: none;
+    }
 
     .grp1,
     .grp2 {
@@ -478,7 +489,7 @@ p {
         gap: 0.5rem;
     }
 
-    #h1 {
+    #h2 {
         font-size: 1.5rem !important;
     }
 
@@ -501,7 +512,7 @@ p {
 }
 
 @media (max-width: 417px) {
-    #h1 {
+    #h2 {
         font-size: 1.5rem !important;
     }
 
