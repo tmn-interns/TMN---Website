@@ -6,20 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="/css/dbprofile.css">
-    <link rel="stylesheet" href="/css/global.css">
+
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+
     <script type="javascript" src="/js/load_nav_footer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <script src="https://kit.fontawesome.com/9970c99cc3.js" crossorigin="anonymous"></script>
     
-
+    <link rel="stylesheet" href="/css/dbprofile.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 
 <body>
 
     <main>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                
+                <div id="nav-logo">
+                    <a class="nav-item" href="/index.html"> <img src="../images/logo.png"> </a>
+                </div>
+        
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="/index.html" class="nav-item nav-link active">Home</a>
+                        <a href="/files/blogs.html" class="nav-item nav-link">Blogs</a>
+                        <a href="/index.html#our-partners" class="nav-item nav-link">Our Partners</a>
+                        <a href="#" class="nav-item nav-link">Career</a>
+                        <a href="/index.html#contacts-us" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    
+                    <div class="navbar-nav">
+                        <a href="/files/login.html" id="login-btn" class="ms-auto nav-item nav-link">
+                            <span>Login <img src="..\images\login-icon.svg"></span>
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </nav>
         
         <div class="dbcontainer">
             <!-- <div class ="profile-r"> -->
@@ -31,11 +64,11 @@
                     </div>
                     <div class="user-details">
                         <div class="username">
-                            <h3> USER </h3>
+                            <h3 id="h3u"> USER </h3>
                             <i class="fa-solid fa-pen"></i>
                         </div>
                         <div class="useremail">
-                            <h3> ABC@GMAIL.COM</h3>
+                            <h3 id="h3e"> ABC@GMAIL.COM</h3>
                         </div>
 
                     </div>
@@ -60,7 +93,7 @@
                 <div class="ActiveServices">
                     <div class="heading">
                         <div class="yas">
-                            <h1> YOUR ACTIVE SERVICES</h1>
+                            <h1 id="h1"> YOUR ACTIVE SERVICES</h1>
                         </div>
 
                         <div class="active-pending">
@@ -78,7 +111,7 @@
                         <div class="service-details">
                             <div class="name-date">
                                 <div class="service_name">
-                                    <h2>Web Developement</h2>
+                                    <h2 id="h2">Web Developement</h2>
                                 </div>
                                 <div class="date">
                                     03/02/2023
@@ -94,7 +127,7 @@
                         <div class="service-btn">
                             <div class="btn-grp grp1">
                                 <div class="viewbtn">
-                                    <button class="btn" style="background-color: var(--PALT_2); color: #E5e5e5"> VIEW
+                                    <button class="btn" style="background-color: var(--PALT_2); color: #E5e5e5;"> VIEW
                                         STATUS </button>
                                 </div>
                                 <div class="statubtn">
@@ -120,7 +153,7 @@
                         <div class="service-details">
                             <div class="name-date">
                                 <div class="service_name">
-                                    <h2>Cloud Services</h2>
+                                    <h2 id="h2">Cloud Services</h2>
                                 </div>
                                 <div class="date">
                                     03/02/2023
@@ -163,7 +196,7 @@
                         <div class="service-details">
                             <div class="name-date">
                                 <div class="service_name">
-                                    <h2>UI Design</h2>
+                                    <h2 id="h2">UI Design</h2>
                                 </div>
                                 <div class="date">
                                     03/02/2023
@@ -205,7 +238,7 @@
                         <div class="service-details">
                             <div class="name-date">
                                 <div class="service_name">
-                                    <h2>HR Services</h2>
+                                    <h2 id="h2">HR Services</h2>
                                 </div>
                                 <div class="date">
                                     03/02/2023
@@ -299,7 +332,46 @@
 
         </div>
 
-        <div id="footer-placeholder"></div>
+        <footer>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-div">
+                    <h3>Explore Techmihir Naik</h3>
+                    <div class="footer-cards">
+                        <a><img src="#" alt="ABC"></a>
+                        <a><img src="#" alt="PQR"></a>
+                        <a><img src="#" alt="XYZ"></a>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 footer-div">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 footer-div">
+                    <h3>Follow Us</h3>
+                    <ul id="footer-socials">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Linked In</li>
+                    </ul><br>
+        
+                    <form id="form-subscribe">
+                        <input type="text" placeholder="enter you email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            <hr style="background: white;">
+            <p style="text-align: center; margin-bottom: 0;">&copy; Copyright 2023 - <strong>Techmihirnaik</strong> All Rights Reserved</p>
+        </div>
+        </footer>
 
     </main>
 </body>
@@ -319,7 +391,6 @@
         })
 
     })
-
 </script>
 
 </html>
