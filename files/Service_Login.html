@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
     <script src="../lib/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
-
     <script type="javascript" src="/js/load_nav_footer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
-    <link rel="stylesheet" href="/css/service_login.css">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="../css/service_login.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <script src="../js/service_login.js"></script>
+    <script src="../js/cities.js"></script>
+
   
 </head>
 
@@ -58,38 +60,44 @@
             GRAB YOUR SEAT </h1>
 
         <div class="SLogin_Container">
-            <form>
+            <form name="login" class="form" onkeyup="ValidateForm()" onsubmit="return ValidateForm()">
                 <div class="Form_field" style="flex-direction: row; display: flex; justify-content: space-between;">
                     
                     <span class="fname">
                         <label for="Fname">First Name* </label>
                         <input type="text" id="Fname" name="Fname" required style="width: 100%;">
+                        <div class="error" id="fnameerr"></div>
                     </span>
 
                     <span>
                         <label for="Lname">Last Name* </label>
                         <input type="text" id="Lname" name="Lname" required style="width: 100%;">
+                        <div class="error" id="lnameerr"></div>
                     </span>
                 </div>
 
                 <span class="Form_field">
                     <label for="Email">Email ID* </label>
                     <input type="email" id="Email" name="Email" required>
+                    <div class="error" id="emailerr"></div>
                 </span>
 
                 <span class="Form_field">
                     <label for="Cname">Company Name* </label>
                     <input type="text" id="Cname" name="Cname" required>
+                    <div class="error" id="cnameerr"></div>
                 </span>
 
                 <span class="Form_field">
                     <label for="Desg">Your Designation* </label>
                     <input type="text" id="Desg" name="Desg" required>
+                    <div class="error" id="desgerr"></div>
                 </span>
 
                 <span class="Form_field">
                     <label for="Ddetail">Domain Detail* </label>
                     <input type="text" id="Ddetail" name="Ddetail" required>
+                    <div class="error" id="domerr"></div>
                 </span>
 
                 <span class="Form_field">
@@ -109,15 +117,26 @@
 
                 <span class="Form_field">
                     <label for="Pno.">Phone Number* </label>
-                    <input type="tel" id="Pno." name="Pno." required>
+                    <input type="tel" id="Pno" name="Pno" maxlength="10" required>
+                    <div class="error" id="pnoerr"></div>
                 </span>
 
                 <span class="Form_field">
                     <label for="Wno.">Whatsapp Number* </label>
-                    <input type="tel" id="Wno." name="Wno." required>
+                    <input type="tel" id="Wno" name="Wno" maxlength="10" required>
+                    <div class="error" id="wnoerr"></div>
+                </span>
+               
+                <span class="Form_field">
+                <label>Select State</label>
+                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+                <label>Select City</label>
+                <select id ="state" class="form-control" required></select>
+                <script language="javascript">print_state("sts");</script>
+                <div class="error" id="stateerr"></div>
                 </span>
 
-                <span class="Form_field">
+                <!-- <span class="Form_field">
                     <label for="city">City* </label>
                     <input type="text" id="city" name="city" required>
                 </span>
@@ -125,18 +144,19 @@
                 <span class="Form_field">
                     <label for="state">State* </label>
                     <input type="tel" id="state" name="state" required>
-                </span>
+                </span> -->
 
                 <span class="Form_field">
                     <label for="pcode">Pin Code* </label>
-                    <input type="tel" id="pcode" name="pcode" required>
+                    <input type="tel" id="pcode" name="pcode" maxlength="6" required>
+                    <div class="error" id="pcodeerr"></div>
                 </span>
 
                 <span class="Form_field" id="checkbox" style="text-align: center; flex-direction: row;">
                     <label> <input type="checkbox" id="tandc" name="tandc"> I have read and agreed to the <a href="#"
-                            style="color: inherit;"><u><b>Terms and Conditions</b></u></a></label>
+                            style="color: inherit;"><u><b>Terms and Conditions</b></u></a></label><br>
+                    <div class = "error" id = "checkboxerr"></div>
                 </span>
-
 
                 <input type="submit" value="Book Now" class="btn">
             </form>
