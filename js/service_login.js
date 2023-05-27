@@ -2,6 +2,11 @@ function printError(elemId, hintMsg) {
     document.getElementById(elemId).innerHTML = hintMsg;
 }
 
+window.alert = function() {};
+
+// or simply
+alert = function() {};
+
 function ValidateForm(){
     var Fname=document.login.Fname.value;
     var Lname=document.login.Lname.value;
