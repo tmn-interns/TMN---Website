@@ -266,3 +266,17 @@ input:focus
 {
   outline: 3px solid var(--PALT_1);
 }
+
+.form-control:focus
+{
+  outline: 3px solid var(--PALT_1);
+  background-color: var(--PALT_2);
+  color: var(--PALT_6);
+  border:none;
+}
+
+#checkboxerr{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+}

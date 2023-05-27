@@ -130,7 +130,7 @@
                 <span class="Form_field">
                 <label>Select State</label>
                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
-                <label>Select City</label>
+                <label style="margin-top: 1rem;">Select City</label>
                 <select id ="state" class="form-control" required></select>
                 <script language="javascript">print_state("sts");</script>
                 <div class="error" id="stateerr"></div>
@@ -155,9 +155,9 @@
                 <span class="Form_field" id="checkbox" style="text-align: center; flex-direction: row;">
                     <label> <input type="checkbox" id="tandc" name="tandc"> I have read and agreed to the <a href="#"
                             style="color: inherit;"><u><b>Terms and Conditions</b></u></a></label><br>
-                    <div class = "error" id = "checkboxerr"></div>
+                    
                 </span>
-
+                <div class = "error" id = "checkboxerr"></div>
                 <input type="submit" value="Book Now" class="btn">
             </form>
         </div>

@@ -13,6 +13,7 @@ function ValidateForm(){
     var Wno=document.login.Wno.value;
     var pcode=document.login.pcode.value;
     var checkbox=document.getElementById("tandc");
+    var state
 
 
     var fnameerr=lnameerr=emailerr=cnameerr=desgerr=domerr=pnoerr=wnoerr=pcodeerr=checkboxerr=true;
@@ -136,7 +137,7 @@ function ValidateForm(){
     checkboxerr=false;
 }
 else{
-    printError("checkboxerr","</br>Please accept the terms and conditions");
+    printError("checkboxerr","Please accept the terms and conditions");
 }
 
  if((fnameerr || lnameerr || emailerr || cnameerr || desgerr || domerr || pnoerr || wnoerr || checkboxerr) == true){
