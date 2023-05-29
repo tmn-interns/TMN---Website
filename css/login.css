@@ -1,64 +1,99 @@
 @import url("global.css");
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #23262F; 
+  background-color: #23262F;
 }
-  
+
 p {
   color: #fff;
-  font-weight: 300; 
+  font-weight: 300;
 }
-  
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: 'Inter', sans-serif;
-  color: #fff; 
+  color: #fff;
   padding-bottom: 18px;
-  
+
 }
-  
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; 
+  transition: .3s all ease;
 }
 
 a:hover {
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
-  
+
 .content {
-  padding: 7rem 0; }
+  padding: 7rem 0;
+}
 
 h2 {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
-.half, .half .container > .row {
+.half,
+.half .container>.row {
   height: 100vh;
-  min-height: 700px; 
+  min-height: 700px;
+}
+
+@media (max-width: 414px) {
+  
 }
 
 @media (max-width: 768px) {
   .half .bg {
     height: 300px;
-  display: none; 
-} 
+    display: none;
+  }
+  
+  .social-login{
+    width: 300px;
+  }
+
+  .google{
+    width: 30px;
+  }
+  .facebook{
+    width: 33px;
+  }
+
 }
 
 .half .contents {
-  background: #23262F; 
+  background: #23262F;
 }
 
-.half .contents, .half .bg {
-  width: 50%; 
+.half .contents,
+.half .bg {
+  width: 50%;
 }
+
 @media (max-width: 1199.98px) {
-  .half .contents, .half .bg {
-    width: 100%; 
-  } 
+
+  .half .contents,
+  .half .bg {
+    width: 100%;
+  }
 }
 
-.half .contents .form-control, .half .bg .form-control {
+.half .contents .form-control,
+.half .bg .form-control {
   border: none;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -66,52 +101,57 @@ h2 {
   height: 54px;
   box-sizing: border-box;
   color: rgba(147, 147, 148, 1);
-  background:#333845; 
+  background: #333845;
 }
 
-.half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
+.half .contents .form-control:active,
+.half .contents .form-control:focus,
+.half .bg .form-control:active,
+.half .bg .form-control:focus {
   outline: none;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .half .bg {
-  background-size:cover; 
+  background-size: cover;
 }
 
 .half a {
   color: #888;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .half .btn {
   height: 54px;
   padding-left: 30px;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
 .half .forgot-pass {
   position: relative;
   top: 2px;
-  font-size: 14px; 
-}
-  
-.facebook{
-  text-decoration: none !important;
+  font-size: 14px;
 }
 
-.google{
+.facebook {
   text-decoration: none !important;
+  width: 40px;
 }
 
-.btn{
+.google {
+  text-decoration: none !important;
+  width: 40px;
+}
+
+.btn {
   background-color: inherit;
   border: 1px solid white;
   color: white;
   cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #B29B6B;
   color: white;
   border: none;
@@ -130,12 +170,14 @@ h2 {
 
 .typed-cursor.typed-cursor--blink {
   animation: typedjsBlink 0.0s step-end !important;
-  color:inherit;
+  color: inherit;
 }
+
+
 
 @import url("../css/global.css");
 
-.navbar{
+.navbar {
   min-height: 5vh;
   margin-bottom: 0;
   font-size: 1rem;
@@ -152,6 +194,7 @@ h2 {
   height: 100%;
   aspect-ratio: 3/2;
 }
+
 #nav-logo img {
   object-fit: cover;
   object-position: 0 -0.5rem;
@@ -166,6 +209,7 @@ h2 {
   text-transform: uppercase;
   font-weight: bolder;
 }
+
 .nav-item:hover {
   transform: scale(1.05) translateY(-5px);
 }
@@ -177,15 +221,15 @@ h2 {
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
-#signup-btn > span{
+#signup-btn>span {
   display: inline-flex;
   align-items: center;
 }
 
-#signup-btn > span > img{
+#signup-btn>span>img {
   height: 1.5rem;
   display: inline;
   opacity: 0.5;
