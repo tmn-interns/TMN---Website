@@ -176,6 +176,7 @@ option[selected]
     color: rgb(9, 9, 9);
     background-color: #f8f7f6;
     border: rgba(19, 19, 19, 0.245) solid 4px;
+    border-radius: 4px;
 }
 
 .blogs:hover{
