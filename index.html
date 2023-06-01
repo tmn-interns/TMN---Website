@@ -18,6 +18,7 @@
     <script>    
         $(function(){
             $("#OSP").load("/files/our-services-&-process.html");
+            $("#faq").load("/files/faq.html")
         });
     </script>
     
@@ -267,6 +268,8 @@
             </div>
         </div>
 
+        <!-- <div id="faq"></div> -->
+
     </section>
 
     <!-- -------------------------------------------------------------- -->
@@ -306,23 +309,26 @@
         <script>
             $(document).ready(function (){
                 $(".add").mouseenter(function(){
-                    // alert("test")
+                    $(".add .upper").css("top", "-1.5rem");
                     document.getElementById("add-text").innerHTML = "BANDRA, MUMBAI";
                 }).mouseleave(function(){
+                    $(".add .upper").css("top", "0");
                     document.getElementById("add-text").innerHTML = "ADDRESS";
                 });
 
                 $(".ph").mouseenter(function () {
-                    // alert("test")
+                    $(".ph .upper").css("top", "-1.5rem");
                     document.getElementById("phn-text").innerHTML = "(+91) 8530392350";
                 }).mouseleave(function () {
+                    $(".ph .upper").css("top", "0");
                     document.getElementById("phn-text").innerHTML = "PHONE NUMBER";
                 });
 
                 $(".email").mouseenter(function () {
-                    // alert("test")
+                    $(".email .upper").css("top", "-1.5rem");
                     document.getElementById("email-text").innerHTML = "hello@techmihirnaik.in";
                 }).mouseleave(function () {
+                    $(".email .upper").css("top", "0");
                     document.getElementById("email-text").innerHTML = "E-MAIL";
                 });
             })
