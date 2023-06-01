@@ -50,7 +50,7 @@ section{
 }
 #welcome-text > h2{
     font-size: 1.5em;
-    //font-variant: small-caps;
+    /* font-variant: small-caps; */
 }
 
 #get-started-btn{
