@@ -60,7 +60,7 @@
 
 
         <div class="aboutus">
-            <div class="a-row about-us-card" data-aos="fade-up" >
+            <div class="a-row about-us-card" data-aos="fade-up">
                 <div class="image">
                     <img src="/images/1.svg" alt="globe" class="about_img" id="image1">
                 </div>
@@ -164,47 +164,68 @@
                 <p>We enable innovation! From ideation all the way through to market delivery.</p>
             </div>
            
-            <hr style="height: 5px; width: 85%; border-width: 0;background-color: #FFFFFF;">
-            <div class="l1"><img src ="./images/Bigline.svg"></div>
-            
-    
-            <div class ="circlehc circle">
-                <div class="images1"><img src ="./images/Happyclients.svg"></div>
-                <div class ="center">
-                    <div class="text1 t1">50,000+</div>
-                    <div class="text2 t11"> Happy<br>Clients</div>
-                </div>
-            </div>
-            
-            <div class ="circlehos circle">
-                <div class="images2"><img src ="./images/Hoursofsupport.svg"></div>
-                <div class="center">
-                    <div class="text1 t2">24x7</div>
-                    <div class="text2 t22"> Hours of<br>Support</div>
-                </div>
-            </div>
 
-            <div class="circle circlep">
-                <div class="images3"><img src ="./images/Projects.svg"></div>
-                <div class ="center">
-                    <div class="text1 t3">400+</div>
-                    <div class="text2 t33"> Projects</div>
+            <hr style="height: 5px; width: 85%; border-width: 0;background-color: #FFFFFF;">
+
+            <!-- <img id="fact-stroke" src="./images/Bigline.svg"> -->
+            <svg id="fact-stroke" width="1137" height="490" viewBox="0 0 1137 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.99989C127.5 2.99989 190.891 1.49989 249 123C307.109 244.5 375 287.5 525.5 272.5C676 257.5 789.5 255.514 851.5 272.5C913.5 289.486 1033.5 333.5 1134.5 488.5" stroke="white" stroke-width="5"/>
+            </svg>
+
+            <script>
+                $(window).on("scroll", function(){
+                  if($(window).scrollTop() + $(window).height() - 100 >= $("#fact-stroke").offset().top){
+                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 2000);
+                  }
+                  else{
+                    $("#fact-stroke").animate({"stroke-dashoffset":"2000"}, 20);
+                  }
+                });
+            </script>
+
+            <div class="fact-circle-bg" style="--h:40px; --l:25%; --t:80%;"></div>
+            <div class="fact-circle-bg" style="--h:55px; --l:60%; --t:80%;"></div>
+            <div class="fact-circle-bg" style="--h:50px; --l:40%; --t:40%;"></div>
+            <div class="fact-circle-bg" style="--h:20px; --l:55%; --t:60%;"></div>
+            <div class="fact-circle-bg" style="--h:60px; --l:80%; --t:30%;"></div>
+            <div class="fact-circle-bg" style="--h:20px; --l:90%; --t:85%;"></div>
+        
+
+            <div class="fact-bubbles">
+
+                <div class="fact-wrapper fact1" data-aos="zoom-in">
+                    <img class="facts-img" src="./images/Happyclients.svg" style="bottom:-50%;">
+                    <div class="facts-circle" style="--fact-scale: 1">
+                        <div class="facts-text-top" style="font-size: 2rem;">50,000+</div>
+                        <div class="facts-text-bottom">Happy<br>Clients</div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="fact-wrapper fact2" data-aos="zoom-in">
+                    <img class="facts-img" src="./images/Hoursofsupport.svg" style="right:20%; top:-30%;">
+                    <div class="facts-circle">
+                        <div class="facts-text-top">24x7</div>
+                        <div class="facts-text-bottom">Hours of<br>Support</div>
+                    </div>
+                </div>
+
+                <div class="fact-wrapper fact3" data-aos="zoom-in">
+                    <img class="facts-img" src="./images/Projects.svg" style="right:-30%">
+                    <div class="facts-circle">
+                        <div class="facts-text-top">400+</div>
+                        <div class="facts-text-bottom">Projects</div>
+                    </div>
+                </div>
+
+                <div class="fact-wrapper fact4" data-aos="zoom-in">
+                    <img class="facts-img" src="./images/Hardworkers.svg" style="right:-30%; bottom:-10%;">
+                    <div class="facts-circle" style="--fact-scale: 1;">
+                        <div class="facts-text-top">300+</div>
+                        <div class="facts-text-bottom">Hardworkers</div>
+                    </div>
+                </div>
             
-            <div class ="circleh circle">
-                <div class="images4"><img src ="./images/Hardworkers.svg"></div>
-                <div class="center">
-                    <div class="text1 t4">300+</div>
-                    <div class="text2 t44"> Hardworkers</div>
-                </div>
             </div>
-            <div class="circleo circle1"></div>
-            <div class="circleo circle2"></div>
-            <div class="circleo circle3"></div>
-            <div class="circleo circle4"></div>
-            <div class="circleo circle5"></div>
-            <div class="circleo circle6"></div>
 
         </div>
     </section>
