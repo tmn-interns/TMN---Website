@@ -350,7 +350,7 @@ section{
 /*----------Facts section----------*/
 
 #facts{
-    padding: 0 10%;
+    padding: 0 15%;
     position: relative;
 }
 
@@ -365,6 +365,8 @@ section{
 .fact-wrapper{
     display: inline-block;
     position: relative;
+    scale: 1.2;
+    z-index: 2;
 }
 
 .facts-circle{
@@ -383,11 +385,12 @@ section{
     overflow: hidden;
 
     scale: var(--fact-scale);
+    z-index: 1;
 }
 
 .facts-img{
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 .facts-text-top{
     color: #B29B6B;
@@ -403,7 +406,7 @@ section{
 }
 
 .fact1{ top: 50px; }
-.fact2{ top: 220px;}
+.fact2{ top: 300px;}
 .fact3{ top: 0; }
 .fact4{ top: 160px }
 
@@ -420,6 +423,8 @@ section{
     height: var(--h);
     top: var(--t);
     left: var(--l);
+
+    z-index: 0;
 }
 
 
