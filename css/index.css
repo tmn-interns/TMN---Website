@@ -301,6 +301,7 @@ section{
     box-sizing: border-box;
     background-color: #333845;
     border-radius: 1.5rem 1.5rem 0 0;
+    transition: top 0.2s ease-in-out;
 }
 
 
@@ -323,7 +324,6 @@ section{
     box-sizing: border-box;
     background-color: #333845;
     border-radius: 0 0 1.5rem 1.5rem;
-    transition: top 0.2s ease-in-out;
 }
 
 .upper:hover{
