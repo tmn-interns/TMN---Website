@@ -287,21 +287,46 @@
             <div class="contact-cards row ml-0 mr-0 mt-5">
                 <div class="add">
                     <div class="upper"></div>
-                    <div class="lower">ADDRESS</div>
+                    <div class="lower" id="add-text">ADDRESS</div>
                     <div class="icon"></div>
                 </div>
             <div class="ph">
                 <div class="upper"></div>
-                <div class="lower">PHONE NUMBER</div>
+                <div class="lower" id="phn-text">PHONE NUMBER</div>
                 <div class="icon"></div>
             </div>
             <div class="email">
                 <div class="upper"></div>
-                <div class="lower">EMAIL</div>
+                <div class="lower" id="email-text">E-MAIL</div>
                 <div class="icon"></div>
              </div>
 
-        </div>   
+        </div>
+
+        <script>
+            $(document).ready(function (){
+                $(".add").mouseenter(function(){
+                    // alert("test")
+                    document.getElementById("add-text").innerHTML = "BANDRA, MUMBAI";
+                }).mouseleave(function(){
+                    document.getElementById("add-text").innerHTML = "ADDRESS";
+                });
+
+                $(".ph").mouseenter(function () {
+                    // alert("test")
+                    document.getElementById("phn-text").innerHTML = "(+91) 8530392350";
+                }).mouseleave(function () {
+                    document.getElementById("phn-text").innerHTML = "PHONE NUMBER";
+                });
+
+                $(".email").mouseenter(function () {
+                    // alert("test")
+                    document.getElementById("email-text").innerHTML = "hello@techmihirnaik.in";
+                }).mouseleave(function () {
+                    document.getElementById("email-text").innerHTML = "E-MAIL";
+                });
+            })
+        </script>
             
         <!-- Form - group -->
         <div class="form-grp row">
