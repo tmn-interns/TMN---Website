@@ -26,6 +26,18 @@
 /*      background-size: 100%;*/
     }
 
+    #our_process_bg{
+      margin: 0;
+      padding: 0;
+      left: -1%;
+      height: 80vh;
+      width: 100vw;
+      /* background-color: dimgray; */
+      background-image: url(./images/Process_fig.svg);
+      background-repeat: no-repeat;
+      background-position: 0% 50%;
+    }
+
     #cards-container{
       padding: 0;
       margin-top: 4%;
@@ -119,6 +131,69 @@
 
     h3:hover, h4:hover{
       cursor: default;
+    }
+
+    .grid {
+      margin-left: 40%;
+      margin-top: 10%;
+      width: 700px;
+      
+/*      background-color: red;*/
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+    }
+
+    .item {
+      box-shadow: 1px 1px 5px gray;
+      font-size: 1.06em;
+      font-weight: ligth;
+      letter-spacing: 1px;
+      position: relative;
+      color: white;
+      padding: 1.35rem;
+      height: 8rem;
+      text-align: center;
+      background: var( --PALT_4);
+      border-radius: 6px;
+    }
+
+    #item1::after{
+      content: '';
+      position: absolute;
+      width:10vh;
+      border-bottom: 7px solid var(--PALT_1);
+      top: 50%;
+      right: -26%;
+    }
+
+    /*#item1::after::after{
+      content: '';
+      position: absolute;
+      width:10vh;
+      border-bottom: 7px solid var(--PALT_1);
+      border-radius: 10px;
+
+    }*/
+
+    #item2::after{
+      content: '';
+      position: absolute;
+      width:10vh;
+      border-bottom: 7px solid var(--PALT_1);
+      right: 38%;
+      top: 130%;
+      transform:rotate(90deg)
+      
+    }
+
+    #item3::before{
+      content: '';
+      position: absolute;
+      width:10vh;
+      border-bottom: 7px solid var(--PALT_1);
+      top: 50%;
+      right: -26%;
     }
   
   </style>
@@ -214,7 +289,41 @@
   
     <img src="./images/head.svg" style="float: right; margin-top: -21%;">
   
+    
+  <section id='our_process_bg'>
+    <div class="container" id="section-container">
+      <div class="section-title">
+          <h2>Our Process</h2>
+          <hr>
+          <p>Kickstart your digital journey with US.</p>
+      </div>
 
+    </div>
+    <div class="grid">
+      <div class="item" id="item1">
+        <img src="./images/our_process_SYR.svg" class = "img-responsive" style="margin-top:-5%; padding-bottom: 5%;">
+        <p>Share Your Requirements</p>
+      </div>
+  
+      <div class="item" id="item2">
+        <img src="./images/our_process_PA.svg" class = "img-responsive" style="margin-top:-2%; padding-bottom: 6%;">
+        <p>Partner Alignments</p>
+      </div>
+      
+      <div class="item" id="item3">
+        <img src="./images/our_process_TP.svg" class = "img-responsive" style="margin-top:-5%; padding-bottom: 4%;">
+        <p>Track Progress</p>
+      </div>
+  
+      <div class="item" id="item4"> 
+        <img src="./images/our_process_SC.svg" class = "img-responsive" style="margin-top:-1%; padding-bottom: 6%;">
+        <p>Sign Contracts</p>
+      </div>
+    </div>
+      
+  </section>
+
+  
 
 
 

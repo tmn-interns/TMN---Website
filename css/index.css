@@ -178,7 +178,7 @@ section{
 #services{
     background-image: url(../images/string.svg), url(../images/side-gold-stroke.svg) !important;
     background-repeat: no-repeat, no-repeat;
-    background-position: 150% -15%, 0% 0%;
+    background-position: 100% 100%, 0% 0%;
 }
 /*----------Our Partners----------*/
 #our-partners{
