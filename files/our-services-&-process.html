@@ -33,14 +33,25 @@
       height: 80vh;
       width: 100vw;
       /* background-color: dimgray; */
-      background-image: url(./images/Process_fig.svg);
-      background-repeat: no-repeat;
-      background-position: 0% 50%;
+      background-image: url(./images/Process_fig_nogear.svg),url(./images/our_process_biggear.svg), url(./images/our_process_smallgear.svg);
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 0% 50%, 15% 51%, 21% 26%;
+      
+      /* animation: none, rotation 2s infinite linear, rotation 2s infinite linear; */
     }
+
+  @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
     #cards-container{
       padding: 0;
-      margin-top: 4%;
+      margin-top: 5%;
 /*      background-color: cyan;*/
       margin-left: 10%;
       width: 60%;
@@ -289,6 +300,9 @@
   
     <img src="./images/head.svg" style="float: right; margin-top: -21%;">
   
+  
+  
+    <!-- -------------Our Process--------------- -->
     
   <section id='our_process_bg'>
     <div class="container" id="section-container">
@@ -297,8 +311,12 @@
           <hr>
           <p>Kickstart your digital journey with US.</p>
       </div>
-
     </div>
+
+    <div id="process_parent">
+
+      <div id="image_parent"></div>
+    
     <div class="grid">
       <div class="item" id="item1">
         <img src="./images/our_process_SYR.svg" class = "img-responsive" style="margin-top:-5%; padding-bottom: 5%;">
@@ -320,7 +338,8 @@
         <p>Sign Contracts</p>
       </div>
     </div>
-      
+
+  </div>
   </section>
 
   
