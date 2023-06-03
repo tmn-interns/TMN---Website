@@ -20,3 +20,13 @@ var repeater = () => {
 repeater();
 
 
+$("document").ready(function(){
+    $(".nav-item").click(function(){
+        var items = $(".nav-item");
+        items.each(function(x){
+            $(items[x]).removeClass("active");
+        });
+        $(this).addClass("active");
+    })
+
+})
