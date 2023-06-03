@@ -328,17 +328,28 @@ footer
     
 }
 
-.phoneno
+.phno
 {
     position: relative;
 }
 
-.phoneno span{
+.phno span{
     position: absolute;
-    right: 10%;
-    bottom: 14%;
+    right: 5%;
     color: var(--PALT_6);
     text-transform: uppercase;
     font-size: 17px;
+    bottom: 2%;
 }
 
+#verify-btn
+{
+    background-color: #333845;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    margin-top: 5px;
+    color: inherit;
+    border: 2px solid #333845;
+    height: 100%;
+}
