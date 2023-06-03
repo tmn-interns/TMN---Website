@@ -386,6 +386,10 @@ section{
 
     scale: var(--fact-scale);
     z-index: 1;
+    transition-duration:  0.2s;
+}
+.facts-circle:hover{
+    transform: scale(1.1);
 }
 
 .facts-img{
