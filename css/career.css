@@ -40,6 +40,7 @@
 }
 .nav-item:hover{
     transform: scale(1.05) translateY(-5px);
+    overflow: visible;
 }
 
 #login-btn{
@@ -50,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     
 }
 #login-btn > span{
