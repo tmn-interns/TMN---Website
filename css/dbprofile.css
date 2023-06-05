@@ -198,6 +198,7 @@ p {
     color: var(--PALT_2);
     border-radius: 0.3rem;
     padding: 0 1rem;
+    flex-direction: column;
 }
 
 
@@ -213,6 +214,7 @@ p {
     text-align: left;
     font-weight: 100;
     font-size: 0.8rem;
+    display: none;
 }
 
 .service-details {
@@ -224,15 +226,18 @@ p {
 
 .service-btn {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     gap: 1rem;
+    margin: 0.8rem 0;
 }
 
 .btn-grp {
-    display: flex;
-    flex-direction: row;
+    
+    grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
+    display: grid;
+    width: 100%;
 }
 
 .btn {
@@ -241,7 +246,7 @@ p {
     border: var(--PALT_4);
     padding: 0.5rem 1rem;
     border-radius: 3px;
-    width: 135px;
+    width: 100%;
     height: 40px;
     box-shadow: 2px 2px 2px var(--PALT_r);
     font-weight: 500;
