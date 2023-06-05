@@ -434,11 +434,11 @@ section{
 
 #fact-stroke{
     position:absolute;
-    bottom:-5px;
-    left:-1px;
+    left:-50px;
+    width: 102%;
 
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
+    stroke-dasharray: 3500;
+    stroke-dashoffset: 3500;
 }
 
 /*----------Contact Us Form----------*/
