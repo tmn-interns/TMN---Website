@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="./css/global.css">
   <link rel="stylesheet" type="text/css" href="./css/index.css">
@@ -22,40 +21,42 @@
       padding: 0;
     }
     .accordion{
-      margin: 5% 20% 5% 20%;
-      /* width: 60%; */
+      margin: 2% 20% 0% 20%;
+    }
+
+    .accordion > .card{
+      width:auto;
+      height: auto;
+      margin-bottom: 2%;
     }
 
      .card-header{
       background-color: var(--PALT_2);
      }
 
-     .btn{
+     .mb-0 > .btn{
       text-decoration: none;
       color: white;
       text-align: left;
       width: 100%;
      }
 
-     .btn-link{
+     .mb-0 > .btn-link{
       text-decoration: none;
      }
 
-     .btn-link:hover{
+     .mb-0 > .btn-link:hover{
       text-decoration: none;
       color: var(--PALT_1);
-     }
-
-     .show{
-      border-left: solid 4px var(--PALT_1);
-      border-right: solid 4px var(--PALT_1);
-     }
+     } 
 
      .card-body{
       color: white;
       text-align: justify;
       padding-right: 5%;
       padding-left: 5%;
+      border-left: solid 4px var(--PALT_1);
+      border-right: solid 4px var(--PALT_1);
       background-color: var(--PALT_4);
      }
 
@@ -77,19 +78,19 @@
 <body>
 
 
-  <div class="accordion" id="accordionExample">
+<div class="accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" id="btn1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Collapsible Group Item #1 <img class ='plus' id ='plus1' src="./images/FAQ_PLUS.svg">
+          What is Techmihirnaik? <img class ='plus' id ='plus1' src="./images/FAQ_PLUS.svg">
         </button>
       </h2>
     </div>
 
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        We’re a young and talented group of entrepreneurs and engineers with a groundbreaking idea that we hope will contribute towards a better tomorrow. We provide smart solutions for companies of all sizes and pride ourselves on our unparalleled, dedicated service.
       </div>
     </div>
   </div>
@@ -97,13 +98,13 @@
     <div class="card-header" id="headingTwo">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" id="btn2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2 <img class ='plus' id ='plus2' src="./images/FAQ_PLUS.svg">
+          Technologies we deal with. <img class ='plus' id ='plus2' src="./images/FAQ_PLUS.svg">
         </button>
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        Stay relevant in a rapidly evolving digital world, using resources to help you design, deploy, and resource your ICT environment. Engage our world-class technical teams, regardless of where you are in your digital and technology service journey. We adopt industry-proven project and program management methodologies. This delivers precise, quality technical solutions with the ability to successfully transition and augment these services for client-retained IT organizations.
       </div>
     </div>
   </div>
@@ -111,16 +112,17 @@
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
         <button class="btn btn-link collapsed" id="btn3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3 <img class ='plus' id ='plus3' src="./images/FAQ_PLUS.svg">
+          Services we work on. <img class ='plus' id ='plus3' src="./images/FAQ_PLUS.svg">
         </button>
       </h2>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
       <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        We work in 3 services which are surely pocket-friendly for sellers as well as consumers, which includes- Technical,Courier & Door-Step.
       </div>
     </div>
   </div>
+
 </div>
 
 

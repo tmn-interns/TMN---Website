@@ -276,7 +276,7 @@ section{
 }
 
 /*----------FAQ----------*/
-.faq-container {
+/* .faq-container {
     width: 100%;
     max-width: 80rem;
     margin: 2rem auto;
@@ -350,7 +350,7 @@ section{
 
 .accordion-item:target .accordion-link .fa-minus {
     display: block;
-}
+} */
 
 /*----------Contact Us----------*/
 .contact-cards {
