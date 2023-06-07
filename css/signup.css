@@ -1,5 +1,9 @@
 @import url("global.css");
 
+#otp{
+    display: none;
+}
+
 .error {
     color: #eab454;
 }
@@ -342,7 +346,7 @@ footer
     bottom: 2%;
 }
 
-#verify-btn
+#verify-btn , #submit-btn
 {
     background-color: #333845;
     border-radius: 5px;

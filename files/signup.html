@@ -60,15 +60,7 @@
                         <div class="error" id="emailerr"></div>
                     </div>
 
-                    <div class="phoneno">
-                        <p>Phone Number</p>
-                        <div class="phno">
-                        <input type="tel" name="pno" placeholder="9213456423" minlength="10" maxlength="10">
-                        <span><button id="verify-btn">VERIFY</button></span>
-                    </div>
-                        <div class="error" id="pnoerr"></div>
-                        
-                    </div>
+
 
                     <div class="password">
                         <p>Password</p>
@@ -86,15 +78,34 @@
 
                     </div>
 
+                    <div class="phoneno">
+                        <p>Phone Number</p>
+                        <div class="phno">
+                            <input type="tel" name="pno" placeholder="9213456423" minlength="10" maxlength="10">
+                            <span><button id="verify-btn" onclick="getotp();">VERIFY</button></span>
+                        </div>
+                        <div class="error" id="pnoerr"></div>
+                    </div>
+
+                    <div id="otp">
+                        <p>Enter OTP</p>
+                        <div class="phno">
+                            <input type="tel" name="otps" placeholder="X X X X" minlength="4" maxlength="4">
+                            <span><button id="submit-btn">SUBMIT</button></span>
+                        </div>
+                        <div class="error" id="otperr"></div>
+                    </div>
+
                     <div class="terms">
                         <input type="checkbox" name="terms" id="checkbox">
                         <p style="display: inline;" class="tnc">I have read and agreed to the <u>Terms and
                                 Conditions</u></p>
-                        <div class = "error" id = "checkboxerr"></div>
+                        <div class="error" id="checkboxerr"></div>
                     </div>
 
                     <div class="buttons">
-                        <input type="reset" name="reset" value="Reset" style="background-color: #666666; cursor: pointer;">
+                        <input type="reset" name="reset" value="Reset"
+                            style="background-color: #666666; cursor: pointer;">
                         <input type="submit" name="submit" style="background-color: #333845;" class="submit">
                     </div>
 
@@ -149,6 +160,12 @@
         // toggle the eye slash icon
         this.classList.toggle("fa-eye-slash");
     });
+
+
+    function getotp() {
+        var otp = document.getElementById("otp");
+        otp.style.display = "block";
+    }
 </script>
 
 </html>
