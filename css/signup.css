@@ -1,9 +1,5 @@
 @import url("global.css");
 
-html{
-    width: max-content;
-}
-
 #otp{
     display: none;
 }
