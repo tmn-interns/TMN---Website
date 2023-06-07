@@ -1,9 +1,5 @@
 @import url("global.css");
 
-html{
-    width: max-content;
-}
-
 #otp{
     display: none;
 }
@@ -360,4 +356,10 @@ footer
     color: inherit;
     border: 2px solid #333845;
     height: 100%;
+}
+
+@media (max-width:390px){
+    html{
+        width: 100%;
+    }
 }
