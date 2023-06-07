@@ -516,8 +516,8 @@ section{
 
 #fact-stroke{
     position:absolute;
-    left:-50px;
-    width: 102%;
+    left:0px;
+    width: 105%;
 
     stroke-dasharray: 3500;
     stroke-dashoffset: 3500;
