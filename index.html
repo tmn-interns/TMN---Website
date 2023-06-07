@@ -34,7 +34,7 @@
 
     
     <section class="container-fluid" id="welcome">
-        <img id="welcome-bg-img" src="https://images.pexels.com/photos/7988080/pexels-photo-7988080.jpeg">
+        <img id="welcome-bg-img" src="images/Homepage_topBG.jpg">
         <img id="welcome-text-bg" src="images/index-text-bg.svg">
         <div class="row align-items-center h-5000">
             <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 p-5 h-100 ">
@@ -179,15 +179,15 @@
             <svg id="fact-stroke" width="1440" height="440" viewBox="0 0 1440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-74 170.691C37.5 11.1917 294.5 -12.6279 407 227.692C490.361 405.765 578.113 467.271 649 421.5C800 324 731.496 169.583 857.5 91.0001C997 4.00037 1073.5 271.627 1136 289.5C1331.54 345.419 1795 84.5 1982.5 3" stroke="white" stroke-width="6"/>
             </svg>
-                
+            <!-- stroke-dasharray=20 -->
 
             <script>
                 $(window).on("scroll", function(){
                   if($(window).scrollTop() + $(window).height() - 100 >= $("#fact-stroke").offset().top){
-                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 2000);
+                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 4000);
                   }
                   else{
-                    $("#fact-stroke").animate({"stroke-dashoffset":"2000"}, 20);
+                    $("#fact-stroke").animate({"stroke-dashoffset":"4000"}, 20);
                   }
                 });
             </script>
