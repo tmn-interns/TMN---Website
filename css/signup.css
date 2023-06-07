@@ -1,9 +1,5 @@
 @import url("global.css");
 
-html{
-    width: max-content;
-}
-
 #otp{
     display: none;
 }
@@ -11,6 +7,7 @@ html{
 .error {
     color: #eab454;
 }
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -306,6 +303,15 @@ footer
     .form
     {
         margin: auto;
+        width: 85%;
+    }
+    .password, .confirm-password{
+        position: relative;
+    }
+    .fa-eye{
+        position: absolute;
+        left: 90%;
+        bottom: 18%;
     }
     .form-div
     {
@@ -361,3 +367,4 @@ footer
     border: 2px solid #333845;
     height: 100%;
 }
+
