@@ -246,7 +246,7 @@ p {
     border: var(--PALT_4);
     padding: 0.5rem 1rem;
     border-radius: 3px;
-    width: 100%;
+    width: 80%;
     height: 40px;
     box-shadow: 2px 2px 2px var(--PALT_r);
     font-weight: 500;

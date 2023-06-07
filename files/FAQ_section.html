@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ****************Not required as present in other files**************** -->
+  <!-- Bootstsrap CSS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></script> -->
+
+  <!-- JQuery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  
+  <!-- Bootstrap JAVAscript -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="./css/global.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+  <style type="text/css">
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .accordion{
+      margin: 2% 20% 0% 20%;
+    }
+
+    .accordion > .card{
+      width:auto;
+      height: auto;
+      margin-bottom: 2%;
+    }
+
+     .card-header{
+      background-color: var(--PALT_2);
+     }
+
+     .mb-0 > .btn{
+      text-decoration: none;
+      color: white;
+      text-align: left;
+      width: 100%;
+     }
+
+     .mb-0 > .btn-link{
+      text-decoration: none;
+     }
+
+     .mb-0 > .btn-link:hover{
+      text-decoration: none;
+      color: var(--PALT_1);
+     } 
+
+     .card-body{
+      color: white;
+      text-align: justify;
+      padding-right: 5%;
+      padding-left: 5%;
+      border-left: solid 4px var(--PALT_1);
+      border-right: solid 4px var(--PALT_1);
+      background-color: var(--PALT_4);
+     }
+
+     #plus1,#plus2,#plus3{
+      float: right;
+      transition: 0.5s;
+
+     }
+
+     .action{
+      transform:rotate(45deg);
+     }
+
+
+  </style>
+
+  <title>FAQ</title>
+</head>
+<body>
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" id="btn1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          What is Techmihirnaik? <img class ='plus' id ='plus1' src="./images/FAQ_PLUS.svg">
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+      <div class="card-body">
+        We’re a young and talented group of entrepreneurs and engineers with a groundbreaking idea that we hope will contribute towards a better tomorrow. We provide smart solutions for companies of all sizes and pride ourselves on our unparalleled, dedicated service.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" id="btn2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Technologies we deal with. <img class ='plus' id ='plus2' src="./images/FAQ_PLUS.svg">
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+      <div class="card-body">
+        Stay relevant in a rapidly evolving digital world, using resources to help you design, deploy, and resource your ICT environment. Engage our world-class technical teams, regardless of where you are in your digital and technology service journey. We adopt industry-proven project and program management methodologies. This delivers precise, quality technical solutions with the ability to successfully transition and augment these services for client-retained IT organizations.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" id="btn3" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Services we work on. <img class ='plus' id ='plus3' src="./images/FAQ_PLUS.svg">
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+      <div class="card-body">
+        We work in 3 services which are surely pocket-friendly for sellers as well as consumers, which includes- Technical,Courier & Door-Step.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+
+    $('#btn1').click(function(){ $('#plus1').toggleClass('action'); });
+    $('#btn2').click(function(){ $('#plus2').toggleClass('action'); });
+    $('#btn3').click(function(){ $('#plus3').toggleClass('action'); });
+
+  })
+</script>
+</body>
+</html>

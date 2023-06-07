@@ -18,10 +18,13 @@
     <script>    
         $(function(){
             $("#OSP").load("/files/our-services-&-process.html");
-            $("#faq").load("/files/faq.html");
+            $("#FAQ_placeholder").load("/files/FAQ_section.html");
         });
     </script>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Techmihirnaik</title>
 </head>
@@ -31,7 +34,7 @@
 
     
     <section class="container-fluid" id="welcome">
-        <img id="welcome-bg-img" src="https://images.pexels.com/photos/7988080/pexels-photo-7988080.jpeg">
+        <img id="welcome-bg-img" src="images/Homepage_topBG.jpg">
         <img id="welcome-text-bg" src="images/index-text-bg.svg">
         <div class="row align-items-center h-5000">
             <div class="col-sm-8 col-md-6 col-lg-6 col-xl-5 p-5 h-100 ">
@@ -42,7 +45,7 @@
                 <input id="get-started-btn" type="button" value="Get Started">
             </div>
         </div>
-        <img id="home-welcome-wave" src="images/index-welcome-wave.svg">
+        <img id="home-welcome-wave" src="images/homepage_blackwave.svg">
     </section>
 
     <!-- -------------------------------------------------------------- -->
@@ -173,18 +176,18 @@
                 <path d="M0 2.99989C127.5 2.99989 190.891 1.49989 249 123C307.109 244.5 375 287.5 525.5 272.5C676 257.5 789.5 255.514 851.5 272.5C913.5 289.486 1033.5 333.5 1134.5 488.5" stroke="white" stroke-width="5"/>
             </svg> -->
             
-            <svg id="fact-stroke" width="1979" height="800" viewBox="0 0 1979 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="fact-stroke" width="1440" height="440" viewBox="0 0 1440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-74 170.691C37.5 11.1917 294.5 -12.6279 407 227.692C490.361 405.765 578.113 467.271 649 421.5C800 324 731.496 169.583 857.5 91.0001C997 4.00037 1073.5 271.627 1136 289.5C1331.54 345.419 1795 84.5 1982.5 3" stroke="white" stroke-width="6"/>
             </svg>
-                
+            <!-- stroke-dasharray=20 -->
 
             <script>
                 $(window).on("scroll", function(){
                   if($(window).scrollTop() + $(window).height() - 100 >= $("#fact-stroke").offset().top){
-                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 2000);
+                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 4000);
                   }
                   else{
-                    $("#fact-stroke").animate({"stroke-dashoffset":"2000"}, 20);
+                    $("#fact-stroke").animate({"stroke-dashoffset":"4000"}, 20);
                   }
                 });
             </script>
@@ -297,6 +300,54 @@
 
         <!-- <div id="faq"></div> -->
 
+        <div class="section-title">
+            <h2>FAQ</h2>
+            <hr>
+            <p>We enable innovation! From ideation all the way through to market delivery.</p>
+        </div> 
+
+        <div id="FAQ_placeholder" style="margin: 0; padding: 0;"></div>
+
+        <!-- <div class="faq-container">
+            <div class="accordion">
+                <div class="accordion-item" id="q1">
+                    <a class="accordion-link" href="#q1">
+                        What is Techmihirnaik?
+                        <i class="fa-regular fa-plus"></i>
+                        <i class="fa fa-minus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>We’re a young and talented group of entrepreneurs and engineers with a groundbreaking idea that we hope will contribute towards a better tomorrow. We provide smart solutions for companies of all sizes and pride ourselves on our unparalleled, dedicated service.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="q2">
+                    <a class="accordion-link" href="#q2">
+                        Technologies we deal
+                        <i class="fa-regular fa-plus"></i>
+                        <i class="fa fa-minus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>Stay relevant in a rapidly evolving digital world, using resources to help you design, deploy, and resource your ICT environment. Engage our world-class technical teams, regardless of where you are in your digital and technology service journey. We adopt industry-proven project and program management methodologies. This delivers precise, quality technical solutions with the ability to successfully transition and augment these services for client-retained IT organizations.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="q3">
+                    <a class="accordion-link" href="#q3">
+                        Services we work on
+                        <i class="fa-regular fa-plus"></i>
+                        <i class="fa fa-minus"></i>
+                    </a>
+                    <div class="answer">
+                        <p>We work in 3 services which are surely pocket-friendly for sellers as well as consumers, which includes- Technical,Courier & Door-Step.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         -->
+
+        
     </section>
 
     <!-- -------------------------------------------------------------- -->
