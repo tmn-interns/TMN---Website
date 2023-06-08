@@ -17,9 +17,10 @@ main > section:nth-child(even){
     color: var(--PALT_2);
 }
 section{
-    width: 100%;
     min-height: 100vh;
     padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: block;
     position: relative;
     overflow: hidden;
 }
@@ -398,15 +399,13 @@ section{
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.2;
-    color: #ffffff;
-    font-family: Poppins, 'Source Sans Pro';
+    font-weight: 600;
+    color: inherit;
     white-space: nowrap;
     border: solid 0.1rem #ffffff;
-    box-sizing: border-box;
     background-color: #333845;
     border-radius: 0 0 1.5rem 1.5rem;
+    /* font-family: Poppins, 'Source Sans Pro'; */
 }
 
 .upper:hover{
@@ -529,8 +528,7 @@ section{
     margin-left: 0;
     margin-right: 0;
 }
-.form{
-    width: 45%;
+.contact-form{
     box-sizing: border-box;
     border: solid 0.1rem white;
     border-radius: 1.1rem;
@@ -583,16 +581,6 @@ input[type="text"]:focus, input[type="email"]:focus{
     align-items: center;
 }
 
-@media (max-width: 600px) {
-    .airplane-container{
-        display: none;
-    }
-}
-
-#airplane{
-    width: 100%;
-    aspect-ratio: 1.25;
-}
 
 
 
