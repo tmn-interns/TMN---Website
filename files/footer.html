@@ -5,9 +5,9 @@
         <div class="col-md-4 footer-div">
             <h3>Explore Techmihir Naik</h3>
             <div class="footer-cards">
-                <a><img src="#" alt="ABC"></a>
-                <a><img src="#" alt="PQR"></a>
-                <a><img src="#" alt="XYZ"></a>
+                <a href="#"><img src="/images/logo-ServiceBox.jfif" alt="Service Box logo"></a>
+                <a href="#"><img src="/images/logo-Roommate.png" alt="PQR"></a>
+                <a href="#"><img src="#" alt="Hrica logo not given"></a>
             </div>
         </div>
 
@@ -55,6 +55,31 @@ footer ul{
     padding-left: 0;
     color: inherit;
 }
+
+.footer-cards > a{
+    width: 80px;
+    aspect-ratio: 1;
+    display: inline-block;
+
+    background-color: white;
+    border: solid var(--PALT_1) 2px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+.footer-cards > a:hover{
+    transform: scale(1.1);
+}
+
+.footer-cards > a > img{
+    width: 100%;
+    object-fit: cover;
+    color: black;
+}
+
 footer  a{color: inherit}
 footer h3{
     font-size: 1.5em;
@@ -94,6 +119,8 @@ footer h3{
 #form-subscribe input[type='submit']:hover{
     filter: brightness(0.5);
 }
+
+
 
 @media screen and (max-width: 600px) {
     footer{

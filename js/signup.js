@@ -16,8 +16,8 @@ function ValidateForm(){
    var pass=document.login.pass.value;
    var cpass=document.login.cpass.value;
    var checkbox=document.getElementById("checkbox");
-
    var fnameerr=lnameerr=emailerr=pnoerr=passerr=cpasserr=checkboxerr=true;
+   var otp = document.login.otps.value;
 
    if(fname == "")
    {
@@ -105,7 +105,9 @@ else{
     printError("checkboxerr","Please accept the terms and conditions");
 }
 
-
+if(otp==""){
+    printError("otperr", "Please enter OTP");
+}
    
 
 if((fnameerr || lnameerr || emailerr || pnoerr || passerr || cpasserr || checkboxerr) == true){

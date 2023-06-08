@@ -1,8 +1,13 @@
 @import url("global.css");
 
+#otp{
+    display: none;
+}
+
 .error {
     color: #eab454;
 }
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -298,6 +303,15 @@ footer
     .form
     {
         margin: auto;
+        width: 85%;
+    }
+    .password, .confirm-password{
+        position: relative;
+    }
+    .fa-eye{
+        position: absolute;
+        left: 90%;
+        bottom: 18%;
     }
     .form-div
     {
@@ -342,7 +356,7 @@ footer
     bottom: 2%;
 }
 
-#verify-btn
+#verify-btn , #submit-btn
 {
     background-color: #333845;
     border-radius: 5px;
@@ -353,3 +367,4 @@ footer
     border: 2px solid #333845;
     height: 100%;
 }
+

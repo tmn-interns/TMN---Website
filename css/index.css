@@ -89,7 +89,7 @@ section{
 }
 #home-welcome-wave{
     position: absolute;
-    bottom: -1%;
+    bottom: 0%;
     left:0;
     width: 105%;
 }
@@ -277,7 +277,7 @@ section{
 }
 
 /*----------FAQ----------*/
-.faq-container {
+/* .faq-container {
     width: 100%;
     max-width: 80rem;
     margin: 2rem auto;
@@ -351,7 +351,7 @@ section{
 
 .accordion-item:target .accordion-link .fa-minus {
     display: block;
-}
+} */
 
 /*----------Contact Us----------*/
 .contact-cards {
@@ -517,8 +517,8 @@ section{
 
 #fact-stroke{
     position:absolute;
-    left:-50px;
-    width: 102%;
+    left:0px;
+    width: 105%;
 
     stroke-dasharray: 3500;
     stroke-dashoffset: 3500;
