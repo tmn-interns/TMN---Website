@@ -10,24 +10,32 @@
 	<script src="./lib/js/bootstrap.bundle.min.js"></script> <!--not working -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./lib/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="/lib/unpkg.com_aos@3.0.0-beta.6_dist_aos.css"> <!--download from: https://unpkg.com/aos@next/dist/aos.css -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Our files -->
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="js/load_nav_footer.js"></script>
-    <script>    
+    <link rel="stylesheet" href="/css/index.css">
+    
+    <script>var nav_item_idx=1;</script>
+    <script src="js/load_nav_footer.js" defer></script>
+    
+    <script>
         $(function(){
             $("#OSP").load("/files/our-services-&-process.html");
             $("#FAQ_placeholder").load("/files/FAQ_section.html");
         });
     </script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>Techmihirnaik</title>
+    <title>techmihirnaik Group</title>
 </head>
+
 <body>
+
 <main>
     <div id="nav-placeholder"></div>
 
@@ -47,9 +55,8 @@
         <img id="home-welcome-wave" src="images/homepage_blackwave.svg">
     </section>
 
-    <!-- -------------------------------------------------------------- -->
 
-    <!-- Header -->
+    <!-- --------------------------------- About Us --------------------------------- -->
 
     <section class="container-fluid" id="about-us">
         <div class="container" data-aos="fade-up">
@@ -124,19 +131,17 @@
         </div>
 
         </div>
-    </section>
     
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init({
-        offset: 200,
-        duration: 1000,
-        });
-    </script>
-    
-    <!-- -------------------------------------------------------------- -->
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            });
+        </script>
+    </section>
 
-    <!-- Our Services -->
+
+    <!-- --------------------------------- Our Services --------------------------------- -->
 
     <section class="container-fluid" id="services">
         <div class="container">
@@ -154,9 +159,7 @@
             
     </section>
 
-    <!-- -------------------------------------------------------------- -->
-
-    <!-- Facts -->
+    <!-- --------------------------------- Facts --------------------------------- -->
 
     <section class="container-fluid" id="facts">
         <div class="container">
@@ -181,7 +184,7 @@
             <script>
                 $(window).on("scroll", function(){
                   if($(window).scrollTop() + $(window).height() - 100 >= $("#fact-stroke").offset().top){
-                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 4000);
+                    $("#fact-stroke").animate({"stroke-dashoffset":"0"}, 2000);
                   }
                   else{
                     $("#fact-stroke").animate({"stroke-dashoffset":"3500"}, 20);
@@ -236,9 +239,7 @@
         </div>
     </section>
 
-    <!-- -------------------------------------------------------------- -->
-
-    <!-- Our Partners -->
+    <!-- --------------------------------- Our Partners --------------------------------- -->
 
     <section id="our-partners">
         
@@ -307,9 +308,7 @@
         
     </section>
 
-    <!-- -------------------------------------------------------------- -->
-
-    <!-- Contact Us -->
+    <!-- --------------------------------- Contact Us --------------------------------- -->
 
     <section class="container-fluid" id="contacts-us">
         <!-- Contact cards -->
@@ -370,12 +369,12 @@
         <div class="form-grp row">
             <form class="contact-form p-5 mt-5 col-md-6" action="#">
                 <div class="row mb-3">
-                    <div class="col-md-6 pl-0">
+                    <div class="col-md-6 pe-md-2 p-0">
                         <label class="form-label">Name</label>
                         <input type="text" class="form-control form-control-lg" placeholder="Your Name">
                     </div>
                     
-                    <div class="col-md-6 pr-0">
+                    <div class="col-md-6 ps-md-2 p-0">
                         <label class="form-label">E-mail</label>
                         <input type="email" class="form-control form-control-lg" placeholder="Your Email">
                     </div>
@@ -404,6 +403,7 @@
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
+
 </main>
 </body>
 </html>

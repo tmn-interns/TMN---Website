@@ -13,6 +13,7 @@
 html{
     background-color: var(--PALT_2);
     scroll-behavior: smooth;
+    
 }
 *{
     font-family: 'Inter', sans-serif;
