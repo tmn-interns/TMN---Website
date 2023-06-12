@@ -147,66 +147,204 @@
 
     .grid {
       margin-left: 40%;
-      margin-top: 10%;
-      width: 700px;
-      
-/*      background-color: red;*/
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5rem;
+      margin-top: 5%;
+      width: 900px;
+      display: inline-block;
+      /* grid-template-columns: repeat(4, 1fr); */
+      gap: 7rem;
     }
 
-    .item {
-      box-shadow: 1px 1px 5px gray;
-      font-size: 1.06em;
-      font-weight: ligth;
-      letter-spacing: 1px;
-      position: relative;
-      color: white;
-      padding: 1.35rem;
-      height: 8rem;
-      text-align: center;
-      background: var( --PALT_4);
-      border-radius: 6px;
+  .op-container{
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+    margin-left: -20%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.op-card{
+  border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 190px;
+    height: 200px;
+    background-color: #2b2b2bdc;
+    transition: 0.5s;
+    /* border-radius: 10px; */
+}
+
+.op-card:hover{
+    height: 250px;
+}
+
+.op-card .op-lines{
+  border-radius: 5px;
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    
+}
+
+.op-card .op-lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background: linear-gradient(transparent, #f1aa03,#e2e0da,#f6b103,transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.op-card:hover .op-lines::before{
+    animation-play-state: running;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
     }
-
-    #item1::after{
-      content: '';
-      position: absolute;
-      width:10vh;
-      border-bottom: 7px solid var(--PALT_1);
-      top: 50%;
-      right: -26%;
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
     }
+}
 
-    /*#item1::after::after{
-      content: '';
-      position: absolute;
-      width:10vh;
-      border-bottom: 7px solid var(--PALT_1);
-      border-radius: 10px;
+.op-card .op-lines::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: var(--PALT_2);
+}
 
-    }*/
+.op-card .op-heading{
+    padding: 20%;
+    position: relative;
+    top: 1px;
+    left: 50%;
+    width: 190px;
+    height: 140px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
 
-    #item2::after{
-      content: '';
-      position: absolute;
-      width:10vh;
-      border-bottom: 7px solid var(--PALT_1);
-      right: 38%;
-      top: 130%;
-      transform:rotate(90deg)
-      
+.op-card:hover .op-heading{
+    background-color: #b29a6b13;
+    box-shadow: 1px 1px 5px gray;
+    top: 25px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+
+.op-card .op-heading::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(transparent, #b29a6b68,#fdfdfa20,#b29a6b68,transparent); */
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+
+/* .w-card:hover .w-heading::before{
+    animation-play-state: running;
+} */
+
+
+@keyframes animate2{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
     }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+        -webkit-transform: translate(-50%,-50%) rotate(0deg);
+        -moz-transform: translate(-50%,-50%) rotate(0deg);
+        -ms-transform: translate(-50%,-50%) rotate(0deg);
+        -o-transform: translate(-50%,-50%) rotate(0deg);
+}
+}
 
-    #item3::before{
-      content: '';
-      position: absolute;
-      width:10vh;
-      border-bottom: 7px solid var(--PALT_1);
-      top: 50%;
-      right: -26%;
-    }
+.op-card:hover .op-heading::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+}
+
+
+.op-card:hover .op-heading{
+    opacity: 1;
+}
+
+.op-card .op-content{
+    /* margin-top: 10px; */
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    overflow: hidden;
+}
+
+.op-card .op-content .op-details{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.op-card .op-content .op-details{
+    transform: translateY(0px);
+}
+
+
+.op-card .op-content .op-details #op-p{
+    font-size: 0.8em;
+    color: rgb(240, 233, 233);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.op-card:hover .op-content .op-details #op-p{
+    opacity: 1;
+}
+
+#op-h{
+    font-weight: ligth;
+    font-size: 1.2em;
+    color: var(--PALT_1);
+}
+
+.op-card .op-heading #op-img{
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+.op-card:hover .op-heading #op-img{
+    height: 50px;
+    width: 50px;
+}
   
   </style>
 
@@ -326,25 +464,60 @@
       </div>
     
     <div class="grid">
-      <div class="item" id="item1">
-        <img src="./images/our_process_SYR.svg" class = "img-responsive" style="margin-top:-5%; padding-bottom: 5%;">
-        <p>Share Your Requirements</p>
-      </div>
-  
-      <div class="item" id="item2">
-        <img src="./images/our_process_PA.svg" class = "img-responsive" style="margin-top:-2%; padding-bottom: 6%;">
-        <p>Partner Alignments</p>
-      </div>
       
-      <div class="item" id="item3">
-        <img src="./images/our_process_TP.svg" class = "img-responsive" style="margin-top:-5%; padding-bottom: 4%;">
-        <p>Track Progress</p>
-      </div>
-  
-      <div class="item" id="item4"> 
-        <img src="./images/our_process_SC.svg" class = "img-responsive" style="margin-top:-1%; padding-bottom: 6%;">
-        <p>Sign Contracts</p>
-      </div>
+      <div class="op-container">
+            <div class="op-card">
+                <div class="op-lines"></div>
+                <div class="op-heading">
+                    <img src="./images/our_process_SYR.svg" class = "img-responsive" id="op-img">
+                    <h1 id="op-h">Share Your Requirements</h1>
+                </div>
+                <div class="op-content">
+                    <div class="op-details">
+                        <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo! Accusantium, voluptate?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="op-card">
+                <div class="op-lines"></div>
+                <div class="op-heading">
+                    <img src="./images/our_process_PA.svg" class = "img-responsive" id="op-img" >
+                    <h1 id="op-h">Partner Alignments</h1>
+                </div>
+                <div class="op-content">
+                    <div class="op-details">
+                        <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae tempore dolor!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="op-card">
+                <div class="op-lines"></div>
+                <div class="op-heading">
+                    <img src="./images/our_process_TP.svg" class = "img-responsive" id="op-img">
+                    <h1 id="op-h">Track Progress</h1>
+                </div>
+                <div class="op-content">
+                    <div class="op-details">
+                        <p id="op-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fuga asperiores natus?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="op-card">
+                <div class="op-lines"></div>
+                <div class="op-heading">
+                    <img src="./images/our_process_SC.svg" class = "img-responsive" id="op-img">
+                    <h1 id="op-h">Sign Contracts</h1>
+                </div>
+                <div class="op-content">
+                    <div class="op-details">
+                        <p id="op-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt exercitationem odit.</p>
+                    </div>
+                </div>
+            </div>
+
     </div>
 
   </div>
