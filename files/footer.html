@@ -5,13 +5,13 @@
         <div class="col-md-4 footer-div">
             <h3>Explore Techmihir Naik</h3>
             <div class="footer-cards d-flex">
-                <a class="m-1 d-flex justify-content-center align-items-center" href="#"><img src="/images/logo-ServiceBox.jfif" alt="Service Box logo"></a>
-                <a class="m-1 d-flex justify-content-center align-items-center" href="#"><img src="/images/logo-Roommate.png" alt="PQR"></a>
-                <a class="m-1 d-flex justify-content-center align-items-center" href="#"><img src="#" alt="Hrica logo not given"></a>
+                <a class="mr-3 d-flex justify-content-center align-items-center" href="#"><img src="/images/logo-ServiceBox.jfif" alt="Service Box logo"></a>
+                <a class="mr-3 d-flex justify-content-center align-items-center" href="#"><img src="/images/logo-Roommate.png" alt="PQR"></a>
+                <a class="mr-3 d-flex justify-content-center align-items-center" href="#"><img src="/images/logo-ServiceBox.jfif" alt="Hrica logo not given"></a>
             </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 footer-div">
+        <div class="col-md-3 col-sm-6 footer-div">
             <h3>Useful Links</h3>
             <ul>
                 <li><a href="#">Terms of Services</a></li>
@@ -24,9 +24,9 @@
         <div class="col-md-4 col-sm-6 footer-div">
             <h3>Follow Us</h3>
             <ul id="footer-socials">
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Linked In</li>
+                <li><a href="https://www.linkedin.com/company/techmihirnaik/">  <img src="/images/linkedin-white.svg"></a></li>
+                <li><a href="https://www.instagram.com/techmihirnaik/">         <img src="/images/instagram-white.svg"></a></li>
+                <li><a href="https://www.facebook.com/techmihirnaik/">          <img src="/images/facebook-white.svg"></a></li>
             </ul><br>
 
             <form id="form-subscribe">
@@ -36,7 +36,7 @@
         </div>
     </div>
     <hr style="background: white;">
-    <p style="text-align: center; margin-bottom: 0;">&copy; Copyright 2023 - <strong>Techmihirnaik</strong> All Rights Reserved</p>
+    <p style="text-align: center; margin-bottom: 0;">&copy; Copyright 2023 - <strong>techmihirnaik Group</strong> All Rights Reserved</p>
 </div>
 </footer>
 
@@ -88,7 +88,18 @@ footer h3{
 }
 #footer-socials > li{
     float: left;
-    padding: 0 1rem;
+    margin-right: 3rem;
+    height: 25px;
+    aspect-ratio: 1;
+}
+#footer-socials > li > a > img{
+    height: 100%;
+    transition: scale 0.2s, rotate 0.5s;
+}
+#footer-socials > li > a > img:hover{
+    scale: 1.2;
+    rotate: 15deg;
+    transform-origin: bottom;
 }
 
 #form-subscribe{

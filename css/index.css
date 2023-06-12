@@ -1,11 +1,11 @@
 @import url("global.css");
 
 body{
-    /* background: white; */
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 main{
     background-color: var(--PALT_2);
 }
@@ -16,6 +16,7 @@ main > section:nth-child(even){
     background: var(--PALT_6);
     color: var(--PALT_2);
 }
+
 section{
     min-height: 100vh;
     padding-top: 3rem;
@@ -32,6 +33,7 @@ section{
     text-transform: uppercase;}
 .section-title > hr{
     margin: auto;
+    opacity: 1;
     width: 10%;
     height: 2.5px;
     background: var(--PALT_1);}
@@ -102,23 +104,21 @@ section{
     width: auto;
     text-align: center;
     flex-wrap: wrap;
-
 }
 
 .aboutus .about-us-card{
-    background: #fff;
-    margin: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    position: relative;
     width: 320px;
+    height: 350px;
+    margin: 50px 10px;
     padding-top: 15px;
     padding-right: 50px;
-    line-height: 20px;
+
+    background: #fff;
     color: #8e8b8b;
-    position: relative;
     border: #979494 solid 5px;
-    border-radius: 20px;
-    height: 350px;
+    border-radius: 15px;
+    line-height: 1.25em;
 }
 
 .aboutus .about-us-card .a-h{
@@ -126,18 +126,16 @@ section{
     font-size: 18px;
     margin-top: 50px;
 }
+.aboutus .about-us-card:hover .a-h{color: white}
 
 .aboutus .about-us-card .image{
-    float: left;
-    margin: 5px;
-    border-radius: 100%;
     position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: 5px; */
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    background: #fff;
 }
 
 .aboutus .about-us-card .image .about_img{
@@ -145,6 +143,11 @@ section{
     height: 100px;
     padding: 15px;
     border-radius: 10px;
+
+    transition-duration: 0.2s;
+}
+.aboutus .about-us-card:hover .image .about_img{
+    border-radius: 100%;
 }
 
 .about_item{
@@ -152,20 +155,11 @@ section{
     margin-left: 20%;
 }
 .about-us-card:hover{
-    transform: scale(1.1);
+    /* scale: 1.1; */
     color: white;
     background: var(--PALT_1);
     border: #e2cb9c solid 5px;
 }
-
-.aboutus .about-us-card:hover .image .about_img{
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
 
 #image1{background: hsl(41, 80%, 88%); 
     border:hsla(40, 80%, 78%, 0.838) solid 5px;}
@@ -210,11 +204,6 @@ section{
     filter: blur(3px);
     margin-top: 0;
 }
-/* .section-title-banner{
-    position: absolute;
-    left: 25%;
-    z-index: 6;
-} */
 .section-title-banner > h2{
     padding-top: 3rem;
     font-weight: 900;
@@ -542,7 +531,7 @@ label{
 input[type="text"], input[type="email"]{
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     background-color: #333845;
-    color: #ffffff;
+    color: #fff !important;
     border-radius: 0.5rem;
     border: none;
 }
@@ -555,8 +544,8 @@ input[type="text"]:focus, input[type="email"]:focus{
 }
 
 .ta{
-    resize: none !important;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4) !important;
+    resize: none;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     background-color: #333845 !important;
     border-radius: 0.5rem !important;
     border: none !important;

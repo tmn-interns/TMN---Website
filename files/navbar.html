@@ -13,7 +13,8 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="/index.html" class="nav-item nav-link active">Home</a>
+                <!-- ADD 'active' class to following 'a' tags using JS on individual pages to highlight-->
+                <a href="/index.html" class="nav-item nav-link">Home</a>
                 <a href="/files/blogs.html" class="nav-item nav-link">Blogs</a>
                 <a href="/index.html#our-partners" class="nav-item nav-link">Our Partners</a>
                 <a href="/files/careers.html" class="nav-item nav-link">Career</a>
@@ -68,9 +69,10 @@
     height: 100%;
     text-transform: uppercase;
     font-weight: bolder;
+    transition-duration: 0.5s;
 }
 .nav-item:hover{
-    transform: scale(1.05) translateY(-5px);
+    transform: scale(1.05);
 }
 
 #login-btn{
@@ -95,19 +97,5 @@
 }
 
 </style>
-
-
-<script>
-    $("document").ready(function(){
-        $(".nav-item").click(function(){
-            var items = $(".nav-item");
-            items.each(function(x){
-                $(items[x]).removeClass("active");
-            });
-            $(this).addClass("active");
-        })
-
-    })
-</script>
 
 </body>
