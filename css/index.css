@@ -48,11 +48,11 @@ section{
 }
 .slide-main-container{
     width: 520px;
+    height: 90vh;
     overflow: hidden;
     padding-top: 20px;
     padding-bottom: 20px;
     place-items: center;
-    height: 85vh;
     float: right;
 }
 .slide-inner-container{
