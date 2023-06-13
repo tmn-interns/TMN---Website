@@ -1,13 +1,8 @@
-html {
-    height: max-content;
-}
-
-@import url("../css/global.css");
+@import url("/css/global.css");
 
 body {
     background-color: var(--PALT_6);
     color: var(--PALT_6);
-    font-family: 'Inter', sans-serif !important;
 }
 
 
