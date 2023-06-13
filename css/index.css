@@ -141,41 +141,39 @@ section{
 /*----------ABOUT US----------*/
 .aboutus{
     display: flex;
-    justify-content: center;
     width: auto;
     text-align: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .aboutus .about-us-card{
-    position: relative;
     width: 320px;
     height: 350px;
     margin: 50px 10px;
+    position: relative;
     padding-top: 15px;
     padding-right: 50px;
-
     background: #fff;
     color: #8e8b8b;
     border: #979494 solid 5px;
     border-radius: 15px;
     line-height: 1.25em;
-
     transition: scale 1s;
 }
 
 .aboutus .about-us-card .a-h{
-    color: hsl(0, 0%, 0%);
-    font-size: 18px;
     margin-top: 50px;
+    font-size: 18px;
+    color: hsl(0, 0%, 0%);   
 }
 .aboutus .about-us-card:hover .a-h{color: white}
 
 .aboutus .about-us-card .image{
-    position: absolute;
     width: 100px;
     height: 100px;
     /* margin: 5px; */
+    position: absolute;
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
@@ -186,7 +184,6 @@ section{
     height: 100px;
     padding: 15px;
     border-radius: 10px;
-
     transition-duration: 0.2s;
 }
 .aboutus .about-us-card:hover .image .about_img{
