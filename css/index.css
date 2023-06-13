@@ -38,46 +38,45 @@ section{
     height: 2.5px;
     background: var(--PALT_1);}
 .section-title > p{
-        margin-top: 1rem;}
+    margin-top: 1rem;}
 
 /*----------Child company Carousel----------*/
 
-.company-img{
-    height: 200px;
-    width: auto;
-}
 .slide-main-container{
     width: 520px;
+    height: 93vh;
     overflow: hidden;
     padding-top: 20px;
     padding-bottom: 20px;
     place-items: center;
-    height: 85vh;
     float: right;
 }
 .slide-inner-container{
-    height: 100%;
     display:block;
-    animation: scroll1 20s linear infinite;
+    animation: scroll1 5s linear infinite;
     width: 300px;
 }
 .main-img{
     display: inline-block;
     height: 200px;
     width: 200px;
-    margin: 8px;
+    margin: 10px;
     background-color: #ffff;
     border-radius: 5px;
     align-items: center;    
     perspective: 100px;
     overflow: hidden;
 }
+.company-img{
+    height: 200px;
+    width: auto;
+}
 @keyframes scroll1{
     0%{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(calc(-250px * 3));
+        transform: translateY(calc(-224px*2));
     }
 }
 /*----------Welcome Section----------*/

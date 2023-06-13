@@ -81,13 +81,12 @@ section{
 .blog-r4-left{
     margin-top: 2rem;
     font-size: 1rem;
-    margin-right: 12rem;
 }
 .blog-r4-right{
+    width: 30%;
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: bold;
-    margin-right: 4rem;
 }
 .blog-pic
 {
@@ -260,7 +259,7 @@ option[selected]
 }
 
 #read-b:hover{
-    border: #6f6e6ca4 solid 3px;
+    border: solid #6f6e6ca4 5px;
 }
 
 .load-more-less
@@ -272,20 +271,23 @@ option[selected]
 
 }
 
-#more, #less
-{
+#more, #less{
     margin: 0.8rem 0;
     background-color: var(--PALT_6);
     color: var(--PALT_2);
     border-radius: 5px;
     border: 1px solid var(--PALT_6);
     padding: 5px 10px;
+    transition-duration: 0.2s;
 }
 
-#less
-{
-    display: none;
+#more:hover, #less:hover{
+    scale: 1.1;
+    background-color: var(--PALT_2);
+    color: white;
 }
+
+#less{ display: none;}
 
 .blog-container .blogs .image img{
     width: 292px;
