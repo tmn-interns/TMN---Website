@@ -84,7 +84,7 @@ section{
 }
 /*----------Welcome Section----------*/
 #welcome-text{
-    padding-top: 20%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -93,7 +93,7 @@ section{
     justify-content: center;
 }
 #welcome-text > h2{
-    font-size: 2.5em;
+    font-size: 4em;
     /* font-variant: small-caps; */
 }
 #welcome-text > p{
@@ -103,33 +103,30 @@ section{
 #homepage-search{
     color: #f5ecec;
     display: flex;
-    padding: 2px;
-    margin-left: 35px;
-    /* border: 1px solid currentColor; */
-    /* border-radius: 5px 0px 0px 5px; */
+    width: 400px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    box-shadow: #0005 0px 0px 10px;
+    border-radius: 5px;
 }
 
 #search_bar{
-    width: 300px;
-    border: none;
-    background: var(--PALT_2);
+    width: 95%;
+    border: transparent;
+    background: var(--PALT_6);
+    color: black;
     margin: 0;
     padding: 7px 8px;
     font-size: 18px;
-    color: inherit;
-    border: 1px solid var(--PALT_2);
     border-radius: 5px 0px 0px 5px;
 }
 #search-btn{
-    overflow: hidden;
-    width: 40px;
-    padding: 0;
-    margin: 0;
+    padding: 0 2em;
+    color: white;
+    background-color: var(--PALT_2);
     border: 1px solid transparent;
     border-radius: 0px 5px 5px 0px;
-    cursor: pointer;
-    opacity: 0.7;
-    background-color: #f5ecec;
 }
 
 #welcome-bg-img{
@@ -143,7 +140,7 @@ section{
 #welcome-wave{
     position: absolute;
     top: 0;
-    right: 0;
+    right: -10px;
     height: 100%;
     width: 110%;
 }
@@ -170,6 +167,8 @@ section{
     border: #979494 solid 5px;
     border-radius: 15px;
     line-height: 1.25em;
+
+    transition: scale 1s;
 }
 
 .aboutus .about-us-card .a-h{
@@ -206,7 +205,7 @@ section{
     margin-left: 20%;
 }
 .about-us-card:hover{
-    /* scale: 1.1; */
+    scale: 1.1;
     color: white;
     background: var(--PALT_1);
     border: #e2cb9c solid 5px;
@@ -274,7 +273,7 @@ section{
     width: 90%;
     display: grid;
     place-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .partner-img{
     width: 100%;
@@ -293,12 +292,13 @@ section{
     align-items: center;
     padding: 15px;
     perspective: 100px;
+    border: 2px grey solid;
+    border-radius: 5px;
     margin: 8px;
     padding: 0;
     background-color: #000000;
 }
 .slide-container{
-    overflow: hidden;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -580,7 +580,7 @@ label{
     font-weight: 400;
 }
 
-input[type="text"], input[type="email"]{
+.form-grp  input[type="text"], input[type="email"]{
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     background-color: #333845;
     color: #fff !important;
