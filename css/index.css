@@ -219,9 +219,9 @@ section{
 
 /*----------Our Services and Process----------*/
 #services{
-    background-image: url(../images/string.svg), url(../images/side-gold-stroke.svg) !important;
-    background-repeat: no-repeat, no-repeat;
-    background-position: 100% 100%, 0% 0%;
+    background-image:url(../images/side-gold-stroke.svg) !important;
+    background-repeat:no-repeat;
+    background-position:0% 0%;
 }
 /*----------Our Partners----------*/
 #our-partners{
