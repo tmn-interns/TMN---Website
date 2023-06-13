@@ -20,41 +20,15 @@
     <script src="../js/service_login.js"></script>
     <script src="../js/cities.js"></script>
 
+    <script>var nav_item_idx=5;</script>
+    <script src="/js/load_nav_footer.js"></script>
+
   
 </head>
 
 <body>
-    <main>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                
-                <div id="nav-logo">
-                    <a class="nav-item" href="/index.html"> <img src="../images/logo.png"> </a>
-                </div>
-        
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="/index.html" class="nav-item nav-link active">Home</a>
-                        <a href="/files/blogs.html" class="nav-item nav-link">Blogs</a>
-                        <a href="/index.html#our-partners" class="nav-item nav-link">Our Partners</a>
-                        <a href="/files/careers.html" class="nav-item nav-link">Career</a>
-                        <a href="/index.html#contacts-us" class="nav-item nav-link">Contact Us</a>
-                    </div>
-                    
-                    <div class="navbar-nav">
-                        <a href="/files/DbProfile.html" id="login-btn" class="ms-auto nav-item nav-link">
-                            <span>User <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"></span>
-                        </a>
-                    </div>
-                </div>
-        
-            </div>
-        </nav>
-
+    <div id="nav-placeholder"></div>
+    <main style="padding-top: 5rem;">
         <h1 class="Service_Login_Title">
             GRAB YOUR SEAT </h1>
 
@@ -165,49 +139,12 @@
         </div>
 
         </div>
-        <footer>
-            <div class="container">
-            <div class="row">
-                <div class="col-md-4 footer-div">
-                    <h3>Explore Techmihir Naik</h3>
-                    <div class="footer-cards">
-                        <a><img src="#" alt="ABC"></a>
-                        <a><img src="#" alt="PQR"></a>
-                        <a><img src="#" alt="XYZ"></a>
-                    </div>
-                </div>
         
-                <div class="col-md-4 col-sm-6 footer-div">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li><a href="#">Terms of Services</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Career</a></li>
-                    </ul>
-                </div>
-        
-                <div class="col-md-4 col-sm-6 footer-div">
-                    <h3>Follow Us</h3>
-                    <ul id="footer-socials">
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Linked In</li>
-                    </ul><br>
-        
-                    <form id="form-subscribe">
-                        <input type="text" placeholder="enter you email">
-                        <input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-            <hr style="background: white;">
-            <p style="text-align: center; margin-bottom: 0;">&copy; Copyright 2023 - <strong>Techmihirnaik</strong> All Rights Reserved</p>
-        </div>
-        </footer>
-
     </main>
 
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    
     <script>
         $("document").ready(function(){
             $(".nav-item").click(function(){
