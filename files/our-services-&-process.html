@@ -108,6 +108,8 @@
     .card-title{
       color: white;
 /*      background-color: black;*/
+      writing-mode: vertical-rl; 
+      transform: rotate(-180deg);
       height: 100%;
       margin-left: 30%;
       margin-top: 0%;
@@ -145,6 +147,30 @@
       cursor: default;
     }
 
+    @media (max-width:1430px){
+      #cards-container{
+        margin-left: 5%;
+        width: 70%;
+      }
+    }
+
+    @media (max-width:1225px){
+      .row{
+        display: block;
+      }
+      .row > .card{
+        width: 80em;
+        height: 5em;
+        overflow: hidden;
+      }
+      .card-img-overlay > .card-title{
+        writing-mode: horizontal-tb; 
+        transform: rotate(0deg);
+      }
+    }
+
+    /* **************************OUR PROCESS********************* */
+
     .grid {
       margin-left: 40%;
       margin-top: 5%;
@@ -158,7 +184,7 @@
     position: relative;
     display: flex;
     margin-top: 10%;
-    margin-left: -20%;
+    margin-left: -17%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
@@ -356,7 +382,7 @@
         <div class = "card" id="card1">
           <img class="card-img-top" id="img1" src="./images/our_services_e-commerce.png">
           <div class="card-img-overlay" id="overlay1">
-            <h5 class="card-title" style="writing-mode: vertical-rl; transform: rotate(-180deg);">E-Commerce</h5>
+            <h5 class="card-title">E-Commerce</h5>
           </div>
           <div class='card-img-overlay' id="expand-overlay1">
             <div class="expand-content">
@@ -371,7 +397,7 @@
         <div class = "card" id="card2">
           <img class="card-img-top" id='img2' src="./images/our_services_gaming.jpg">
           <div class="card-img-overlay" id="overlay2">
-            <h5 class="card-title" style="writing-mode: vertical-rl; transform: rotate(-180deg);">Gaming</h5>
+            <h5 class="card-title">Gaming</h5>
           </div>
           <div class='card-img-overlay' id="expand-overlay2">
             <div class="expand-content">
@@ -388,7 +414,7 @@
         <div class = "card" id="card3">
           <img class="card-img-top" id="img3" src="./images/our_services_professional-service.png">
           <div class="card-img-overlay" id="overlay3">
-            <h5 class="card-title" style="writing-mode: vertical-rl; transform: rotate(-180deg);">Professional Services</h5>
+            <h5 class="card-title">Professional Services</h5>
           </div>
           <div class='card-img-overlay' id="expand-overlay3">
             <div class="expand-content">
@@ -405,7 +431,7 @@
         <div class = "card" id="card4">
           <img class="card-img-top" id="img4" src="./images/our_services_ERP.png">
           <div class="card-img-overlay" id="overlay4">
-            <h5 class="card-title" style="writing-mode: vertical-rl; transform: rotate(-180deg);">ERP</h5>
+            <h5 class="card-title">ERP</h5>
           </div>
           <div class='card-img-overlay' id="expand-overlay4">
             <div class="expand-content">
@@ -422,7 +448,7 @@
         <div class = "card" id="card5">
           <img class="card-img-top" id="img5" src="./images/our_services_Digital-marketing.png">
           <div class="card-img-overlay" id="overlay5">
-            <h5 class="card-title" style="writing-mode: vertical-rl; transform: rotate(-180deg);">Digital Marketing</h5>
+            <h5 class="card-title">Digital Marketing</h5>
           </div>
           <div class='card-img-overlay' id="expand-overlay5">
             <div class="expand-content">
@@ -544,6 +570,10 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
+
+      if($(window).innerWidth() > 1225){
+        // location.reload();
+
         $('#overlay1').hide();
         $('#overlay2').show();
         $('#overlay3').show();
@@ -675,6 +705,138 @@
           $('#img5').css({'transform':'scale(1.2)'});
           $('.card-img-top:not(#img5)').css({'transform':'scale(1)'});
         })
+      }
+      // Else statement
+      if($(window).innerWidth() < 1225){
+        // location.reload();
+
+        $('#overlay1').show();
+        $('#overlay2').show();
+        $('#overlay3').show();
+        $('#overlay4').show();
+        $('#overlay5').show();
+
+        $('#expand-overlay1').hide();
+        $('#expand-overlay2').hide();
+        $('#expand-overlay3').hide();
+        $('#expand-overlay4').hide();
+        $('#expand-overlay5').hide();
+
+        $('#card1').hover(function(){
+          $('#overlay1').hide();
+          $('#overlay2').show();
+          $('#overlay3').show();
+          $('#overlay4').show();
+          $('#overlay5').show();
+
+          $('#card1').css({'height':'20em'});
+          $('#card2').css({'height':'5em'});
+          $('#card3').css({'height':'5em'});
+          $('#card4').css({'height':'5em'});
+          $('#card5').css({'height':'5em'});
+
+          $('#expand-overlay1').fadeIn();
+          $('#expand-overlay2').hide();
+          $('#expand-overlay3').hide();
+          $('#expand-overlay4').hide();
+          $('#expand-overlay5').hide();
+
+          $('#img1').css({'transform':'scale(1.2)'});
+          $('.card-img-top:not(#img1)').css({'transform':'scale(1)'});
+        })
+
+        $('#card2').hover(function(){
+          $('#overlay1').show();
+          $('#overlay2').hide();
+          $('#overlay3').show();
+          $('#overlay4').show();
+          $('#overlay5').show();
+
+          $('#card1').css({'height':'5em'});
+          $('#card2').css({'height':'20em'});
+          $('#card3').css({'height':'5em'});
+          $('#card4').css({'height':'5em'});
+          $('#card5').css({'height':'5em'});
+
+          $('#expand-overlay1').hide();
+          $('#expand-overlay2').fadeIn();
+          $('#expand-overlay3').hide();
+          $('#expand-overlay4').hide();
+          $('#expand-overlay5').hide();
+
+          $('#img2').css({'transform':'scale(1.2)'});
+          $('.card-img-top:not(#img2)').css({'transform':'scale(1)'});
+        })
+
+        $('#card3').hover(function(){
+          $('#overlay1').show();
+          $('#overlay2').show();
+          $('#overlay3').hide();
+          $('#overlay4').show();
+          $('#overlay5').show();
+
+          $('#card1').css({'height':'5em'});
+          $('#card2').css({'height':'5em'});
+          $('#card3').css({'height':'20em'});
+          $('#card4').css({'height':'5em'});
+          $('#card5').css({'height':'5em'});
+
+          $('#expand-overlay1').hide();
+          $('#expand-overlay2').hide();
+          $('#expand-overlay3').fadeIn();
+          $('#expand-overlay4').hide();
+          $('#expand-overlay5').hide();
+
+          $('#img3').css({'transform':'scale(1.2)'});
+          $('.card-img-top:not(#img3)').css({'transform':'scale(1)'});
+        })
+
+        $('#card4').hover(function(){
+          $('#overlay1').show();
+          $('#overlay2').show();
+          $('#overlay3').show();
+          $('#overlay4').hide();
+          $('#overlay5').show();
+
+          $('#card1').css({'height':'5em'});
+          $('#card2').css({'height':'5em'});
+          $('#card3').css({'height':'5em'});
+          $('#card4').css({'height':'20em'});
+          $('#card5').css({'height':'5em'});
+
+          $('#expand-overlay1').hide();
+          $('#expand-overlay2').hide();
+          $('#expand-overlay3').hide();
+          $('#expand-overlay4').fadeIn();
+          $('#expand-overlay5').hide();
+
+          $('#img4').css({'transform':'scale(1.2)'});
+          $('.card-img-top:not(#img4)').css({'transform':'scale(1)'});
+        })
+
+        $('#card5').hover(function(){
+          $('#overlay1').show();
+          $('#overlay2').show();
+          $('#overlay3').show();
+          $('#overlay4').show();
+          $('#overlay5').hide();
+
+          $('#card1').css({'height':'5em'});
+          $('#card2').css({'height':'5em'});
+          $('#card3').css({'height':'5em'});
+          $('#card4').css({'height':'5em'});
+          $('#card5').css({'height':'20em'});
+
+          $('#expand-overlay1').hide();
+          $('#expand-overlay2').hide();
+          $('#expand-overlay3').hide();
+          $('#expand-overlay4').hide();
+          $('#expand-overlay5').fadeIn();
+
+          $('#img5').css({'transform':'scale(1.2)'});
+          $('.card-img-top:not(#img5)').css({'transform':'scale(1)'});
+        })
+      }
 
       })
     </script>
