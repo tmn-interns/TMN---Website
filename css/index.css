@@ -56,22 +56,20 @@ section{
     float: right;
 }
 .slide-inner-container{
-    display:block;
     height: 100%;
+    display:block;
     animation: scroll1 20s linear infinite;
     width: 300px;
 }
 .main-img{
+    display: inline-block;
     height: 200px;
     width: 200px;
-    display: inline-block;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-    border-radius: 5px;
     margin: 8px;
-    padding: 0;
     background-color: #ffff;
+    border-radius: 5px;
+    align-items: center;    
+    perspective: 100px;
     overflow: hidden;
 }
 @keyframes scroll1{
@@ -84,33 +82,26 @@ section{
 }
 /*----------Welcome Section----------*/
 #welcome-text{
-    padding-top: 10%;
-    padding-right: 10%;
-    padding-left: 5%;
+    padding: 0 15%;
     display: flex;
     flex-direction: column;
-    text-align: left;
     font-size: 1.1em;
-    /* color: white; */
-    justify-content: center;
 }
 #welcome-text > h2{
     font-size: 4em;
-    /* font-variant: small-caps; */
 }
 #welcome-text > p{
     margin-bottom: 2rem;
-    /* font-variant: small-caps; */
 }
 #homepage-search{
+    position: relative;
+    left: 50%;
+    width: 400px;
+    border-radius: 5px;
     color: #f5ecec;
     display: flex;
-    width: 400px;
-    position: relative;
     transform: translateX(-50%);
-    left: 50%;
     box-shadow: #0005 0px 0px 10px;
-    border-radius: 5px;
 }
 
 #search_bar{
@@ -623,8 +614,3 @@ input[type="text"]:focus, input[type="email"]:focus{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-

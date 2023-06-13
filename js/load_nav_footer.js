@@ -9,4 +9,4 @@ $(function(){
 window.setTimeout(function(){
     var items = $(".nav-item");
     items[nav_item_idx].classList.add("active");
-    }, 500);
+    }, 100);
