@@ -11,9 +11,8 @@
     <script src="../lib/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
     <script type="javascript" src="/js/load_nav_footer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <link rel="stylesheet" href="../css/service_login.css">
@@ -60,7 +59,7 @@
             GRAB YOUR SEAT </h1>
 
         <div class="SLogin_Container">
-            <form name="login" class="form" onkeyup="ValidateForm()" onsubmit="return ValidateForm()">
+            <form name="login" class="form"  onsubmit="return ValidateForm()" novalidate>
                 <div class="Form_field" style="flex-direction: row; display: flex; justify-content: space-between;">
                     
                     <span class="fname">
@@ -128,14 +127,17 @@
                 </span>
                
                 <span class="Form_field">
-                <label>Select State</label>
-                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
-                <label style="margin-top: 1rem;">Select City</label>
-                <select id ="state" class="form-control" required></select>
-                <script language="javascript">print_state("sts");</script>
+                <label>Select State*</label>
+                <select onchange="print_city('state', this.selectedIndex);" id="sta" name ="sta" class="form-control" required></select>
                 <div class="error" id="stateerr"></div>
                 </span>
+            </span>
 
+            <label class="city" style="margin-top: 1rem;"> Select City*</label>
+                <select id ="city" name="city" class="form-control" required></select>
+                <script language="javascript">print_state("sts");</script>
+                <div class="error" id="cityeerr"></div>
+            </span>
                 <!-- <span class="Form_field">
                     <label for="city">City* </label>
                     <input type="text" id="city" name="city" required>
@@ -147,7 +149,7 @@
                 </span> -->
 
                 <span class="Form_field">
-                    <label for="pcode">Pin Code* </label>
+                    <label for="pcode" style="margin-top: 1rem;">Pin Code* </label>
                     <input type="tel" id="pcode" name="pcode" maxlength="6" required>
                     <div class="error" id="pcodeerr"></div>
                 </span>

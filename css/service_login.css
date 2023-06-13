@@ -280,3 +280,11 @@ input:focus
     text-align: left;
     margin-bottom: 1rem;
 }
+
+.city{
+width: 100%;
+
+}
+#cityeerr{
+    width: 100%;
+}
