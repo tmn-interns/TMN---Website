@@ -88,7 +88,7 @@
                 </div>
 
 
-                <button type="submit" value="Log In" class="btn btn-block" 
+                <button type="submit" value="Log In" class="btn btn-block" id="login-bttn"
                   ng-disabled="form.email.$invalid || form.password.$invalid" ng-click="submit">Log In</button>
 
                 <span class="d-block  my-4  text-center
@@ -142,7 +142,7 @@
       }
     }
 
-    document.getElementById("login-btn").onclick = function () {
+    document.getElementById("login-bttn").onclick = function () {
       loginID = document.getElementById("email").value;
       pwd = document.getElementById("password").value;
 
@@ -159,7 +159,7 @@
     $(window).on("load", function () {
         $("#login-txt").html("Signup");
         $("#login-txt").append('<img src="/images/login-icon.svg">');
-        $("#login-btn").attr("href", "/files/signup.html");
+        $("#login-bttn").attr("href", "/files/signup.html");
       });
 
     
