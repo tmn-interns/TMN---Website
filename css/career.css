@@ -52,7 +52,7 @@
     height: 40rem;
     width: 30%;
     border-radius: 203px 203px 0px 0px;
-    z-index: -1;
+    z-index: 0;
     position: relative;
     display: flex;
   }
@@ -63,6 +63,7 @@
     position: relative;
     top: 62px;
     margin: 0 auto;
+    z-index: 0;
   }
   
   .main-photos .photos-female {
@@ -72,14 +73,14 @@
     width: 30%;
     border-radius: 203px 203px 0px 0px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     top: 32px;
   }
   
   
   .main-photos .photos-female img {
     height: 30rem;
-  
+    z-index: 0;
     width: 200%;
     object-fit: cover;
     position: relative;
@@ -92,8 +93,9 @@
   .find-job-part {
     background: var(--main-royal-blue);
     margin-top: -180px;
-    z-index: 11;
+    z-index: 50;
     overflow: hidden;
+    position: relative;
     /* height: 80vh; */
   }
   .find-job-content {
@@ -162,6 +164,7 @@
   .mid-section {
     width: 100%;
     margin-top: 3%;
+  
   }
   
   .mid-upper-part {
@@ -184,6 +187,7 @@
   }
   .links {
     margin: 0 5%;
+    margin-bottom: 11px;
     display: flex;
     width: 70%;
     justify-content: space-between;
@@ -230,7 +234,7 @@
     width: 80%;
   }
   .inputs div input::placeholder {
-    color: #f9f9f9;
+    color: #aa946c;
     font-size: 0.9rem;
   }
   
@@ -276,6 +280,7 @@
     color: #f9f9f9;
     padding: 5px 20px;
     border-radius: 3px;
+    width: 9em;
   }
   .btn1 {
     margin-bottom: 10px;
