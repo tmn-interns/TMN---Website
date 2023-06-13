@@ -20,12 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/load_nav_footer.js"></script>
-  <script>
-    $(function () {
-      $("#footer-placeholder").load("/files/footer.html");
-    });
-  </script>
-
+  <script>var nav_item_idx = 5;</script>
 
 
   <!-- Style -->
@@ -36,37 +31,9 @@
 
 <body ng-app>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
+  <div id="nav-placeholder"></div>
 
-      <div id="nav-logo">
-        <a class="nav-item" href="/index.html"> <img src="../images/logo.png"> </a>
-      </div>
-
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <div class="navbar-nav">
-          <a href="/index.html" class="nav-item nav-link active">Home</a>
-          <a href="/files/blogs.html" class="nav-item nav-link">Blogs</a>
-          <a href="/index.html#our-partners" class="nav-item nav-link">Our Partners</a>
-          <a href="/files/careers.html" class="nav-item nav-link">Career</a>
-          <a href="/index.html#contacts-us" class="nav-item nav-link">Contact Us</a>
-        </div>
-
-        <div class="navbar-nav">
-          <a href="../files/signup.html" id="signup-btn" class="ms-auto nav-item nav-link">
-            <span>Sign Up <img src="..\images\login-icon.svg"></span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </nav>
-
-  <section>
+  <section style="padding-top: 3em;">
     <div class="d-lg-flex half">
 
       <div class="bg order-1 order-md-2" style="background-image: url('/images/login-bg.png');"></div>
@@ -121,7 +88,7 @@
                 </div>
 
 
-                <button type="submit" value="Log In" class="btn btn-block" id="login-btn"
+                <button type="submit" value="Log In" class="btn btn-block" id="login-bttn"
                   ng-disabled="form.email.$invalid || form.password.$invalid" ng-click="submit">Log In</button>
 
                 <span class="d-block  my-4  text-center
@@ -175,7 +142,7 @@
       }
     }
 
-    document.getElementById("login-btn").onclick = function () {
+    document.getElementById("login-bttn").onclick = function () {
       loginID = document.getElementById("email").value;
       pwd = document.getElementById("password").value;
 
@@ -187,7 +154,15 @@
       else {
         document.getElementById("invalid-cred").style.visibility = "visible";
       }
-    } 
+    }
+
+    $(window).on("load", function () {
+        $("#login-txt").html("Signup");
+        $("#login-txt").append('<img src="/images/login-icon.svg">');
+        $("#login-bttn").attr("href", "/files/signup.html");
+      });
+
+    
   </script>
 
 </body>

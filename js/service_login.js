@@ -18,10 +18,12 @@ function ValidateForm(){
     var Wno=document.login.Wno.value;
     var pcode=document.login.pcode.value;
     var checkbox=document.getElementById("tandc");
-    var state
+    var sta=document.login.sta.value;
+    var city=document.login.city.value;
+    
 
 
-    var fnameerr=lnameerr=emailerr=cnameerr=desgerr=domerr=pnoerr=wnoerr=pcodeerr=checkboxerr=true;
+    var fnameerr=lnameerr=emailerr=cnameerr=desgerr=domerr=pnoerr=wnoerr=pcodeerr=checkboxerr=stateerr=cityeerr=true;
 
     if(Fname == "")
    {
@@ -145,7 +147,24 @@ else{
     printError("checkboxerr","Please accept the terms and conditions");
 }
 
- if((fnameerr || lnameerr || emailerr || cnameerr || desgerr || domerr || pnoerr || wnoerr || checkboxerr) == true){
+if(sta == "") {
+    printError("stateerr", "Please select a State");
+}else{
+    printError("stateerr","");
+    stateerr=false;
+}
+if(city == "") {
+    printError("cityeerr", "Please select a city");
+}else{
+    printError("cityeerr","");
+    cityeerr=false;
+}
+
+
+
+
+
+ if((fnameerr || lnameerr || emailerr || cnameerr || desgerr || domerr || pnoerr || wnoerr || checkboxerr || stateerr || cityeerr ) == true){
     return false;
     }
     

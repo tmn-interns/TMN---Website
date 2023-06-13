@@ -49,8 +49,8 @@ option{
 .error{
     display: block;
 }
-input,
-select {
+main input,
+main select {
     width: 100%;
     background-color: #333845;
     border-radius: 5px;
@@ -61,19 +61,19 @@ select {
     border: 2px solid #586176;
 }
 
-input[type=checkbox] {
+main input[type=checkbox] {
     width: auto;
     display: inline-flex;
 }
 
-input[type=submit] {
+main input[type=submit] {
     width: 50%;
     display: inline-block;
     padding: 5px 7px;
     border: 1px solid var(--PALT_6);
 }
 
-form {
+main form {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -138,129 +138,6 @@ label{
 
 }
 
-/*footer*/
-footer{
-    padding: 1.5em 0;
-    color: var(--PALT_6);
-    font-size: 0.8rem;
-    background-color: var(--PALT_2);
-}
-.footer-div{
-    padding: 1em 20px;
-}
-footer ul{
-    list-style: none;
-    padding-left: 0;
-    color: inherit;
-}
-footer  a{color: inherit}
-footer h3{
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#footer-socials{
-    display: inline-block;
-}
-#footer-socials > li{
-    float: left;
-    padding: 0 1rem;
-}
-
-#form-subscribe{
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-    display: inline-flex;
-}
-#form-subscribe input{
-    display: flex;
-    width: 70%;
-    background-color: white;
-    color: var(--PALT_2);
-    padding: 0.5rem 1rem;
-    border-radius: 0;
-}
-#form-subscribe input[type='submit']{
-    display: flex;
-    width: 30%;
-    background-color: var(--PALT_1);
-    color: var(--PALT_6);
-    font-weight: bold;
-    border: transparent;
-}
-#form-subscribe input[type='submit']:hover{
-    filter: brightness(0.5);
-}
-
-@media screen and (max-width: 600px) {
-    footer{
-        text-align: left;
-    }
-    
-}
-
-/*navbar*/
-@import url("../css/global.css");
-
-.navbar{
-    min-height: 5vh;
-    margin-bottom: 0;
-    
-    font-size: 1rem;
-
-    background-color: var(--PALT_2);
-    box-shadow: 0px 5px 10px #0005;
-    
-    z-index: 99;
-    overflow: hidden;
-}
-
-#nav-logo{
-    justify-content: center;
-    position: relative;
-    display: flex;
-    height: 100%;
-    aspect-ratio: 3/2;
-}
-#nav-logo img{
-    object-fit: cover;
-    object-position: 0 -0.5rem;
-    width: 80px;
-    aspect-ratio: 1;
-}
-
-.nav-item{
-    margin: 0 0.2rem;
-    transition: 0.1s transform;
-    height: 100%;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-.nav-item:hover{
-    transform: scale(1.05) translateY(-5px);
-}
-
-#login-btn{
-    background-color: var(--PALT_1);
-    border-radius: 3rem;
-    padding: 0 2rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    
-}
-#login-btn > span{
-    display: inline-flex;
-    align-items: center;
-}
-#login-btn > span > img{
-    height: 1.5rem;
-    display: inline;
-    opacity: 0.5;
-}
 
 input:focus
 {
@@ -279,4 +156,12 @@ input:focus
     width: 100%;
     text-align: left;
     margin-bottom: 1rem;
+}
+
+.city{
+width: 100%;
+
+}
+#cityeerr{
+    width: 100%;
 }

@@ -11,54 +11,56 @@
 
     <link rel="stylesheet" href="../css/blogs.css">
     <script>var nav_item_idx=2;</script>
-    <script src="../js/load_nav_footer.js"></script>
+    <script src="/js/load_nav_footer.js"></script>
 </head>
 
-<body onload="highlight_nav_item(2);">
+<body>
     <div id="nav-placeholder"></div>
-    <main>
+    <main style="padding-top: 4rem;">
 
         <section id="trending-section" class="container">
             <h2 class="blog-title">Trending Blog</h2>
 
             <div class="blog-circle" style="top: 10%; left: -10%; z-index: 1;"></div>
-            <div class="blog-circle" style="top: 78%; left: 90%;"></div>
+            <div class="blog-circle" style="top: 78%; right: 0;"></div>
             <img class="blog-t1" src="/images/Blogtrail1.svg" style="position: absolute; top: 80%; left: -15%;">
-            <img class="blog-t2" src="/images/Blogtrail2.svg" style="position: absolute; top: 8%; left: 90%;">
+            <img class="blog-t2" src="/images/Blogtrail2.svg" style="position: absolute; top: 8%; right: 0%;">
 
-            <div class="row trending-blog">
-                <div class="col-lg-1"></div>
+            <div class="justify-content-center d-block">
+                <div class="row trending-blog">
+                    <div class="col-lg-1"></div>
 
-                <div class="col-lg-4">
-                    <img class="blog-img" src="../images/Blogbigpic.svg">
-                </div>
-
-                <div class="col-lg-6 blog-txt">
-                    <div class="trend-row">
-                        <span class="blog-r1-left">TRAVELLING</span>
-
-                        <div class="blog-r1-right">
-                            <span>May 10th, 2023</span>
-                        </div>
+                    <div class="col-lg-4">
+                        <img class="blog-img" src="../images/Blogbigpic.svg">
                     </div>
 
-                    <div class="trend-row blog-r2">
-                        <h3>TRAVEL BROADENS HORIZONS, FOSTERS CULTURAL UNDERSTANDING, CREATES LIFELONG MEMORIES.</h3>
-                    </div>
-                    <div class="trend-row blog-r3">
-                        <p>Have you been watching Ted Lasso? Just in case you've been marooned on a desert island and
-                            think experiences, diverse cultures, breathtaking landscapes, personal growth, and...</p>
+                    <div class="col-lg-6 blog-txt">
+                        <div class="trend-row">
+                            <span class="blog-r1-left">TRAVELLING</span>
 
-                    </div>
-                    <div class="trend-row">
-                        <div class="blog-pic">
-                            <img src="../images/Blogname.svg">
+                            <div class="blog-r1-right">
+                                <span>May 10th, 2023</span>
+                            </div>
                         </div>
-                        <div class="blog-r4-left">
-                            Michelle Bookoff-Bajdek
+
+                        <div class="trend-row blog-r2">
+                            <h3>TRAVEL BROADENS HORIZONS, FOSTERS CULTURAL UNDERSTANDING, CREATES LIFELONG MEMORIES.</h3>
                         </div>
-                        <div class="blog-r4-right" style="cursor: pointer;">
-                            READ MORE >
+                        <div class="trend-row blog-r3">
+                            <p>Have you been watching Ted Lasso? Just in case you've been marooned on a desert island and
+                                think experiences, diverse cultures, breathtaking landscapes, personal growth, and...</p>
+
+                        </div>
+                        <div class="trend-row">
+                            <span style="display: flex;">
+                                <div class="blog-pic">
+                                    <img src="../images/Blogname.svg">
+                                </div>
+                                <div class="blog-r4-left">
+                                    Michelle Bookoff-Bajdek
+                                </div>
+                            </span>
+                            <div class="blog-r4-right" style="cursor: pointer;"> READ MORE > </div>
                         </div>
                     </div>
                 </div>
