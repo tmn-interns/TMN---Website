@@ -19,6 +19,9 @@ html{
     font-family: 'Inter', sans-serif;
 }
 
-#navbar{
-    overflow: visible;
+#nav-placeholder{
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 99;
 }
