@@ -38,17 +38,13 @@ section{
     height: 2.5px;
     background: var(--PALT_1);}
 .section-title > p{
-        margin-top: 1rem;}
+    margin-top: 1rem;}
 
 /*----------Child company Carousel----------*/
 
-.company-img{
-    height: 200px;
-    width: auto;
-}
 .slide-main-container{
     width: 520px;
-    height: 90vh;
+    height: 93vh;
     overflow: hidden;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -56,28 +52,31 @@ section{
     float: right;
 }
 .slide-inner-container{
-    height: 100%;
     display:block;
-    animation: scroll1 20s linear infinite;
+    animation: scroll1 5s linear infinite;
     width: 300px;
 }
 .main-img{
     display: inline-block;
     height: 200px;
     width: 200px;
-    margin: 8px;
+    margin: 10px;
     background-color: #ffff;
     border-radius: 5px;
     align-items: center;    
     perspective: 100px;
     overflow: hidden;
 }
+.company-img{
+    height: 200px;
+    width: auto;
+}
 @keyframes scroll1{
     0%{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(calc(-250px * 3));
+        transform: translateY(calc(-224px*2));
     }
 }
 /*----------Welcome Section----------*/
@@ -141,41 +140,39 @@ section{
 /*----------ABOUT US----------*/
 .aboutus{
     display: flex;
-    justify-content: center;
     width: auto;
     text-align: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .aboutus .about-us-card{
-    position: relative;
     width: 320px;
     height: 350px;
     margin: 50px 10px;
+    position: relative;
     padding-top: 15px;
     padding-right: 50px;
-
     background: #fff;
     color: #8e8b8b;
     border: #979494 solid 5px;
     border-radius: 15px;
     line-height: 1.25em;
-
     transition: scale 1s;
 }
 
 .aboutus .about-us-card .a-h{
-    color: hsl(0, 0%, 0%);
-    font-size: 18px;
     margin-top: 50px;
+    font-size: 18px;
+    color: hsl(0, 0%, 0%);   
 }
 .aboutus .about-us-card:hover .a-h{color: white}
 
 .aboutus .about-us-card .image{
-    position: absolute;
     width: 100px;
     height: 100px;
     /* margin: 5px; */
+    position: absolute;
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
@@ -186,7 +183,6 @@ section{
     height: 100px;
     padding: 15px;
     border-radius: 10px;
-
     transition-duration: 0.2s;
 }
 .aboutus .about-us-card:hover .image .about_img{
