@@ -157,10 +157,12 @@
     }
 
     $(window).on("load", function () {
-        $("#login-txt").html("Signup");
-        $("#login-txt").append('<img src="/images/login-icon.svg">');
-        $("#login-bttn").attr("href", "/files/signup.html");
-      });
+      setTimeout(function(){
+          $("#login-txt").html("Signup");
+          $("#login-txt").append('<img src="/images/login-icon.svg">');
+          $("#login-btn").attr("href", "/files/signup.html");
+          }, 100);
+        });
 
     
   </script>
