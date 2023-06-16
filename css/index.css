@@ -732,7 +732,7 @@ input[type="text"]:focus, input[type="email"]:focus{
         padding: 0px;
     }
 
-    .container{
+    .container-fluid > .container{
         width: 100% !important;
     }
     .facts-text-top{
