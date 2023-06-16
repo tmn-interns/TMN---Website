@@ -654,3 +654,109 @@ input[type="text"]:focus, input[type="email"]:focus{
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width:1000px){
+    #fact-stroke, .facts-img, .fact-circle-bg{
+        display: none;
+    }
+
+    #facts{
+        height: min-content;
+    }
+    .fact-bubbles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;
+        row-gap: 3.5rem;
+        margin: auto;
+    }
+
+    .fact-wrapper
+    {   
+        width: 50%;
+        margin: auto;
+    }
+  
+    .facts-circle{
+        position: static;
+    }
+  
+    .fact1, .fact2, .fact3, .fact4{
+        position: static;
+        top:0;
+    }
+
+    #facts.container-fluid{
+        padding: 0px;
+    }
+
+    .container{
+        width: 100% !important;
+    }
+    .facts-text-top{
+        font-size: 2rem !important;
+    }
+
+    .facts-text-bottom
+    {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width:850px){
+
+    .facts-text-top{
+        font-size: 1.4rem !important;
+    }
+
+    .facts-text-bottom
+    {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width:510px){
+    
+    .facts-text-top{
+        font-size: 1.2rem !important;
+    }
+
+    .facts-text-bottom
+    {
+        font-size: 0.8rem !important;
+    }
+
+}
+
+@media (max-width:420px){
+
+    .facts-text-top{
+        font-size: 1rem !important;
+    }
+
+    .facts-text-bottom
+    {
+        font-size: 0.7rem !important;
+    }
+    .facts-circle{
+        width: 120%;
+    }
+
+}
+
+
+@media (max-width:350px){
+
+    .facts-text-top{
+        font-size: 0.9rem !important;
+    }
+
+    .facts-text-bottom
+    {
+        font-size: 0.7rem !important;
+    }
+  
+    
+
+}
