@@ -134,6 +134,51 @@ section{
     object-fit: cover;
 }
 
+@media(max-width:1102px){
+    #welcome-wave{
+        display: none;
+    }
+}
+
+@media(max-width:766px){
+
+   .slide-main-container {
+    transform: rotate(90deg) !important;
+    margin-top: -150px !important; 
+    margin-right: 160px;
+    
+   }
+    .main-img{
+        transform: rotate(-90deg) !important;
+    }
+
+    .boxxes{
+        height: 1px!important;
+
+    }
+
+    #welcome{
+        height: 800px !important;
+    }
+#welcome-text{
+    margin-top: 50px;
+}
+}
+
+@media (max-width:624px){
+
+#welcome-text>h2{
+    font-size: 2em;
+}
+#homepage-search{
+    width: 70%;
+}
+#welcome{
+    height: 800px !important;
+}
+
+}
+
 /*----------ABOUT US----------*/
 .aboutus{
     display: flex;
