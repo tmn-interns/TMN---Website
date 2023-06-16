@@ -28,17 +28,16 @@
     
     <main style="padding-top: 7rem;">
         <div class="dbcontainer">
-            <!-- <div class ="profile-r"> -->
-
             <div class="user">
                 <div class="profile-pic-user-details">
+
                     <div class="profile-pic">
                         <i class="fa-solid fa-user fa-5x"></i>
                     </div>
+
                     <div class="user-details">
                         <div class="username">
                             <h3 id="h3u"> USER </h3>
-                            <i class="fa-solid fa-pen"></i>
                         </div>
                         <div class="useremail">
                             <h3 id="h3e"> ABC@GMAIL.COM</h3>
@@ -60,7 +59,6 @@
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
             <div class="profile-r">
 
                 <div class="ActiveServices">
@@ -314,17 +312,6 @@
     function oncliq() {
         window.open("Service_Login.html", "_self");
     }
-
-    $("document").ready(function(){
-        $(".nav-item").click(function(){
-            var items = $(".nav-item");
-            items.each(function(x){
-                $(items[x]).removeClass("active");
-            });
-            $(this).addClass("active");
-        })
-
-    })
 </script>
 
 </html>

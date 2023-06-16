@@ -8,6 +8,8 @@ body{
 
 main{
     background-color: var(--PALT_2);
+
+    scroll-snap-type: x mandatory;
 }
 main > section:nth-child(odd){
     background: var(--PALT_2);
@@ -24,6 +26,8 @@ section{
     display: block;
     position: relative;
     overflow: hidden;
+
+    scroll-snap-align: start;
 }
 .section-title{
     margin-top: 3rem;
@@ -121,20 +125,13 @@ section{
     border-radius: 0px 5px 5px 0px;
 }
 
-#welcome-bg-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 #welcome-wave{
     position: absolute;
     top: 0;
     right: -10px;
     height: 100%;
     width: 110%;
+    object-fit: cover;
 }
 
 /*----------ABOUT US----------*/
@@ -305,7 +302,7 @@ section{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(calc(-384*9px));
     }
 }
 

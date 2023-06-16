@@ -1,10 +1,7 @@
 @import url("/css/global.css");
 
-html{
-    background-color: white;
-}
 body {
-    background-color: var(--PALT_6);
+    background-color: var(--PALT_4);
     color: var(--PALT_6);
 }
 
@@ -14,8 +11,7 @@ p {
 }
 
 .dbcontainer {
-    margin: 0 10rem;
-    /* border: 1px solid red; */
+    margin: 0 8rem;
 }
 
 .profile-r {
@@ -27,21 +23,18 @@ p {
 }
 
 .user {
-    background-color: var(--PALT_2);
     width: 100%;
-    /* border: 1px solid green; */
-    border-radius: 8px;
+    background-color: var(--PALT_2);
+    border-radius: 5px;
 }
 
 .ActiveServices {
-    background-color: var(--PALT_2);
-    /* height: 69.2%; */
     width: 70%;
-    /* position: absolute; */
-    /* border: 1px solid blue; */
     margin-top: 2rem;
     padding-bottom: 2rem;
+    
     border-radius: 8px;
+    background-color: var(--PALT_2);
 }
 
 .Addservice {
@@ -64,19 +57,23 @@ p {
 }
 .button {
     display: inline-flex;
-    color: var(--PALT_6);
-    background-color: var(--PALT_4);
-    border: none;
-    border-radius: 5px;
-    font-family: 'Inter';
-    font-size: 0.84rem;
-    cursor: pointer;
     width: 80%;
     height: 2.5rem;
     margin-left: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+
+    color: var(--PALT_6);
+    background-color: var(--PALT_4);
+    
+    border: none;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    
     box-shadow: 2px 2px 2px var(--PALT_5);
     align-items: center;
+    cursor: pointer;
+
+    transition-duration: 0.2s;
 }
 .btn{
     line-height: 1;
@@ -125,11 +122,11 @@ p {
 }
 
 .profile-pic {
-    border: 0.5rem solid var(--PALT_6);
-    padding: 1rem 1.5rem;
-    border-radius: 50%;
-    background-color: var(--PALT_1);
     margin: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 100%;
+    border: 5px solid var(--PALT_6);
+    background-color: var(--PALT_1);
 }
 
 .profile-pic i {
@@ -141,7 +138,7 @@ p {
     gap: 3rem;
     align-items: center;
     align-self: flex-start;
-    margin: 2rem 3rem 0 0;
+    margin: 2rem 2rem;
 
 }
 
@@ -163,7 +160,7 @@ p {
 .heading {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 2rem 0 2rem;
+    margin: 3rem 2rem 1rem 2rem;
 }
 
 .active-pending {
@@ -229,7 +226,6 @@ p {
 }
 
 .btn-grp {
-    
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     display: grid;
