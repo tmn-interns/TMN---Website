@@ -57,7 +57,7 @@ section{
 }
 .slide-inner-container{
     display:block;
-    animation: scroll1 5s linear infinite;
+    animation: scroll1 20s linear infinite;
     width: 300px;
 }
 .main-img{
@@ -74,13 +74,14 @@ section{
 .company-img{
     height: 200px;
     width: auto;
+    border: solid darkgray 2px;
 }
 @keyframes scroll1{
     0%{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(calc(-224px*2));
+        transform: translateY(calc(-300px*3));
     }
 }
 /*----------Welcome Section----------*/
