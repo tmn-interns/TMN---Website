@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Our files -->
     <link rel="stylesheet" href="/css/index.css">
     
@@ -418,40 +419,39 @@
         </script>
             
         <!-- Form group -->
-        <div class="form-grp row">
-            <form class="contact-form p-5 mt-5 col-md-6" action="#">
-                <div class="row mb-3">
+        <div class="form-grp row" id="contact-us-form-container">
+            <form class="contact-form p-5 mt-5 col-md-6" id="contact-us-form" action="#">
+                <div class="contactus-row row mb-3">
                     <div class="col-md-6 pe-md-2 p-0">
                         <label class="form-label">Name</label>
                         <input type="text" class="form-control form-control-lg" placeholder="Your Name">
                     </div>
                     
-                    <div class="col-md-6 ps-md-2 p-0">
+                    <div id = "email-cont" class="col-md-6 ps-md-2 p-0">
                         <label class="form-label">E-mail</label>
                         <input type="email" class="form-control form-control-lg" placeholder="Your Email">
                     </div>
                 </div>
                 
-                <div class="mb-3">
+                <div class="contactus-row mb-3">
                     <label class="form-label">Subject</label>
-                    <input type="text" class="form-control form-control-lg" placeholder="Your Subject">
+                    <input type="text" id = "subj_field" class="form-control form-control-lg" placeholder="Your Subject">
                 </div>
                 
-                <div class="mb-3">
+                <div class="contactus-row mb-3">
                     <label class="form-label">Message</label>
-                    <textarea cols="10" rows="10" class="ta form-control" placeholder="Your Message Here..."></textarea>
+                    <textarea id="msg-box" cols="10" rows="10" class="ta form-control" placeholder="Your Message Here..."></textarea>
                 </div>
                 <div id="send-btn-container" class="mt-4 d-flex justify-content-center">
                     <input type="submit" class="send-btn btn btn-lg btn-secondary" value="Send Message"></input>
                 </div>            
             </form>
             <div class="airplane-container d-none d-md-flex col-md-6 pl-5">
-                <img src="images/airplane-image.png" alt="Airplane" style="width: 100%; aspect-ratio: 1.25;">
+                <img src="images/airplane-image.png" id ="airplane_img" alt="Airplane" style="width: 100%; aspect-ratio: 1.25;">
             </div>
         </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>

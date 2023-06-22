@@ -393,82 +393,6 @@ section{
     }
 }
 
-/*----------FAQ----------*/
-/* .faq-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
-}
-
-.accordion-item {
-    background-color: #23262F;
-    border-radius: 0.4rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    box-shadow: 0.5rem 2px .5rem rgba(0, 0, 0, 0.1);
-}
-
-.accordion-link {
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    background-color: #23262F;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.accordion-link i {
-    color: #B29B6B;
-    font-size: 2.5rem;
-    font-weight: 800;
-    padding: 0.5rem;
-}
-
-.accordion-link .fa-minus {
-    display: none;
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    background-color: #39404D;
-    transition: max-height 0.6s ease;
-}
-
-.answer::before {
-    content: '';
-    position: absolute;
-    width: 0.6rem;
-    height: 100%;
-    background-color: #B29B6B;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.answer p {
-    padding: 1rem;
-    color: white;
-    font-size: 1rem;
-}
-
-.accordion-item:target .answer {
-    max-height: 40rem;
-    overflow: auto;
-}
-
-.accordion-item:target .accordion-link .fa-plus {
-    display: none;
-}
-
-.accordion-item:target .accordion-link .fa-minus {
-    display: block;
-} */
 
 /*----------Contact Us----------*/
 .contact-cards {
@@ -483,8 +407,12 @@ section{
     position: relative;
     border-radius: 1.5rem;
     display: flex;
-    width: 20rem;
-    height: 16rem;
+    width: 16rem;
+    height: 14rem;
+}
+
+#add-text,#phn-text,#email-text{
+    font-size: 1.2em;
 }
 
 .add:hover, .ph:hover, .email:hover{
@@ -493,7 +421,7 @@ section{
 
 .upper{
     width: 100%;
-    height: 35%;
+    height: 30%;
     position: absolute;
     left: 0;
     top: 0;
@@ -507,10 +435,10 @@ section{
 
 .lower{
     width: 100%;
-    height: 60%;
+    height: 70%;
     position: absolute;
     left: 0;
-    top: 5rem;
+    top: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -532,7 +460,7 @@ section{
     width: 25%;
     aspect-ratio: 1;
     position: absolute;
-    left: 7.5rem;
+    left: 6.2rem;
     top: 2.5rem;
     display: flex;
     align-items: center;
@@ -544,6 +472,30 @@ section{
     background-color: #b29a6b;
     border-radius: 3rem;
 }
+
+@media (max-width:480px){
+    .add,.ph{
+        margin-bottom: 10%;
+    }
+    .add, .ph, .email {
+
+        width:13rem;
+        height: 12rem;
+    }
+    .icon{
+        top:2.3rem;
+        left: 5.1rem;
+    }
+    #add-text,#phn-text,#email-text{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
 
 /*----------Facts section----------*/
 
@@ -640,27 +592,33 @@ section{
 }
 
 /*----------Contact Us Form----------*/
-.form-grp{
-    margin-left: 0;
-    margin-right: 0;
-}
-.contact-form{
+
+#contact-us-form-container{
+    margin-top: 5%;
+    margin-left: 6.5%;
+    width: 86.5%;
     box-sizing: border-box;
     border: solid 0.1rem white;
-    border-radius: 1.1rem;
+    border-radius: 1.1rem;   
 }
-
+#contact-us-form{
+    /* background-color: black; */
+    padding-top: 4% !important;
+    margin-top: 0 !important;
+    /* background-color: gray; */
+}
 label{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
 .form-grp  input[type="text"], input[type="email"]{
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
     background-color: #333845;
     color: #fff !important;
     border-radius: 0.5rem;
     border: none;
+    font-size: 1.1em;
 }
 
 input[type="text"]:focus, input[type="email"]:focus{
@@ -668,11 +626,12 @@ input[type="text"]:focus, input[type="email"]:focus{
     border: 0.1rem solid #b29a6b;
     outline: none;
     box-shadow: none;
+    
 }
 
 .ta{
     resize: none;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
     background-color: #333845 !important;
     border-radius: 0.5rem !important;
     border: none !important;
@@ -685,6 +644,7 @@ input[type="text"]:focus, input[type="email"]:focus{
 
 .send-btn{
     background-color: #333845 !important;
+    font-size: 1.2em;
 }
 
 .send-btn:hover{
@@ -695,8 +655,40 @@ input[type="text"]:focus, input[type="email"]:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #333845;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    transform: scale(0.9);
+}
+    
+
+
+@media (max-width:480px){
+    #contact-us-form-container{
+        border: none;
+        margin-top: 10%;
+    }
+    .contactus-row{
+        margin-left: -22%;
+    }
+    .form-grp  input[type="text"]:not(#subj_field), input[type="email"]{
+        width: 150%;
+    }
+    #email-cont{
+        margin-top: 5%;
+    }
+    #subj_field{
+        width: 125%;
+    }
+    #msg-box{
+        width: 125%;
+    }
+    .send-btn{margin-left: 5%;}
+    
 }
 
+
+/* ************ facts media queries ************ */
 
 @media (max-width:1000px){
     #fact-stroke, .facts-img, .fact-circle-bg{
