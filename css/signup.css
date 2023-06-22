@@ -285,15 +285,18 @@ footer
 
     .fa-eye
     {
-        position: relative;   
-        left: 375px;
-        bottom: 35px;
+        position: absolute;   
+        right: 15px;
+        top: 60px;
+    }
 
+    .password, .confirm-password{
+        position: relative;
     }
     
 }
 
-@media (max-width:480px) {
+@media (max-width:484px) {
     
     div input, input[type="text"]
     {
@@ -308,11 +311,15 @@ footer
     .password, .confirm-password{
         position: relative;
     }
-    .fa-eye{
-        position: absolute;
-        left: 90%;
-        bottom: 18%;
+    
+    .fa-eye
+    {
+        position: absolute;   
+        right: 15px;
+        top: 60px;
     }
+
+
     .form-div
     {
         justify-content: center;
@@ -339,7 +346,18 @@ footer
     .submit{
         margin: 0;
     }
-    
+
+    .form-div{
+        font-size: 15px;
+    }
+
+    .button-fb-google{
+        margin-top: 20px;
+    }
+
+    .login .mobile-view{
+        margin-top: 10px;
+    }
 }
 
 .phno
@@ -367,4 +385,5 @@ footer
     border: 2px solid #333845;
     height: 100%;
 }
+
 
