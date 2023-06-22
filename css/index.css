@@ -901,6 +901,9 @@ input[type="text"]:focus, input[type="email"]:focus{
 }
 
 @media (max-width:420px){
+    .fact-bubbles{
+        margin-top: 40%;
+    }
 
     .facts-text-top{
         font-size: 1rem !important;
