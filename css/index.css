@@ -92,7 +92,8 @@ section{
     font-size: 1.1em;
 }
 #welcome-text > h2{
-    font-size: 4em;
+    font-size: 3.5em;
+    margin-bottom: 2rem;
 }
 #welcome-text > p{
     margin-bottom: 2rem;
@@ -100,7 +101,7 @@ section{
 #homepage-search{
     position: relative;
     left: 50%;
-    width: 400px;
+    width: 70%;
     border-radius: 5px;
     color: #f5ecec;
     display: flex;
@@ -271,10 +272,13 @@ section{
 @media (max-width: 586px){
     #welcome{
         height: 500px !important;
+        margin-top: 10%;
     }
+
     #welcome-text>h2{
         font-size: 3em;
     }
+
     #welcome-card{
         background-color: var(--PALT_2);
         width: 100%;
@@ -419,6 +423,16 @@ section{
     border:rgb(213, 182, 243)  solid 5px;}
 #image6{background: rgb(174, 211, 246); 
     border:rgb(205, 224, 242) solid 5px;}
+
+@media (max-width:480px){
+    .about-us-card{
+        scale: 0.8;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -10% !important;
+    }
+ 
+}
 
 /*----------Our Services and Process----------*/
 #services{
