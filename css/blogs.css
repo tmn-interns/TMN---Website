@@ -376,3 +376,16 @@ option[selected]
     }
 }
 
+@media (max-width: 480px){
+    .blogs{
+        scale: 0.8;
+        margin-bottom: -30%;
+    }
+
+    .load-more-less{
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+
+}
+
