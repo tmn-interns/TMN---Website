@@ -423,6 +423,7 @@
     .main-text p {
       font-size: 0.6rem;
       width: 70%;
+      margin-left:15%;
     }
   
     .main-photos {
