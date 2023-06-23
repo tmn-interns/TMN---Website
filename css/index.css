@@ -1136,12 +1136,13 @@ input[type="email"]:focus {
 
     .fact2 {
         position: relative;
-        top: 180%;
+        top: 130%;
     }
 
     .fact3 {
         position: relative;
-        top: -20px;
+        left:20%;
+        top: 90%;
     }
 
     .fact4 {
@@ -1155,4 +1156,18 @@ input[type="email"]:focus {
         height: 70%;
         width: 100%;
     }
+}
+
+@media only screen and (max-height: 916px) and (min-height: 844px)  {
+    .fact1{top:80%;}
+    .fact2{top:220%;}
+    .fact3{top:240%;}
+    .fact4{top:380%;}
+}
+
+@media only screen and (max-height: 760px) and (min-height: 739px)  {
+    .fact1{top:10%;}
+    .fact2{top:180%;}
+    .fact3{top:160%;}
+    .fact4{top:330%;} 
 }
