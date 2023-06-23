@@ -628,6 +628,11 @@ section{
     }
 }
 
+@media (max-width:560px){
+    .add,.ph{
+        margin-bottom: 10%;
+    }
+}
 
 
 
