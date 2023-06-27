@@ -183,18 +183,23 @@
 
     <section class="container-fluid" id="services">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
                 <hr>
                 <p>We enable innovation! From ideation all the way through to market delivery.</p>  
 
             </div>
-        </div style="margin:0; padding:0;">
+        </div style="margin:0; padding:0;" data-aos="fade-up">
         
             <div id="OSP" style="margin:0; padding:0;">
 
         </div>
-            
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 1000,
+                });
+            </script>
     </section>
 
     <!-- --------------------------------- Facts --------------------------------- -->
@@ -383,24 +388,24 @@
     <section class="container-fluid" id="contacts-us">
         <!-- Contact cards -->
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Contact Us</h2>
                 <hr>
                 <p>Want to get in touch? We'd love to hear from you.<br>Here's how you can reach us.</p>
             </div>
 
             <div class="contact-cards row ml-0 mr-0 mt-5">
-                <div class="add">
+                <div class="add" data-aos="fade-up">
                     <div class="upper"></div>
                     <div class="lower" id="add-text">ADDRESS</div>
                     <div class="icon"><img src="/images/contactus_location.svg"></div>
                 </div>
-                <div class="ph">
+                <div class="ph" data-aos="fade-up">
                     <div class="upper"></div>
                     <div class="lower" id="phn-text">PHONE NUMBER</div>
                     <div class="icon"><img src="/images/contactus_phone.svg"></div>
                 </div>
-                <div class="email">
+                <div class="email" data-aos="fade-up">
                     <div class="upper"></div>
                     <div class="lower" id="email-text">E-MAIL</div>
                     <div class="icon"><img src="/images/contactus_email.svg"></div>
@@ -436,7 +441,7 @@
         </script>
             
         <!-- Form group -->
-        <div class="form-grp row" id="contact-us-form-container">
+        <div class="form-grp row" id="contact-us-form-container" data-aos="fade-up">
             <form class="contact-form p-5 mt-5 col-md-6" id="contact-us-form" action="#">
                 <div class="contactus-row row mb-3">
                     <div class="col-md-6 pe-md-2 p-0">
@@ -463,8 +468,8 @@
                     <input type="submit" class="send-btn btn btn-lg btn-secondary" value="Send Message"></input>
                 </div>            
             </form>
-            <div class="airplane-container d-none d-md-flex col-md-6 pl-5">
-                <img src="images/airplane-image.png" id ="airplane_img" alt="Airplane" style="width: 100%; aspect-ratio: 1.25;">
+            <div class="airplane-container d-none d-md-flex col-md-6 pl-5"> 
+                <img src="images/airplane-image.png" id ="airplane_img" alt="Airplane" style="width: 100%; aspect-ratio: 1.25;" data-aos="fade-up">
             </div>
         </div>
         </div>

@@ -156,7 +156,10 @@ p {
 }
 
 /* main body */
-
+.service_name > h4{
+    font-weight: bold;
+    color: var(--PALT_3);
+}
 .heading {
     display: flex;
     justify-content: space-between;
