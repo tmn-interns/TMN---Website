@@ -859,7 +859,7 @@ section {
 }
 
 .fact1 {
-    top: 50px;
+    top: 0px;
 }
 
 .fact2 {
@@ -868,10 +868,12 @@ section {
 
 .fact3 {
     top: 0;
+    scale: 0.95;
 }
 
 .fact4 {
-    top: 160px
+    top: 160px;
+    scale: 0.95;
 }
 
 
