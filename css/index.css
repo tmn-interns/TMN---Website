@@ -656,16 +656,16 @@ section {
 .slide-subcontainer {
     display: flex;
     width: calc(300px * 18);
-    animation: scroll2 30s linear infinite;
+    animation: scroll2 15s linear infinite;
 }
 
 @keyframes scroll2 {
     0% {
-        transform: translateX(0);
+        transform: translateX(-200px);
     }
 
     100% {
-        transform: translateX(calc(-384*9px));
+        transform: translateX(calc(-370*7px));
     }
 }
 

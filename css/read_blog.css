@@ -1,0 +1,69 @@
+@import "global.css";
+
+
+section{
+    min-height: 80vh;
+}
+
+#blog-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.blog-header{
+    justify-content: center;
+    width: 80%;
+}
+
+h1{
+    word-break: break-word;
+}
+
+.blog-img{
+    width: 100%;
+    aspect-ratio: 5/2;
+    border-radius: 10px;
+    outline: solid var(--PALT_1) 5px;
+    margin: 2em 0;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.blog-content{
+    padding-top: 4em;
+    text-align: justify;
+    width: 80%;
+}
+
+.tags{
+    margin: 1em 0;
+    display: block;
+    text-align: left;
+    position: relative;
+    left: 0;
+    line-height: 2.5em;
+
+    width: 80%;
+}
+
+.blog-tag{
+    background-color: #ccc;
+    padding: 6px 1em;
+    border-radius: 1em;
+}
+.blog-tag:hover{ background-color: #bbb; }
+
+#like-btn{
+    stroke: #5f0000;
+    stroke-width: 3px;
+    fill: none;
+}
+
+@media screen and (max-width: 480px){
+h1{ font-size: 1.5em;}
+.blog-header, .blog-content{ width: 100%;}
+    
+}
