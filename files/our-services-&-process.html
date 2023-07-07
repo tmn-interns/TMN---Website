@@ -617,7 +617,7 @@
 
 <body>
 
-    <div class="container" id="cards-container">
+    <div class="container" id="cards-container" data-aos="fade-up">
       <div class="row">
 
         <div class = "card" id="card1">
@@ -713,7 +713,7 @@
     
   <section id='our_process_bg'>
     <div class="container" id="section-container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up">
           <h2>Our Process</h2>
           <hr>
           <p>Kickstart your digital journey with US.</p>
@@ -738,18 +738,18 @@
                 padding: 0;
                 position: absolute;">
 
-    <img src="./images/our_process_Crown.svg" id="OP_crown"
+    <img src="./images/our_process_Crown.svg" id="OP_crown" data-aos="fade-up"
          style="margin-top:1%;
                 margin-left:63%;
                 transform: rotate(45deg);
                 position: absolute;">
 
-    <img src="./images/our_process_pencil.svg" id="OP_pencil"
+    <img src="./images/our_process_pencil.svg" id="OP_pencil" data-aos="fade-up"
          style="margin-top:-4%;
                 margin-left:75%;
                 position: absolute;">
 
-    <img src="./images/our_process_rook.svg" id="OP_rook"
+    <img src="./images/our_process_rook.svg" id="OP_rook" data-aos="fade-up"
          style="margin-top:25%;
                 margin-left:78.5%;
                 transform: rotate(-20deg);
@@ -768,7 +768,7 @@
     
     <!-- <div class="grid"> -->
       
-      <div class="grid">
+      <div class="grid" data-aos="fade-up">
         
             <div class="op-card" id="op_card1">
                 <div class="op-lines"></div>
@@ -826,7 +826,12 @@
           
     </div>
 
-  <!-- </div> -->
+    <script>
+      AOS.init({
+          offset: 200,
+          duration: 1000,
+          });
+      </script>
   </section>
 
   

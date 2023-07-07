@@ -16,7 +16,7 @@ section{
 .blog-title{
     text-align: center;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 2.5em;
     text-transform: uppercase;
 }
 
@@ -62,7 +62,7 @@ section{
     color: #23262f; 
     align-items: center;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border-radius: 8px;
 }
 .blog-r1-right{
@@ -181,7 +181,7 @@ option[selected]
 }
 
 .blogs:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     border: #B29B6B solid 4px;
 }
 
