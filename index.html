@@ -184,19 +184,12 @@
                 <h2>Our Services</h2>
                 <hr>
                 <p>We enable innovation! From ideation all the way through to market delivery.</p>  
-
             </div>
         </div style="margin:0; padding:0;" data-aos="fade-up">
-        
             <div id="OSP" style="margin:0; padding:0;">
-
         </div>
-        <script>
-            AOS.init({
-                offset: 200,
-                duration: 1000,
-                });
-            </script>
+        
+        <script> AOS.init({ offset: 200, duration: 1000, }); </script>
     </section>
 
     <!-- --------------------------------- Facts --------------------------------- -->
@@ -220,6 +213,9 @@
                 <path d="M-74 170.691C37.5 11.1917 294.5 -12.6279 407 227.692C490.361 405.765 578.113 467.271 649 421.5C800 324 731.496 169.583 857.5 91.0001C997 4.00037 1073.5 271.627 1136 289.5C1331.54 345.419 1795 84.5 1982.5 3" stroke="white" stroke-width="6"/>
             </svg>
             <!-- stroke-dasharray=20 -->
+            <svg id="m-fact-stroke" viewBox="0 0 398 710" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-28.5 2.5C127.667 98.5 430.5 302.5 392.5 350.5C345 410.5 -17.4997 206 25 331.5C67.4997 457 458.627 558.782 351.5 664.5C313.5 702 73 774.5 -6 800.5" stroke="white" stroke-width="5"/>
+                </svg>
 
             <script>
                 $(window).on("scroll", function(){
@@ -228,6 +224,15 @@
                   }
                   else{
                     $("#fact-stroke").animate({"stroke-dashoffset":"3500"}, 20);
+                  }
+                });
+
+                $(window).on("scroll", function(){
+                  if($(window).scrollTop() + $(window).height() - 100 >= $("#m-fact-stroke").offset().top){
+                    $("#m-fact-stroke").animate({"stroke-dashoffset":"0"}, 2000);
+                  }
+                  else{
+                    $("#m-fact-stroke").animate({"stroke-dashoffset":"3500"}, 20);
                   }
                 });
             </script>
@@ -440,10 +445,10 @@
                     <script>
                         function msgsent(){
                             if(contactname.value.length == 0 || contactemail.value.length == 0 || subj_field.value.length == 0 || msg_box.value.length == 0){
-                                alert("Please fill out every field!!");
-                            }
+                                alert("Please fill out every field!!"); }
                             else {
                                 alert("Your message has been sent");
+                                $("#contact-us-form")[0].reset();
                             }
                         }
                     </script>

@@ -1,18 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/global.css">
-
-    <title>CARDS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/css/global.css">
 </head>
+
+<body>
+
     <style type="text/css">
     body{
       margin: 0;
@@ -71,15 +66,6 @@
       box-shadow: 1px 1px 5px gray;
       position: relative;
       z-index: 3;
-    }
-
-    .row{
-      display: flex;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      /*background-color: blue;*/
-      justify-content: space-between;
     }
 
     .row > .card{
@@ -149,7 +135,7 @@
 
     .expand-content > h4{
       font-size: 1em;
-      line-height: 1.6;
+      line-height: 1.2;
       text-align: justify;
       font-weight: lighter;
     }
@@ -166,7 +152,6 @@
 
       #head_img{
         transform:scale(0.95);
-        margin-top:-30%;
       }
     }
 
@@ -175,13 +160,8 @@
       #string_img{visibility: hidden;}
 
       #head_img{
-        position: absolute;
         transform:scale(0.80);
-        left: 0;
-        top: 33%;
-        /* margin-top: 1000px; */
-        /* height: 100%; */
-        /* background-color: red; */
+        /* top: 33%; */
       }
 
       .row{display: block;}
@@ -216,13 +196,7 @@
         @media (max-width:530px)
       {
         #head_img{
-        transform:scale(0.70);
-        position: absolute;
-        left: -10%;
-        top: 20%;
-        /* margin-top: 1000px; */
-        /* height: 100%; */
-        /* background-color: red; */
+        visibility: hidden;
       }
 
         #overlay1,#overlay2,#overlay3,#overlay4,#overlay5{
@@ -242,42 +216,18 @@
         .expand-content > h3{font-size:1.5em;}
     }
 
-    @media (max-width:376px)
-      {
-        #head_img{
-        transform:scale(0.70);
-        position: absolute;
-        left: -18%;
-        top: 20%;
-        /* margin-top: 1000px; */
-        /* height: 100%; */
-        /* background-color: red; */
-      }
-    }
     /* **************************OUR PROCESS********************* */
-
-    /* .grid {
-      width: 900px;
-      margin-left: 40%;
-      margin-top: 5%;
-      display: inline-block;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 7rem;
-    } */
 
     .grid{
       position: relative;
-      display: flex;  
-      margin-top: 10%;
-      margin-left: 35%;
-      gap: 30px;
-      width: 900px;
-      /* display: inline-block; */
-      justify-content: center;
-      flex-wrap: wrap;
-      /* grid-template-columns: repeat(4, 1fr); */
-      /* position: absolute; */
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50px;
       
+      height: 500px;
+      width: 1100px;
+      display: inline-block;
+      flex-wrap: wrap;      
     }
 
     .op-card{
@@ -292,6 +242,7 @@
       align-items: center;
       box-shadow: 4px 4px 5px gray;
       transition: 0.5s;
+      transform: scale(1.2);
       /*border-radius: 10px; */
     }
 
@@ -484,24 +435,14 @@
         /* visibility: hidden; */}
       }
 
-      .grid{
-        margin-top: 7%;
-        margin-left: 25%;
-        gap: 0.5em;
-      }
       .op-card{
+        position: absolute;
         scale: 0.9;
       }
-      #op_card3{
-        position: absolute;
-        margin-top: 26%;
-        margin-left: -21.8%;
-      }
-      #op_card4{
-        position: absolute;
-        margin-top: 26%;
-        margin-left: 21.8%;
-      }
+      #op_card1{ left: 0; }
+      #op_card2{ left: 20%;}
+      #op_card3{ left: 0;   top: 60%;}
+      #op_card4{ left: 20%; top: 60%; }
 
       #smlgear_img,#biggear_img{
         scale: 0.9;
@@ -516,7 +457,7 @@
           visibility: hidden;
         }
         .grid{
-        margin-left: 15%;       
+        margin-left: -50%;       
       }
       #smlgear_img,#biggear_img{
         scale: 1.2;
@@ -530,8 +471,8 @@
         .grid{
           margin: 0;
           padding: 0;
-          margin-left: -10%;
-          margin-top: 10%;
+          left:15%;
+         
           scale: 0.8;       
         }
       #OP_crown{
@@ -544,23 +485,17 @@
       }
     }
     
-    @media (max-width:480px)
+    /* @media (max-width:480px)
       {
         .grid{
-          margin: 0;
-          padding: 0;
-          margin-top: 10%;
-          margin-left: -40%;
+          left: -50%;
           scale: 0.8;       
         }
-      }
+      } */
 
       @media (max-width:415px){
         .grid{
-          margin: 0;
-          padding: 0;
-          margin-top: 10%;
-          margin-left: -60%;     
+          left: -18%;  
         }
         #biggear_img{
         top:56%;
@@ -578,8 +513,7 @@
         .grid{
           margin: 0;
           padding: 0;
-          margin-top: 10%;
-          margin-left: -65%;
+          left: -30%;
           scale: 0.7;       
         }
         #biggear_img{
@@ -595,11 +529,9 @@
       
     @media (max-width:376px){
         .grid{
-          margin: 0;
-          padding: 0;
-          margin-top: 10%;
-          margin-left: -72%;
-          scale: 0.7;       
+          margin-top: -30%;
+          left:-40%; 
+          scale: 0.65;       
         }
         #biggear_img{
         top:60%;
@@ -615,8 +547,6 @@
   
     </style>
 
-<body>
-
     <div class="container" id="cards-container" data-aos="fade-up">
       <div class="row">
 
@@ -628,7 +558,7 @@
           <div class='card-img-overlay' id="expand-overlay1">
             <div class="expand-content">
               <h3>E-Commerce</h3>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
+              <h4>At our e-commerce website designing service, we understand the power of visual appeal and seamless functionality to create a captivating online shopping experience. Our team of skilled designers and developers is dedicated to crafting custom e-commerce websites that showcase your brand and products in the best possible light. </h4>
 
             <button type="button" class="btn btn-outline-light"><a style ="text-decoration: none; color: inherit;" href="/index.html#contacts-us">Get Quote</a></button>
             </div>
@@ -643,7 +573,7 @@
           <div class='card-img-overlay' id="expand-overlay2">
             <div class="expand-content">
               <h3>Gaming</h3>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
+              <h4>Our team of passionate designers and developers specializes in creating immersive and dynamic gaming websites that leave a lasting impression on gamers worldwide.</h4>
 
             <button type="button" class="btn btn-outline-light"><a style="text-decoration: none; color: inherit;" href="/index.html#contacts-us">Get Quote</a></button>
             </div>
@@ -660,7 +590,7 @@
           <div class='card-img-overlay' id="expand-overlay3">
             <div class="expand-content">
               <h3>Professional Services</h3>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
+              <h4>We understand the importance of showcasing your professional services with elegance and efficiency. Our team of skilled designers and developers specializes in creating custom websites that highlight your unique value proposition and drive client engagement. </h4>
 
             <button type="button" class="btn btn-outline-light"><a style ="text-decoration: none; color: inherit;" href="/index.html#contacts-us">Get Quote</a></button>
             </div>
@@ -677,7 +607,8 @@
           <div class='card-img-overlay' id="expand-overlay4">
             <div class="expand-content">
               <h3>ERP</h3>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
+              <h4>Our team of experienced designers and developers specializes in creating dynamic ERP websites that streamline your operations and optimize your resources. We understand the unique requirements of ERP systems and work closely with you to design a user-friendly interface that simplifies complex workflows.
+              </h4>
 
             <button type="button" class="btn btn-outline-light"><a style ="text-decoration: none; color: inherit;" href="/index.html#contacts-us">Get Quote</a></button>
             </div>
@@ -694,7 +625,7 @@
           <div class='card-img-overlay' id="expand-overlay5">
             <div class="expand-content">
               <h3>Digital Marketing</h3>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
+              <h4>Our team of skilled marketers and strategists specializes in crafting tailored digital marketing solutions that drive results. We understand the ever-evolving nature of online platforms and leverage the latest trends and techniques to increase your brand visibility, engage your target audience, and boost your online presence.</h4>
 
             <button type="button" class="btn btn-outline-light"><a style ="text-decoration: none; color: inherit;" href="/index.html#contacts-us">Get Quote</a></button>
             </div>
@@ -703,9 +634,242 @@
 
       </div>
     </div>
+
+<style>
+  .sub-services-section{
+    background: linear-gradient(to right, #ddd, #eee);
+    display: flex;
+    position: relative;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 50px;
+    /* padding: 20px; */
+    
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px #aaa;
+    outline: solid white 5px;
+
+    overflow: hidden;
+    z-index: 1;
+  }
+  .sub-services-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-decoration: none;
+    list-style: none;
+    padding: 20px 0 20px 20px ;
+    padding-right: 0.5em;
+    margin: 0;
+    background-color: var(--PALT_4);
+
+    border-right: solid #bbb 2px;
+
+    /* background-color: red; */
+  }
+  .sub-services-header > li{
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--PALT_1);
+  }
+  .sub-services-header > li:hover{
+    color: var(--PALT_6);
+    cursor: pointer;
+  }
+
+  .sub-services-list{
+    /* display: block; */
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    /* background-color: blue; */
+    padding: 20px;
+    padding-left: 3em;
+
+    background-image: url("/images/gears-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+  }
+  .sub-services-list>div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20px;
+    /* background-color: skyblue; */
+    list-style: none;
+    column-count: 2;
+    column-width: 50%;
+  }
+
+  .sub-services-list>div>li{
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  @media (max-width:1430px){
+    .sub-services-section{
+      margin-left: 5%;
+      width: 90%;}
+    .sub-services-list{
+      padding-left: 1em;
+      background-image: none;
+    }
+    .sub-services-header>li{
+      font-size: 0.8em;
+    }
+    .sub-services-list>div{
+      font-size: 0.7em;
+      column-count: 1;
+    }
+    
+  }
+</style>
+
+<script>
+  $(".sub-services-header>li").click(function(){
+    var curr = this.innerHTML;
+    $('.sub-services-header>li').css({"color": ""});
+    $(this).css({"color": "var(--PALT_6)"});
+
+    $(".sub-services-list>div").fadeOut(200);
+
+    var service_map = {
+        "Top Services" : "TopS",
+        "Gaming": "GMG",
+        "Professional Services" : "ProS",
+        "ERP" : "ERPS",
+        "Digital Marketing" : "DigiS",
+        "E-Commerce" : "EComS", };
+    $(".sub-services-list>." + service_map[curr]).delay(195).fadeIn(500);
+  });
   
-    <img src="./images/head.svg" id ="head_img" style="float: right; margin-top: -23%;margin-left: 82%; position: absolute;">
-    <img src="./images/our_process_string.svg" id ="string_img" style="float: right; margin-top: -33%;margin-left: 30%;height: 98%; position: absolute; z-index: 0;">
+  $('.sub-services-header>li:first').click();
+</script>
+
+
+
+    <img src="./images/head.svg"               id ="head_img"   style="position: absolute; top:15%; right: 0; scale: 1.2;">
+    <img src="./images/our_process_string.svg" id ="string_img" style="position: absolute; top:0; right: 0; height: 100%; z-index: 0;">
+
+
+
+    <div class="sub-services-section">
+        <ul class="sub-services-header">
+          <li>Top Services</li>
+          <li>Gaming</li>
+          <li>Professional Services</li>
+          <li>ERP</li>
+          <li>Digital Marketing</li>
+          <li>E-Commerce</li>
+        </ul>
+
+      <div class="sub-services-list">
+        <div class="TopS">
+          <li>Learning Management System</li>
+          <li>E-learning</li>
+          <li>Metaverse Gaming</li>
+          <li>Board Games</li>
+          <li>Card Games</li>
+          <li>Single-vendor E-commerce Website</li>
+          <li>Multi-vendor E-commerce Website</li>
+          <li>SEO</li>
+          <li>Youtube Marketing</li>
+          <li>LinkedIn Marketing</li>
+          <li>Test/Quiz Platform</li>
+          <li>Influencer Marketing</li>
+          <li>Marketplace Management</li>
+          <li>Product Videography</li>
+        </div>
+
+        <div class="GMG">
+          <li>AR/VR- Immersive solutions</li>
+          <li>Arcade Games</li>
+          <li>Metaverse Gaming</li>
+          <li>Racing Games</li>
+          <li>Card Games</li>
+          <li>3D Game development</li>
+          <li>Board Games</li>
+          <li>Puzzle Game Development</li>
+          <li>Casual Games</li>
+          <li>Gamification of Modules</li>
+          <li>Game Marketing</li>
+          <li>Game art and animation</li>
+          <li>Fantasy Sports</li>
+          <li>Web 3.0 Gaming </li>
+        </div>
+        
+        <div class="ProS">
+          <li>Learning Management System</li>
+          <li>Payment solutions application</li>
+          <li>School/College Management System</li>
+          <li>Coaching Application/Website</li>
+          <li>Astrology Application</li>
+          <li>Test/Quiz Platform</li>
+          <li>Doctor Consultancy application</li>
+          <li>Gamification of learning Modules</li>
+          <li>Online Pharmacy Solutions</li>
+          <li>Custom LMS Solution/Platform</li>
+          <li>Hospital Management system</li>
+          <li>E-learning</li>
+          <li>Stock trading application</li>
+          <li>Upskilling Platform </li>
+        </div>
+
+        <div class="ERPS">
+          <li>Asset Management system</li>
+          <li>Hotel/Restaurant Booking<br>Management System</li>
+          <li>Human resource management system</li>
+          <li>CRM</li>
+          <li>Event management system</li>
+          <li>ERP</li>
+          <li>POS Software</li>
+          <li>Daily Sales Reporting(DSR) application</li>
+          <li>Custom Software Development</li>
+          <li>Inventory Management System</li>
+        </div>
+
+        <div class="DigiS">
+          <li>Product photography</li>
+          <li>Youtube Marketing</li>
+          <li>SEO</li>
+          <li>Linkedin Marketing</li>
+          <li>SMM</li>
+          <li>Public relations</li>
+          <li>Ad videography</li>
+          <li>Presentation Design</li>
+          <li>Video Animation</li>
+          <li>Brochure Design</li>
+          <li>App store optimization</li>
+          <li>Product Videography</li>
+          <li>Google my business</li>
+          <li>Explainer Videos </li>
+        </div>
+
+        <div class="EComS">
+          <li>Single-vendor E-commerce Website</li>
+          <li>Multi-vendor E-commerce website</li>
+          <li>Single Vendor E Commerce Application</li>
+          <li>Multi-vendor E-commerce Application</li>
+          <li>Marketplace Management</li>
+          <li>E Commerce Marketing & Branding</li>
+          <li>Custom E Commerce Website</li>
+          <li>Custom E-commerce Application</li>
+          <li>E-Commerce packaging and design</li>
+          <li>E-Commerce Business consultation</li>
+          <li>Back end Development</li>
+          <li>Digital Marketing</li>
+          <li>Mobile app development</li>
+          <li>Website Development</li>
+        </div>
+
+      </div>
+    </div>
+
   
   
   
@@ -739,23 +903,22 @@
                 position: absolute;">
 
     <img src="./images/our_process_Crown.svg" id="OP_crown" data-aos="fade-up"
-         style="margin-top:1%;
-                margin-left:63%;
+         style="
+                margin-left:72%;
                 transform: rotate(45deg);
                 position: absolute;">
 
     <img src="./images/our_process_pencil.svg" id="OP_pencil" data-aos="fade-up"
-         style="margin-top:-4%;
-                margin-left:75%;
+         style="margin-top:-8%;
+                margin-left:82%;
                 position: absolute;">
 
     <img src="./images/our_process_rook.svg" id="OP_rook" data-aos="fade-up"
-         style="margin-top:25%;
-                margin-left:78.5%;
-                transform: rotate(-20deg);
+         style="margin-top: 25%;
+                margin-left:85%;
                 position: absolute;">
 
-    <div id="process_parent">
+    <div id="process_parent" style="position: relative;">
 
       <div id="image_parent">
         <div id="img_child1">
@@ -765,23 +928,21 @@
           
         </div>
       </div>
-    
-    <!-- <div class="grid"> -->
       
       <div class="grid" data-aos="fade-up">
         
-            <div class="op-card" id="op_card1">
-                <div class="op-lines"></div>
-                <div class="op-heading">
-                    <img src="./images/our_process_SYR.svg" class = "img-responsive" id="op-img">
-                    <h1 id="op-h">Share Your Requirements</h1>
-                </div>
-                <div class="op-content">
-                    <div class="op-details">
-                        <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo! Accusantium, voluptate?</p>
-                    </div>
-                </div>
-            </div>
+          <div class="op-card" id="op_card1">
+              <div class="op-lines"></div>
+              <div class="op-heading">
+                  <img src="./images/our_process_SYR.svg" class = "img-responsive" id="op-img">
+                  <h1 id="op-h">Share Your Requirements</h1>
+              </div>
+              <div class="op-content">
+                  <div class="op-details">
+                      <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo! Accusantium, voluptate?</p>
+                  </div>
+              </div>
+          </div>
         
             <div class="op-card" id="op_card2">
                 <div class="op-lines"></div>
@@ -797,7 +958,6 @@
             </div>
           
 
-          
             <div class="op-card" id="op_card3">
                 <div class="op-lines"></div>
                 <div class="op-heading">
