@@ -1,848 +1,97 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/global.css">
-
-    <title>CARDS</title>
+    <link rel="stylesheet" href="./css/our-service-process.css">
 </head>
-    <style type="text/css">
-    body{
-      margin: 0;
-      padding: 0;
-      /*Below part transferred to services section in index.css**/
-      /*background-image: url('images/string.svg'), url(../images/side-gold-stroke.svg) !important;
-      background-repeat: no-repeat, no-repeat;
-      background-position: 150% -15%, 0% 0%; */
-      /*z-index: 99,99; */
-      /*background-size: 100%;*/
-    }
-
-    #our_process_bg{
-      margin: 0;
-      padding: 0;
-      margin-top: 10%;
-      left: -1%;
-      height: 80vh;
-      width: 100vw;
-      
-    }
-
-    #biggear_img{
-      animation: rotation1 4s infinite linear;
-    }
-
-    #smlgear_img{
-      animation: rotation2 3s infinite linear;
-    }
-
-    @keyframes rotation1 {
-      from {
-      transform: rotate(0deg);
-      }
-      to {
-      transform: rotate(359deg);
-      }
-    }
-
-    @keyframes rotation2 {
-      from {
-      transform: rotate(0deg);
-      }
-      to {
-      transform: rotate(-359deg);
-      }
-    }
-
-    #cards-container{
-      padding: 0;
-      margin-top: 5%;
-      /*background-color: cyan;*/
-      margin-left: 10%;
-      width: 60%;
-      border: solid whitesmoke 4px;
-      box-shadow: 1px 1px 5px gray;
-      position: relative;
-      z-index: 3;
-    }
-
-    .row{
-      display: flex;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      /*background-color: blue;*/
-      justify-content: space-between;
-    }
-
-    .row > .card{
-      width: 8em;
-      height: 20em;  
-      margin: 0;
-      padding: 0;
-      /*background-color: black;*/
-      overflow: hidden;
-      transition: 0.2s;
-    }
-
-    .card-img-top{
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      transition: 1s;
-      /*transform: translate(-15%);*/
-      object-fit: cover;
-      opacity: 0.85;
-      /*z-index: 1;*/
-    }
-    
-    #overlay1,#overlay2,#overlay3,#overlay4,#overlay5{
-      height: 100%;
-      width: 100%;
-      margin:0;
-      padding:0;
-      padding-bottom: 20%;
-      position: absolute;
-      /*background-color:black;*/
-      /*glyph-orientation-horizontal: center;*/
-    }
-
-    #overlay3,#overlay5{
-      padding-right: 35%;
-    }
-
-    .card-title{
-      height: 100%;
-      margin-left: 30%;
-      margin-top: 0%;
-      font-size: 2.2em;
-      font-weight: bold;
-      color: white;
-      /*background-color: black;*/
-      writing-mode: vertical-rl; 
-      transform: rotate(-180deg);  
-    }
-
-    #expand-overlay1,#expand-overlay2,#expand-overlay3,#expand-overlay4,#expand-overlay5{
-      display: flex;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(to bottom, rgba(178,155,107,0.4), rgba(1,1,1,0.5)); 
-      color: white;
-      flex-direction: column;
-      justify-content: flex-end;
-      text-align: center;
-      /*z-index: 6;*/
-    }
-    
-    .expand-content > h3{
-      font-weight: bold;
-      font-size: 2em;
-    }
-
-    .expand-content > h4{
-      font-size: 1em;
-      line-height: 1;
-      text-align: justify;
-      font-weight: lighter;
-    }
-
-    .expand-content > h3:hover, .expand-content > h4:hover{
-      cursor: default;
-    }
-
-    @media (max-width:1430px){
-      #cards-container{
-        margin-left: 5%;
-        width: 70%;
-      }
-
-      #head_img{
-        transform:scale(0.95);
-        margin-top:-30%;
-      }
-    }
-
-    @media (max-width:1225px){
-
-      #string_img{visibility: hidden;}
-
-      #head_img{
-        position: absolute;
-        transform:scale(0.80);
-        left: 0;
-        top: 33%;
-        /* margin-top: 1000px; */
-        /* height: 100%; */
-        /* background-color: red; */
-      }
-
-      .row{display: block;}
-      .row > .card{
-        width: 80em;
-        height: 5em;
-        overflow: hidden;}
-      .row > .card:not(#card5){margin-bottom: 1%;}
-
-      #overlay1,#overlay2,#overlay3,#overlay4,#overlay5{
-        margin: 0;
-        padding: 0;
-        padding-top: 3%;
-        align-items: center;
-        vertical-align: middle;}
-      .card-img-overlay > .card-title{
-        margin: 0;
-        padding: 0;
-        writing-mode: horizontal-tb; 
-        transform: rotate(0deg);
-        text-align: center;
-        font-size: 2em;}
-
-        .expand-content{
-          margin: 0;
-          padding: 0;
-          height: 100%;}
-        
-      }
-
-     
-        @media (max-width:530px)
-      {
-        #head_img{
-        transform:scale(0.70);
-        position: absolute;
-        left: -10%;
-        top: 20%;
-        /* margin-top: 1000px; */
-        /* height: 100%; */
-        /* background-color: red; */
-      }
-      #op_card1, #op_card3{ margin-left: 7%; }
-      #op_card2, #op_card4{ margin-left: +2%; }
-
-        #overlay1,#overlay2,#overlay3,#overlay4,#overlay5{
-          margin: 0;
-          padding: 0;  
-        }
-
-        .card-img-overlay > .card-title{
-          margin: 0;
-          padding: 0;
-          height:3em;
-          width: 15em;
-          display: table-cell;
-          vertical-align: middle;
-          font-size: 1.5em;
-        }
-        .expand-content > h3{font-size:1.5em;}
-    }
-
-    @media (max-width:376px){
-        #head_img{
-        transform:scale(0.70);
-        position: absolute;
-        left: -18%;
-        top: 20%;
-        /* margin-top: 1000px; */
-        /* height: 100%; */
-        /* background-color: red; */
-      }
-      #op_card1, #op_card3{ margin-left: 5%; }
-      #op_card2, #op_card4{ margin-left: +5%; }
-
-    }
-    /* **************************OUR PROCESS********************* */
-
-    /* .grid {
-      width: 900px;
-      margin-left: 40%;
-      margin-top: 5%;
-      display: inline-block;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 7rem;
-    } */
-
-    .grid{
-      position: relative;
-      display: flex;  
-      margin-top: 10%;
-      margin-left: 35%;
-      gap: 30px;
-      width: 900px;
-      /* display: inline-block; */
-      justify-content: center;
-      flex-wrap: wrap;
-      /* grid-template-columns: repeat(4, 1fr); */
-      /* position: absolute; */
-      
-    }
-
-    .op-card{
-      display: flex;
-      width: 190px;
-      height: 200px;
-      flex-direction: column;
-      position: relative;
-      background-color: #2b2b2bdc;
-      border-radius: 5px;
-      text-align: center;
-      align-items: center;
-      box-shadow: 4px 4px 5px gray;
-      transition: 0.5s;
-      transform: scale(1.1);
-      /*border-radius: 10px; */
-    }
-
-    .op-card:hover{
-      height: 250px;
-    }
-
-    .op-card .op-lines{
-      border-radius: 5px;
-      position: absolute;
-      inset: 0;
-      background: #000;
-      overflow: hidden;
-      /*border-radius: 10px; */
-    }
-
-    .op-card .op-lines::before{
-      width: 600px;
-      height: 120px;
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      background: linear-gradient(transparent, #f1aa03,#e2e0da,#f6b103,transparent);
-      animation: animate 4s linear infinite;
-      animation-play-state: paused;
-    }
-
-    .op-card:hover .op-lines::before{
-      animation-play-state: running;
-    }
-
-    @keyframes animate{
-      0%
-      {
-        transform: translate(-50%,-50%) rotate(0deg);
-      }
-      100%
-      {
-        transform: translate(-50%,-50%) rotate(360deg);
-      }
-    }
-
-    .op-card .op-lines::after{
-      content: '';
-      position: absolute;
-      inset: 4px;
-      background: var(--PALT_2);
-    }
-
-    .op-card .op-heading{
-      position: relative;
-      width: 190px;
-      height: 140px;
-      top: 1px;
-      left: 50%;
-      padding: 20%;
-      transform: translateX(-50%);
-      transition: 0.5s;
-      z-index: 10;
-      overflow: hidden;
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .op-card:hover .op-heading{
-      display: flex;
-      width: 100%;
-      height: 70px;
-      background-color: #b29a6b13;
-      box-shadow: 1px 1px 5px gray;
-      top: 25px;
-    }
-
-    .op-card .op-heading::before{
-      width: 500px;
-      height: 150px;
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      /* background: linear-gradient(transparent, #b29a6b68,#fdfdfa20,#b29a6b68,transparent); */
-      animation: animate2 6s linear infinite;
-      animation-play-state: paused;
-    }
-
-    /*.w-card:hover .w-heading::before{
-      animation-play-state: running;
-    }*/
-
-    @keyframes animate2{
-      0%
-      {
-        transform: translate(-50%,-50%) rotate(360deg);
-      }
-      100%
-      {
-        transform: translate(-50%,-50%) rotate(0deg);
-        -webkit-transform: translate(-50%,-50%) rotate(0deg);
-        -moz-transform: translate(-50%,-50%) rotate(0deg);
-        -ms-transform: translate(-50%,-50%) rotate(0deg);
-        -o-transform: translate(-50%,-50%) rotate(0deg);
-      }
-    }
-
-    .op-card:hover .op-heading::after{
-      position: absolute;
-      content: '';
-      inset: 3px;
-    }
-
-    .op-card:hover .op-heading{
-      opacity: 1;
-    }
-
-    .op-card .op-heading #op-img{
-      height: 60px;
-      width: 60px;
-      align-items: center;
-    }
-
-    .op-card:hover .op-heading #op-img{
-      height: 50px;
-      width: 50px;
-    }
-
-    .op-card .op-content{
-      display: flex;
-      width: 100%;
-      height: 100%;
-      /* margin-top: 10px; */
-      position: absolute;
-      top: 40%;
-      justify-content: center;
-      /* align-items: flex-end; */
-      overflow: hidden;
-    }
-
-    .op-card .op-content .op-details{
-      width: 100%;
-      padding: 30px 20px;
-      text-align: center;
-      transition: 0.5s;
-    }
-
-    .op-card .op-content .op-details{
-      transform: translateY(0px);
-    }
-
-    .op-card .op-content .op-details #op-p{
-      font-size: 0.8em;
-      color: rgb(240, 233, 233);
-      opacity: 0;
-      transition: 0.5s;
-    }
-
-    .op-card:hover .op-content .op-details #op-p{
-      opacity: 1;
-    }
-
-    #op-h{
-      /* line-height: 120%; */
-      font-weight: ligth;
-      font-size: 1.2em;
-      
-      /* position: relative; */
-      color: var(--PALT_1);
-    }
-
-    @media (max-width:1430px){
-      #our_process_bg_img{
-        left: -3%;
-      }
-    }
-
-    @media (max-width:1225px){
-      #our_process_bg_img{
-        left: -5%;
-        scale: 0.9;
-      }
-      #OP_pencil,#OP_rook{
-        visibility: hidden;
-      }
-
-      #OP_crown{
-        top: 13%;
-        right: 17%;
-        /* visibility: hidden; */}
-      }
-
-      .grid{
-        margin-top: 7%;
-        margin-left: 25%;
-        gap: 0.5em;
-      }
-      .op-card{
-        position: absolute;
-      }
-      #op_card1{ left: 20%; }
-      #op_card2{ left: 50%;}
-      #op_card4{ left: 50%; margin-top: 31%; }
-      #op_card3{ left: 20%; margin-top: 31%;}
-
-      #smlgear_img,#biggear_img{
-        scale: 0.9;
-      }
-      #biggear_img{
-        position: absolute;
-        top: 25%;
-      }
-
-      @media (max-width:850px){
-        #our_process_bg_img{
-          visibility: hidden;
-        }
-        .grid{
-        margin-left: 15%;       
-      }
-      #smlgear_img,#biggear_img{
-        scale: 1.2;
-      }
-      #smlgear_img{top:30%;}
-      #biggear_img{top:50%;}
-      }
-
-      @media (max-width:850px){
-        #smlgear_img{visibility: hidden;}
-        .grid{
-          margin: 0;
-          padding: 0;
-          margin-left: -10%;
-          margin-top: 10%;
-          scale: 0.8;       
-        }
-      #OP_crown{
-        visibility: hidden;
-      }
-      #biggear_img{
-        top:32%;
-        left:24%;
-        scale: 2.7;
-      }
-    }
-    
-    @media (max-width:480px)
-      {
-        .grid{
-          margin: 0;
-          padding: 0;
-          position:relative;
-          margin-top: 5%;
-          margin-left: -45%;     
-        }
-        #biggear_img{
-          top:70%;
-          left: 33%;
-          scale: 0.9;
-        }
-        #smlgear_img{
-          visibility: visible;
-          top: 78%;    
-          scale: 0.8;
-        }
-        #head_img{
-          visibility: none;
-        }
-      }
-      @media (max-width:435px)
-      {
-        .grid{
-          margin: 0;
-          padding: 0;
-          position:relative;
-          margin-top: 5%;
-          margin-left: -60%;     
-        }
-        #biggear_img{
-          top:70%;
-          left: 33%;
-          scale: 0.9;
-        }
-        #smlgear_img{
-          visibility: visible;
-          top: 78%;
-          left: -10%;    
-          scale: 0.8;
-        }
-        #head_img{
-          visibility: hidden;
-        }
-      }
-/* 
-      @media (max-width:415px){
-       
-    } */
-
-    @media (max-width:391px){
-        .grid{
-          margin: 0;
-          padding: 0;
-          margin-top: 10%;
-          margin-left: -65%;
-          scale: 0.7;       
-        }
-        #biggear_img{
-        top:60%;
-        left:20%;
-        scale: 0.9;
-      }
-      #smlgear_img{
-        visibility: visible;
-        top: 80%;    
-        scale: 0.8;
-      }}
-      
-    @media (max-width:376px){
-        .grid{
-          margin: 0;
-          padding: 0;
-          margin-top: 10%;
-          margin-left: -72%;
-          scale: 0.7;       
-        }
-        #biggear_img{
-        top:60%;
-        left:20%;
-        scale: 0.7;
-      }
-      #smlgear_img{
-        visibility: visible;
-        top: 80%;    
-        scale: 0.6;
-      }
-    }
-  
-    </style>
 
 <body>
+<div class="container" id="cards-container" >
+  <div class="row" data-aos="fade-up">
 
-    <div class="container" id="cards-container">
-      <div class="row">
+    <div class = "card" id="card1">
+      <img class="card-img-top" id="img1" src="./images/our_services_e-commerce.png">
+      <div class="card-img-overlay" id="overlay1">
+        <h5 class="card-title">E-Commerce</h5>
+      </div>
+      <div class='card-img-overlay' id="expand-overlay1">
+        <div class="expand-content">
+          <h3>E-Commerce</h3>
+          <h4>At our e-commerce website designing service, we understand the power of visual appeal and seamless functionality to create a captivating online shopping experience. Our team of skilled designers and developers is dedicated to crafting custom e-commerce websites that showcase your brand and products in the best possible light. </h4>
 
-        <div class = "card" id="card1">
-          <img class="card-img-top" id="img1" src="./images/our_services_e-commerce.png">
-          <div class="card-img-overlay" id="overlay1">
-            <h5 class="card-title">E-Commerce</h5>
-          </div>
-          <div class='card-img-overlay' id="expand-overlay1">
-            <div class="expand-content">
-              <h3>E-Commerce</h3>
-              <h4>At our e-commerce website designing service, we understand the power of visual appeal and seamless functionality to create a captivating online shopping experience. Our team of skilled designers and developers is dedicated to crafting custom e-commerce websites that showcase your brand and products in the best possible light. </h4>
-
-            <button type="button" class="btn btn-outline-light">Show More</button>
-            </div>
-          </div>
+        <button type="button" class="btn btn-outline-light">Show More</button>
         </div>
-
-        <div class = "card" id="card2">
-          <img class="card-img-top" id='img2' src="./images/our_services_gaming.jpg">
-          <div class="card-img-overlay" id="overlay2">
-            <h5 class="card-title">Gaming</h5>
-          </div>
-          <div class='card-img-overlay' id="expand-overlay2">
-            <div class="expand-content">
-              <h3>Gaming</h3>
-              <h4>Our team of passionate designers and developers specializes in creating immersive and dynamic gaming websites that leave a lasting impression on gamers worldwide.</h4>
-
-            <button type="button" class="btn btn-outline-light">Show More</button>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class = "card" id="card3">
-          <img class="card-img-top" id="img3" src="./images/our_services_professional-service.png">
-          <div class="card-img-overlay" id="overlay3">
-            <h5 class="card-title">Professional Services</h5>
-          </div>
-          <div class='card-img-overlay' id="expand-overlay3">
-            <div class="expand-content">
-              <h3>Professional Services</h3>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
-
-            <button type="button" class="btn btn-outline-light">Show More</button>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class = "card" id="card4">
-          <img class="card-img-top" id="img4" src="./images/our_services_ERP.png">
-          <div class="card-img-overlay" id="overlay4">
-            <h5 class="card-title">ERP</h5>
-          </div>
-          <div class='card-img-overlay' id="expand-overlay4">
-            <div class="expand-content">
-              <h3>ERP</h3>
-              <h4>We understand the importance of showcasing your professional services with elegance and efficiency. Our team of skilled designers and developers specializes in creating custom websites that highlight your unique value proposition and drive client engagement. </h4>
-
-            <button type="button" class="btn btn-outline-light">Show More</button>
-            </div>
-          </div>
-        </div>
-  
-
-
-        <div class = "card" id="card5">
-          <img class="card-img-top" id="img5" src="./images/our_services_Digital-marketing.png">
-          <div class="card-img-overlay" id="overlay5">
-            <h5 class="card-title">Digital Marketing</h5>
-          </div>
-          <div class='card-img-overlay' id="expand-overlay5">
-            <div class="expand-content">
-              <h3>Digital Marketing</h3>
-              <h4>Our team of experienced designers and developers specializes in creating dynamic ERP websites that streamline your operations and optimize your resources. We understand the unique requirements of ERP systems and work closely with you to design a user-friendly interface that simplifies complex workflows.</h4> 
-
-            <button type="button" class="btn btn-outline-light">Show More</button>
-            </div>
-          </div>
-        </div> 
-
       </div>
     </div>
 
-    <style>
-      .sub-services-section{
-        background: linear-gradient(to right, #ddd, #eee);
-        display: flex;
-        position: relative;
-        width: 60%;
-        margin-left: 10%;
-        margin-top: 50px;
-        /* padding: 20px; */
-        
-        border-radius: 4px;
-        box-shadow: 2px 2px 10px #aaa;
-        outline: solid white 5px;
-        
-        overflow: hidden;
-        z-index: 1;
-      }
-      .sub-services-header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-        text-decoration: none;
-        list-style: none;
-        padding: 20px 0 20px 20px ;
-        padding-right: 0.5em;
-        margin: 0;
-        background-color: var(--PALT_4);
-        
-        border-right: solid #bbb 2px;
-        
-        /* background-color: red; */
-      }
-      .sub-services-header > li{
-        margin: 0.5em 0;
-        font-size: 1.2em;
-        font-weight: 600;
-        color: var(--PALT_1);
-      }
-      .sub-services-header > li:hover{
-        color: var(--PALT_6);
-        cursor: pointer;
-      }
-      
-      .sub-services-list{
-        /* display: block; */
-        position: relative;
-        top: 0;
-        bottom: 0;
-        width: 75%;
-        /* background-color: blue; */
-        padding: 20px;
-        padding-left: 3em;
-        
-        background-image: url("/images/gears-bg.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
-        
-      }
-      .sub-services-list>div{
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: 20px;
-        /* background-color: skyblue; */
-        list-style: none;
-        column-count: 2;
-        column-width: 50%;
-      }
-      
-      .sub-services-list>div>li{
-        margin-bottom: 15px;
-        font-weight: 600;
-      }
-      
-      @media (max-width:1430px){
-        .sub-services-section{
-          margin-left: 5%;
-          width: 90%;
-        }
-        .sub-services-list{
-          padding-left: 1em;
-          background-image: none;
-        }
-        .sub-services-header>li{
-          font-size: 0.8em;
-        }
-        .sub-services-list>div{
-          font-size: 0.7em;
-          column-count: 1;
-        }
-        
-      }
-    </style>
-    
-    <script>
-      $(".sub-services-header>li").click(function(){
-        var curr = this.innerHTML;
-        $('.sub-services-header>li').css({"color": ""});
-        $(this).css({"color": "var(--PALT_6)"});
-        
-        $(".sub-services-list>div").fadeOut(200);
-        
-        var service_map = {
-          "Top Services" : "TopS",
-          "Gaming": "GMG",
-          "Professional Services" : "ProS",
-          "ERP" : "ERPS",
-          "Digital Marketing" : "DigiS",
-          "E-Commerce" : "EComS"
-        };
-        $(".sub-services-list>." + service_map[curr]).delay(195).fadeIn(500);
-      });
-      
-      $('.sub-services-header>li:first').click();
-    </script>
-  
+    <div class = "card" id="card2">
+      <img class="card-img-top" id='img2' src="./images/our_services_gaming.jpg">
+      <div class="card-img-overlay" id="overlay2">
+        <h5 class="card-title">Gaming</h5>
+      </div>
+      <div class='card-img-overlay' id="expand-overlay2">
+        <div class="expand-content">
+          <h3>Gaming</h3>
+          <h4>Our team of passionate designers and developers specializes in creating immersive and dynamic gaming websites that leave a lasting impression on gamers worldwide.</h4>
+
+        <button type="button" class="btn btn-outline-light">Show More</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class = "card" id="card3">
+      <img class="card-img-top" id="img3" src="./images/our_services_professional-service.png">
+      <div class="card-img-overlay" id="overlay3">
+        <h5 class="card-title">Professional Services</h5>
+      </div>
+      <div class='card-img-overlay' id="expand-overlay3">
+        <div class="expand-content">
+          <h3>Professional Services</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h4>
+
+        <button type="button" class="btn btn-outline-light">Show More</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class = "card" id="card4">
+      <img class="card-img-top" id="img4" src="./images/our_services_ERP.png">
+      <div class="card-img-overlay" id="overlay4">
+        <h5 class="card-title">ERP</h5>
+      </div>
+      <div class='card-img-overlay' id="expand-overlay4">
+        <div class="expand-content">
+          <h3>ERP</h3>
+          <h4>We understand the importance of showcasing your professional services with elegance and efficiency. Our team of skilled designers and developers specializes in creating custom websites that highlight your unique value proposition and drive client engagement. </h4>
+
+        <button type="button" class="btn btn-outline-light">Show More</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class = "card" id="card5">
+      <img class="card-img-top" id="img5" src="./images/our_services_Digital-marketing.png">
+      <div class="card-img-overlay" id="overlay5">
+        <h5 class="card-title">Digital Marketing</h5>
+      </div>
+      <div class='card-img-overlay' id="expand-overlay5">
+        <div class="expand-content">
+          <h3>Digital Marketing</h3>
+          <h4>Our team of experienced designers and developers specializes in creating dynamic ERP websites that streamline your operations and optimize your resources. We understand the unique requirements of ERP systems and work closely with you to design a user-friendly interface that simplifies complex workflows.</h4> 
+
+        <button type="button" class="btn btn-outline-light">Show More</button>
+        </div>
+      </div>
+    </div> 
+
+  </div>
+</div>
   <img src="./images/head.svg"               id ="head_img"   style="position: absolute; top:15%; right: 0; scale: 1.2;">
   <img src="./images/our_process_string.svg" id ="string_img" style="position: absolute; top:0; right: 0; height: 100%; z-index: 0;">
   
@@ -1006,375 +255,374 @@
                 position: absolute;">
 
     <div id="process_parent">
-
-      <div id="image_parent">
-        <div id="img_child1">
-
-        </div>
-        <div id="img_child2">
-          
-        </div>
-      </div>
-    
-    <!-- <div class="grid"> -->
       
-      <div class="grid">
-        
-            <div class="op-card" id="op_card1">
-                <div class="op-lines"></div>
-                <div class="op-heading">
-                    <img src="./images/our_process_SYR.svg" class = "img-responsive" id="op-img">
-                    <h1 id="op-h">Share Your Requirements</h1>
-                </div>
-                <div class="op-content">
-                    <div class="op-details">
-                        <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo! Accusantium, voluptate?</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="op-card" id="op_card2">
-                <div class="op-lines"></div>
-                <div class="op-heading">
-                    <img src="./images/our_process_PA.svg" class = "img-responsive" id="op-img" >
-                    <h1 id="op-h">Partner Alignments</h1>
-                </div>
-                <div class="op-content">
-                    <div class="op-details">
-                        <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae tempore dolor!</p>
-                    </div>
-                </div>
-            </div>
-          
+      <div class="op-grid">
+          <span class="op-link" style="left: 50%; top:25%; transform: translate(-50%, -50%);"></span>
+          <span class="op-link" style="left: 50%; top:75%; transform: translate(-50%, -50%);"></span>
+          <span class="op-link" style="left: 75%; top:50%; transform: translate(-50%, -50%) rotate(90deg);"></span>
 
+        
+          <div class="op-card" id="op_card1">
+              <div class="op-lines"></div>
+              <div class="op-heading">
+                  <img src="./images/our_process_SYR.svg" class = "img-responsive" id="op-img">
+                  <h1 id="op-h">Share Your Requirements</h1>
+              </div>
+              <div class="op-content">
+                  <div class="op-details">
+                      <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quo! Accusantium, voluptate?</p>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="op-card" id="op_card2">
+              <div class="op-lines"></div>
+              <div class="op-heading">
+                  <img src="./images/our_process_PA.svg" class = "img-responsive" id="op-img" >
+                  <h1 id="op-h">Partner Alignments</h1>
+              </div>
+              <div class="op-content">
+                  <div class="op-details">
+                      <p id="op-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus recusandae tempore dolor!</p>
+                  </div>
+              </div>
+          </div>
           
-            <div class="op-card" id="op_card3">
-                <div class="op-lines"></div>
-                <div class="op-heading">
-                    <img src="./images/our_process_TP.svg" class = "img-responsive" id="op-img">
-                    <h1 id="op-h">Track Progress</h1>
-                </div>
-                <div class="op-content">
-                    <div class="op-details">
-                        <p id="op-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fuga asperiores natus?</p>
-                    </div>
-                </div>
-            </div>
+          <br>
+        
+          <div class="op-card" id="op_card3">
+              <div class="op-lines"></div>
+              <div class="op-heading">
+                  <img src="./images/our_process_TP.svg" class = "img-responsive" id="op-img">
+                  <h1 id="op-h">Track Progress</h1>
+              </div>
+              <div class="op-content">
+                  <div class="op-details">
+                      <p id="op-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo fuga asperiores natus?</p>
+                  </div>
+              </div>
+          </div>
 
-            <div class="op-card" id="op_card4">
-                <div class="op-lines"></div>
-                <div class="op-heading">
-                    <img src="./images/our_process_SC.svg" class = "img-responsive" id="op-img">
-                    <h1 id="op-h">Sign Contracts</h1>
-                </div>
-                <div class="op-content">
-                    <div class="op-details">
-                        <p id="op-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt exercitationem odit.</p>
-                    </div>
-                </div>
-            </div>
+          <div class="op-card" id="op_card4">
+              <div class="op-lines"></div>
+              <div class="op-heading">
+                  <img src="./images/our_process_SC.svg" class = "img-responsive" id="op-img">
+                  <h1 id="op-h">Sign Contracts</h1>
+              </div>
+              <div class="op-content">
+                  <div class="op-details">
+                      <p id="op-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nesciunt exercitationem odit.</p>
+                  </div>
+              </div>
+          </div>
           
     </div>
   </section>
 
   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
+<script type="text/javascript">
+  // function refresh() {
+  //       window .location.reload();
+  //   }
+  
+  $(document).ready(function(){
 
+  if($(window).innerWidth() > 1225){
+    // location.reload();
+    // window.setInterval('refresh()', 5000); 	// Call a function every 10000 milliseconds (OR 10 seconds).
+    // Refresh or reload page.
+    
 
-    <!-- <img src="gear 1.svg" id = 'gear' style="margin-top: 5%;"> gear image -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    $('#overlay1').hide();
+    $('#overlay2').show();
+    $('#overlay3').show();
+    $('#overlay4').show();
+    $('#overlay5').show();
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    $('#card1').css({'width':'20em'});
 
-<!--     <script type="text/javascript">
-      $(document).ready(function(){
+    $('#expand-overlay1').fadeIn();
+    $('#expand-overlay2').hide();
+    $('#expand-overlay3').hide();
+    $('#expand-overlay4').hide();
+    $('#expand-overlay5').hide();
 
-        $('#overlay1').hide();
-        $('#card1').css({'width':'20em'});
-        $('#expand-overlay1').hide();
-      })
-    </script> -->
+    // $('.card-img-overlay:not(#overlay1)').show();
+    // $('.card-img-overlay:not(#expand-overlay1)').hide();
+    
+    $('#card1').hover(function(){
+      $('#overlay1').hide();
+      $('#overlay2').show();
+      $('#overlay3').show();
+      $('#overlay4').show();
+      $('#overlay5').show();
 
-    <script type="text/javascript">
-      // function refresh() {
-      //       window .location.reload();
-      //   }
-      
-      $(document).ready(function(){
+      $('#card1').css({'width':'20em'});
+      $('#card2').css({'width':'8em'});
+      $('#card3').css({'width':'8em'});
+      $('#card4').css({'width':'8em'});
+      $('#card5').css({'width':'8em'});
 
-      if($(window).innerWidth() > 1225){
-        // location.reload();
-        // window.setInterval('refresh()', 5000); 	// Call a function every 10000 milliseconds (OR 10 seconds).
-        // Refresh or reload page.
-        
+      $('#expand-overlay1').fadeIn();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').hide();
 
-        $('#overlay1').hide();
-        $('#overlay2').show();
-        $('#overlay3').show();
-        $('#overlay4').show();
-        $('#overlay5').show();
+      $('#img1').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img1)').css({'transform':'scale(1)'});
+    })
 
-        $('#card1').css({'width':'20em'});
+    $('#card2').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').hide();
+      $('#overlay3').show();
+      $('#overlay4').show();
+      $('#overlay5').show();
 
-        $('#expand-overlay1').fadeIn();
-        $('#expand-overlay2').hide();
-        $('#expand-overlay3').hide();
-        $('#expand-overlay4').hide();
-        $('#expand-overlay5').hide();
+      $('#card1').css({'width':'8em'});
+      $('#card2').css({'width':'20em'});
+      $('#card3').css({'width':'8em'});
+      $('#card4').css({'width':'8em'});
+      $('#card5').css({'width':'8em'});
 
-        // $('.card-img-overlay:not(#overlay1)').show();
-        // $('.card-img-overlay:not(#expand-overlay1)').hide();
-       
-       $('#card1').hover(function(){
-          $('#overlay1').hide();
-          $('#overlay2').show();
-          $('#overlay3').show();
-          $('#overlay4').show();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').fadeIn();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').hide();
 
-          $('#card1').css({'width':'20em'});
-          $('#card2').css({'width':'8em'});
-          $('#card3').css({'width':'8em'});
-          $('#card4').css({'width':'8em'});
-          $('#card5').css({'width':'8em'});
+      $('#img2').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img2)').css({'transform':'scale(1)'});
+    })
 
-          $('#expand-overlay1').fadeIn();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').hide();
+    $('#card3').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').show();
+      $('#overlay3').hide();
+      $('#overlay4').show();
+      $('#overlay5').show();
 
-          $('#img1').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img1)').css({'transform':'scale(1)'});
-        })
+      $('#card1').css({'width':'8em'});
+      $('#card2').css({'width':'8em'});
+      $('#card3').css({'width':'20em'});
+      $('#card4').css({'width':'8em'});
+      $('#card5').css({'width':'8em'});
 
-        $('#card2').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').hide();
-          $('#overlay3').show();
-          $('#overlay4').show();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').fadeIn();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').hide();
 
-          $('#card1').css({'width':'8em'});
-          $('#card2').css({'width':'20em'});
-          $('#card3').css({'width':'8em'});
-          $('#card4').css({'width':'8em'});
-          $('#card5').css({'width':'8em'});
+      $('#img3').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img3)').css({'transform':'scale(1)'});
+    })
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').fadeIn();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').hide();
+    $('#card4').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').show();
+      $('#overlay3').show();
+      $('#overlay4').hide();
+      $('#overlay5').show();
 
-          $('#img2').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img2)').css({'transform':'scale(1)'});
-        })
+      $('#card1').css({'width':'8em'});
+      $('#card2').css({'width':'8em'});
+      $('#card3').css({'width':'8em'});
+      $('#card4').css({'width':'20em'});
+      $('#card5').css({'width':'8em'});
 
-        $('#card3').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').show();
-          $('#overlay3').hide();
-          $('#overlay4').show();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').fadeIn();
+      $('#expand-overlay5').hide();
 
-          $('#card1').css({'width':'8em'});
-          $('#card2').css({'width':'8em'});
-          $('#card3').css({'width':'20em'});
-          $('#card4').css({'width':'8em'});
-          $('#card5').css({'width':'8em'});
+      $('#img4').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img4)').css({'transform':'scale(1)'});
+    })
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').fadeIn();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').hide();
+    $('#card5').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').show();
+      $('#overlay3').show();
+      $('#overlay4').show();
+      $('#overlay5').hide();
 
-          $('#img3').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img3)').css({'transform':'scale(1)'});
-        })
+      $('#card1').css({'width':'8em'});
+      $('#card2').css({'width':'8em'});
+      $('#card3').css({'width':'8em'});
+      $('#card4').css({'width':'8em'});
+      $('#card5').css({'width':'20em'});
 
-        $('#card4').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').show();
-          $('#overlay3').show();
-          $('#overlay4').hide();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').fadeIn();
 
-          $('#card1').css({'width':'8em'});
-          $('#card2').css({'width':'8em'});
-          $('#card3').css({'width':'8em'});
-          $('#card4').css({'width':'20em'});
-          $('#card5').css({'width':'8em'});
+      $('#img5').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img5)').css({'transform':'scale(1)'});
+    })
+  }
+  // Else statement
+  if($(window).innerWidth() < 1225){
+    // location.reload();
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').fadeIn();
-          $('#expand-overlay5').hide();
+    $('#overlay1').show();
+    $('#overlay2').show();
+    $('#overlay3').show();
+    $('#overlay4').show();
+    $('#overlay5').show();
 
-          $('#img4').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img4)').css({'transform':'scale(1)'});
-        })
+    $('#expand-overlay1').hide();
+    $('#expand-overlay2').hide();
+    $('#expand-overlay3').hide();
+    $('#expand-overlay4').hide();
+    $('#expand-overlay5').hide();
 
-        $('#card5').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').show();
-          $('#overlay3').show();
-          $('#overlay4').show();
-          $('#overlay5').hide();
+    $('#card1').hover(function(){
+      $('#overlay1').hide();
+      $('#overlay2').show();
+      $('#overlay3').show();
+      $('#overlay4').show();
+      $('#overlay5').show();
 
-          $('#card1').css({'width':'8em'});
-          $('#card2').css({'width':'8em'});
-          $('#card3').css({'width':'8em'});
-          $('#card4').css({'width':'8em'});
-          $('#card5').css({'width':'20em'});
+      $('#card1').css({'height':'20em'});
+      $('#card2').css({'height':'5em'});
+      $('#card3').css({'height':'5em'});
+      $('#card4').css({'height':'5em'});
+      $('#card5').css({'height':'5em'});
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').fadeIn();
+      $('#expand-overlay1').fadeIn();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').hide();
 
-          $('#img5').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img5)').css({'transform':'scale(1)'});
-        })
-      }
-      // Else statement
-      if($(window).innerWidth() < 1225){
-        // location.reload();
+      $('#img1').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img1)').css({'transform':'scale(1)'});
+    })
 
-        $('#overlay1').show();
-        $('#overlay2').show();
-        $('#overlay3').show();
-        $('#overlay4').show();
-        $('#overlay5').show();
+    $('#card2').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').hide();
+      $('#overlay3').show();
+      $('#overlay4').show();
+      $('#overlay5').show();
 
-        $('#expand-overlay1').hide();
-        $('#expand-overlay2').hide();
-        $('#expand-overlay3').hide();
-        $('#expand-overlay4').hide();
-        $('#expand-overlay5').hide();
+      $('#card1').css({'height':'5em'});
+      $('#card2').css({'height':'20em'});
+      $('#card3').css({'height':'5em'});
+      $('#card4').css({'height':'5em'});
+      $('#card5').css({'height':'5em'});
 
-        $('#card1').hover(function(){
-          $('#overlay1').hide();
-          $('#overlay2').show();
-          $('#overlay3').show();
-          $('#overlay4').show();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').fadeIn();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').hide();
 
-          $('#card1').css({'height':'20em'});
-          $('#card2').css({'height':'5em'});
-          $('#card3').css({'height':'5em'});
-          $('#card4').css({'height':'5em'});
-          $('#card5').css({'height':'5em'});
+      $('#img2').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img2)').css({'transform':'scale(1)'});
+    })
 
-          $('#expand-overlay1').fadeIn();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').hide();
+    $('#card3').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').show();
+      $('#overlay3').hide();
+      $('#overlay4').show();
+      $('#overlay5').show();
 
-          $('#img1').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img1)').css({'transform':'scale(1)'});
-        })
+      $('#card1').css({'height':'5em'});
+      $('#card2').css({'height':'5em'});
+      $('#card3').css({'height':'20em'});
+      $('#card4').css({'height':'5em'});
+      $('#card5').css({'height':'5em'});
 
-        $('#card2').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').hide();
-          $('#overlay3').show();
-          $('#overlay4').show();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').fadeIn();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').hide();
 
-          $('#card1').css({'height':'5em'});
-          $('#card2').css({'height':'20em'});
-          $('#card3').css({'height':'5em'});
-          $('#card4').css({'height':'5em'});
-          $('#card5').css({'height':'5em'});
+      $('#img3').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img3)').css({'transform':'scale(1)'});
+    })
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').fadeIn();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').hide();
+    $('#card4').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').show();
+      $('#overlay3').show();
+      $('#overlay4').hide();
+      $('#overlay5').show();
 
-          $('#img2').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img2)').css({'transform':'scale(1)'});
-        })
+      $('#card1').css({'height':'5em'});
+      $('#card2').css({'height':'5em'});
+      $('#card3').css({'height':'5em'});
+      $('#card4').css({'height':'20em'});
+      $('#card5').css({'height':'5em'});
 
-        $('#card3').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').show();
-          $('#overlay3').hide();
-          $('#overlay4').show();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').fadeIn();
+      $('#expand-overlay5').hide();
 
-          $('#card1').css({'height':'5em'});
-          $('#card2').css({'height':'5em'});
-          $('#card3').css({'height':'20em'});
-          $('#card4').css({'height':'5em'});
-          $('#card5').css({'height':'5em'});
+      $('#img4').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img4)').css({'transform':'scale(1)'});
+    })
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').fadeIn();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').hide();
+    $('#card5').hover(function(){
+      $('#overlay1').show();
+      $('#overlay2').show();
+      $('#overlay3').show();
+      $('#overlay4').show();
+      $('#overlay5').hide();
 
-          $('#img3').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img3)').css({'transform':'scale(1)'});
-        })
+      $('#card1').css({'height':'5em'});
+      $('#card2').css({'height':'5em'});
+      $('#card3').css({'height':'5em'});
+      $('#card4').css({'height':'5em'});
+      $('#card5').css({'height':'20em'});
 
-        $('#card4').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').show();
-          $('#overlay3').show();
-          $('#overlay4').hide();
-          $('#overlay5').show();
+      $('#expand-overlay1').hide();
+      $('#expand-overlay2').hide();
+      $('#expand-overlay3').hide();
+      $('#expand-overlay4').hide();
+      $('#expand-overlay5').fadeIn();
 
-          $('#card1').css({'height':'5em'});
-          $('#card2').css({'height':'5em'});
-          $('#card3').css({'height':'5em'});
-          $('#card4').css({'height':'20em'});
-          $('#card5').css({'height':'5em'});
+      $('#img5').css({'transform':'scale(1.2)'});
+      $('.card-img-top:not(#img5)').css({'transform':'scale(1)'});
+    })
+  }
 
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').fadeIn();
-          $('#expand-overlay5').hide();
+  })
+</script>
 
-          $('#img4').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img4)').css({'transform':'scale(1)'});
-        })
-
-        $('#card5').hover(function(){
-          $('#overlay1').show();
-          $('#overlay2').show();
-          $('#overlay3').show();
-          $('#overlay4').show();
-          $('#overlay5').hide();
-
-          $('#card1').css({'height':'5em'});
-          $('#card2').css({'height':'5em'});
-          $('#card3').css({'height':'5em'});
-          $('#card4').css({'height':'5em'});
-          $('#card5').css({'height':'20em'});
-
-          $('#expand-overlay1').hide();
-          $('#expand-overlay2').hide();
-          $('#expand-overlay3').hide();
-          $('#expand-overlay4').hide();
-          $('#expand-overlay5').fadeIn();
-
-          $('#img5').css({'transform':'scale(1.2)'});
-          $('.card-img-top:not(#img5)').css({'transform':'scale(1)'});
-        })
-      }
-
-      })
-    </script>
+<script>
+  $(".sub-services-header>li").click(function(){
+    var curr = this.innerHTML;
+    $('.sub-services-header>li').css({"color": ""});
+    $(this).css({"color": "var(--PALT_6)"});
+    
+    $(".sub-services-list>div").fadeOut(200);
+    
+    var service_map = {
+      "Top Services" : "TopS",
+      "Gaming": "GMG",
+      "Professional Services" : "ProS",
+      "ERP" : "ERPS",
+      "Digital Marketing" : "DigiS",
+      "E-Commerce" : "EComS"
+    };
+    $(".sub-services-list>." + service_map[curr]).delay(195).fadeIn(500);
+  });
+  
+  $('.sub-services-header>li:first').click();
+</script>
   
 </body>
-</html>
