@@ -8,8 +8,8 @@ body {
 
 main {
     background-color: var(--PALT_2);
+
     scroll-snap-type: x mandatory;
-    background: var(--PALT_6);
 }
 
 main>section:nth-child(odd) {
@@ -18,6 +18,7 @@ main>section:nth-child(odd) {
 }
 
 main>section:nth-child(even) {
+    background: var(--PALT_6);
     color: var(--PALT_2);
 }
 
@@ -655,16 +656,16 @@ section {
 .slide-subcontainer {
     display: flex;
     width: calc(300px * 18);
-    animation: scroll2 15s linear infinite;
+    animation: scroll2 30s linear infinite;
 }
 
 @keyframes scroll2 {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(calc(-370*7px));
+        transform: translateX(calc(-384*9px));
     }
 }
 
@@ -903,7 +904,6 @@ section {
 }
 
 #m-fact-stroke {
-    display: none;
     stroke-dasharray: 3500;
     stroke-dashoffset: 3500;
 }
@@ -1008,7 +1008,7 @@ input[type="email"]:hover  {
         width: 125%;
     }
 
-    #msg-box {
+    #msg_box {
         width: 125%;
     }
 
@@ -1020,6 +1020,11 @@ input[type="email"]:hover  {
 
 
 /* ************ facts media queries ************ */
+@media (max-width:2160px) {
+    #m-fact-stroke {
+        display: none;
+    }
+}
 
 @media (max-width:1000px) {
 

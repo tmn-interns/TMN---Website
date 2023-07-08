@@ -8,15 +8,17 @@
     <!-- Libraries import -->
 	<script src="/lib/jquery-3.7.0.min.js"></script>
     
+    
+	
     <script src="/lib/js/bootstrap.bundle.min.js"></script> <!--not working -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/lib/css/bootstrap.min.css">
     
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="/lib/unpkg.com_aos@3.0.0-beta.6_dist_aos.css"> <!--download from: https://unpkg.com/aos@next/dist/aos.css -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Our files -->
@@ -25,9 +27,16 @@
     <script>var nav_item_idx=1;</script>
     <script src="js/load_nav_footer.js" defer></script>
     
+    <script>
+        $(function(){
+            $("#OSP").load("/files/our-services--process.html");
+            $("#FAQ_placeholder").load("/files/FAQ_section.html");
+        });
+    </script>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>techmihirnaik Group</title>
+
 </head>
 
 <body>
@@ -37,7 +46,7 @@
 
     
     <section class="container-fluid" id="welcome">
-        <img id="welcome-wave" src="/images/Welcome-wave.svg" alt="welcome">
+        <img id="welcome-wave" src="/images/Welcome-wave.svg">
         <div class="row align-items-center h-5000" id="welcome-card">
             <div class="col-md-6" data-aos="flip-up" data-aos-duration="500">
 
@@ -79,7 +88,6 @@
                             <img src="/images/Postica_logo.jpeg" class="company-img">
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <!-- <img id="background-curve" src="images/homepage_bg.png"> -->
@@ -161,7 +169,13 @@
         </div>
 
         </div>
-
+    
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            });
+        </script>
     </section>
 
 
@@ -169,14 +183,23 @@
 
     <section class="container-fluid" id="services">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
                 <hr>
                 <p>We enable innovation! From ideation all the way through to market delivery.</p>  
+
             </div>
-        </div>
-        <div id="OSP" style="margin:0; padding:0;"></div>
+        </div style="margin:0; padding:0;" data-aos="fade-up">
         
+            <div id="OSP" style="margin:0; padding:0;">
+
+        </div>
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 1000,
+                });
+            </script>
     </section>
 
     <!-- --------------------------------- Facts --------------------------------- -->
@@ -191,14 +214,20 @@
            
 
             <hr style="height:4px; border-width:0; background-color:#fff; margin-bottom: 50px;">
+
+            <!-- <svg id="fact-stroke" width="1137" height="490" viewBox="0 0 1137 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2.99989C127.5 2.99989 190.891 1.49989 249 123C307.109 244.5 375 287.5 525.5 272.5C676 257.5 789.5 255.514 851.5 272.5C913.5 289.486 1033.5 333.5 1134.5 488.5" stroke="white" stroke-width="5"/>
+            </svg> -->
             
             <svg id="fact-stroke" width="1440" height="440" viewBox="0 0 1440 440" fill="none">
                 <path d="M-74 170.691C37.5 11.1917 294.5 -12.6279 407 227.692C490.361 405.765 578.113 467.271 649 421.5C800 324 731.496 169.583 857.5 91.0001C997 4.00037 1073.5 271.627 1136 289.5C1331.54 345.419 1795 84.5 1982.5 3" stroke="white" stroke-width="6"/>
             </svg>
+            <!-- stroke-dasharray=20 -->
+
             <svg id="m-fact-stroke" viewBox="0 0 398 710" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-28.5 2.5C127.667 98.5 430.5 302.5 392.5 350.5C345 410.5 -17.4997 206 25 331.5C67.4997 457 458.627 558.782 351.5 664.5C313.5 702 73 774.5 -6 800.5" stroke="white" stroke-width="5"/>
-            </svg>
-
+                </svg>
+                
             <script>
                 $(window).on("scroll", function(){
                   if($(window).scrollTop() + $(window).height() - 100 >= $("#fact-stroke").offset().top){
@@ -229,23 +258,23 @@
 
             <div class="fact-bubbles">
 
-                <div class="fact-wrapper fact1">
-                    <img class="facts-img" src="./images/Happyclients.svg" style="bottom:-50%;">
+                <div class="fact-wrapper fact1" data-aos="zoom-in">
+                    <img class="facts-img" src="./images/Happyclients.svg" style="bottom:-60%;">
                     <div class="facts-circle" style="--fact-scale: 1">
                         <div class="facts-text-top" style="font-size: 2rem;">50lac+</div>
                         <div class="facts-text-bottom">Happy<br>Clients</div>
                     </div>
                 </div>
 
-                <div class="fact-wrapper fact2">
-                    <img class="facts-img" src="./images/Hoursofsupport.svg" style="right:20%; top:-35%;">
+                <div class="fact-wrapper fact2" data-aos="zoom-in">
+                    <img class="facts-img" src="./images/Hoursofsupport.svg" style="right:20%; top:-40%;">
                     <div class="facts-circle">
                         <div class="facts-text-top">24x7</div>
                         <div class="facts-text-bottom">Hours of<br>Support</div>
                     </div>
                 </div>
 
-                <div class="fact-wrapper fact3">
+                <div class="fact-wrapper fact3" data-aos="zoom-in">
                     <img class="facts-img" src="./images/Projects.svg" style="right:-30%">
                     <div class="facts-circle">
                         <div class="facts-text-top">17000+</div>
@@ -253,7 +282,7 @@
                     </div>
                 </div>
 
-                <div class="fact-wrapper fact4">
+                <div class="fact-wrapper fact4" data-aos="zoom-in">
                     <img class="facts-img" src="./images/Hardworkers.svg" style="right:-30%; bottom:-10%;">
                     <div class="facts-circle" style="--fact-scale: 1;">
                         <div class="facts-text-top">1200+</div>
@@ -280,19 +309,19 @@
             <div class="slide-container">
                 <div class="slide-subcontainer">
                     <div class="slide-img">
-                        <img src="/images/partner8.png" alt="image 1" class="partner-img">
+                        <img src="/images/partner1.png" alt="image 1" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner10.png" alt="image 2" class="partner-img">
+                        <img src="/images/partner2.png" alt="image 2" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner12.png" alt="image 3" class="partner-img">
+                        <img src="/images/partner3.png" alt="image 3" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner3.png" alt="image 4" class="partner-img">
+                        <img src="/images/partner4.png" alt="image 4" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner4.png" alt="image 5" class="partner-img">
+                        <img src="/images/partner5.png" alt="image 5" class="partner-img">
                     </div>
                     <div class="slide-img">
                         <img src="/images/partner6.png" alt="image 6" class="partner-img">
@@ -301,26 +330,38 @@
                         <img src="/images/partner7.png" alt="image 7" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner5.png" alt="image 8" class="partner-img">
+                        <img src="/images/partner8.png" alt="image 8" class="partner-img">
                     </div>
                     <div class="slide-img">
                         <img src="/images/partner9.png" alt="image 9" class="partner-img">
                     </div>
+                    <div class="slide-img">
+                        <img src="/images/partner10.png" alt="image 10" class="partner-img">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner11.png" alt="image 11" class="partner-img">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner12.png" alt="image 12" class="partner-img">
+                    </div>
+                    <div class="slide-img">
+                        <img src="/images/partner2.png" alt="image 2" class="partner-img">
+                    </div>
 
                     <div class="slide-img">
-                        <img src="/images/partner8.png" alt="image 1" class="partner-img">
+                        <img src="/images/partner1.png" alt="image 1" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner10.png" alt="image 2" class="partner-img">
+                        <img src="/images/partner2.png" alt="image 2" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner12.png" alt="image 3" class="partner-img">
+                        <img src="/images/partner3.png" alt="image 3" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner3.png" alt="image 4" class="partner-img">
+                        <img src="/images/partner4.png" alt="image 4" class="partner-img">
                     </div>
                     <div class="slide-img">
-                        <img src="/images/partner4.png" alt="image 5" class="partner-img">
+                        <img src="/images/partner5.png" alt="image 5" class="partner-img">
                     </div>
                     <div class="slide-img">
                         <img src="/images/partner6.png" alt="image 6" class="partner-img">
@@ -328,6 +369,7 @@
                     
                 </div>
             </div>
+        </div>
 
         <!---------------------- FAQ ------------->
 
@@ -346,24 +388,24 @@
     <section class="container-fluid" id="contacts-us">
         <!-- Contact cards -->
         <div class="container">
-            <div class="section-title" >
+            <div class="section-title" data-aos="fade-up">
                 <h2>Contact Us</h2>
                 <hr>
                 <p>Want to get in touch? We'd love to hear from you.<br>Here's how you can reach us.</p>
             </div>
 
             <div class="contact-cards row ml-0 mr-0 mt-5">
-                <div class="add" >
+                <div class="add" data-aos="fade-up">
                     <div class="upper"></div>
                     <div class="lower" id="add-text">ADDRESS</div>
                     <div class="icon"><img src="/images/contactus_location.svg"></div>
                 </div>
-                <div class="ph" >
+                <div class="ph" data-aos="fade-up">
                     <div class="upper"></div>
                     <div class="lower" id="phn-text">PHONE NUMBER</div>
                     <div class="icon"><img src="/images/contactus_phone.svg"></div>
                 </div>
-                <div class="email" >
+                <div class="email" data-aos="fade-up">
                     <div class="upper"></div>
                     <div class="lower" id="email-text">E-MAIL</div>
                     <div class="icon"><img src="/images/contactus_email.svg"></div>
@@ -372,13 +414,6 @@
 
         <script>
             $(document).ready(function (){
-
-                AOS.init();
-                
-
-                $("#OSP").load("/files/our-services-&-process.html");
-                $("#FAQ_placeholder").load("/files/FAQ_section.html");
-
                 $(".add").mouseenter(function(){
                     $(".add .upper").css("top", "-1.5rem");
                     document.getElementById("add-text").innerHTML = "BANDRA, MUMBAI";
@@ -453,7 +488,8 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </main>
 </body>
 </html>
