@@ -418,12 +418,12 @@
                 <div class="contactus-row row mb-3">
                     <div class="col-md-6 pe-md-2 p-0">
                         <label class="form-label">Name</label>
-                        <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+                        <input type="text" class="form-control form-control-lg" id="contactname" placeholder="Your Name">
                     </div>
                     
                     <div id = "email-cont" class="col-md-6 ps-md-2 p-0">
                         <label class="form-label">E-mail</label>
-                        <input type="email" class="form-control form-control-lg" placeholder="Your Email">
+                        <input type="email" class="form-control form-control-lg" id="contactemail" placeholder="Your Email">
                     </div>
                 </div>
                 
@@ -434,10 +434,20 @@
                 
                 <div class="contactus-row mb-3">
                     <label class="form-label">Message</label>
-                    <textarea id="msg-box" cols="10" rows="10" class="ta form-control" placeholder="Your Message Here..."></textarea>
+                    <textarea id="msg_box" cols="10" rows="10" class="ta form-control" placeholder="Your Message Here..."></textarea>
                 </div>
                 <div id="send-btn-container" class="mt-4 d-flex justify-content-center">
-                    <input type="submit" class="send-btn btn btn-lg btn-secondary" value="Send Message"></input>
+                    <script>
+                        function msgsent(){
+                            if(contactname.value.length == 0 || contactemail.value.length == 0 || subj_field.value.length == 0 || msg_box.value.length == 0){
+                                alert("Please fill out every field!!");
+                            }
+                            else {
+                                alert("Your message has been sent");
+                            }
+                        }
+                    </script>
+                    <input type="submit" class="send-btn btn btn-lg btn-secondary" value="Send Message" onclick="msgsent()"></input>
                 </div>            
             </form>
             <div class="airplane-container d-none d-md-flex col-md-6 pl-5"> 
